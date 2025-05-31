@@ -4,6 +4,17 @@
 
 **Context**: Professional scripts collection for Obsidian vault management, markdown processing, and automated workflows
 
+## 🎯 **Two Ways to Use This Toolkit**
+
+This toolkit is designed to be accessible to everyone, regardless of technical comfort level:
+
+- **🖥️ Terminal Users**: Direct command-line usage with full control
+- **🤖 AI-Assisted Users**: Step-by-step guidance through Cursor AI
+
+**Both approaches are equally valid and powerful!** Choose what feels comfortable to you.
+
+*New to terminal commands?* The Cursor AI approach will teach you as you go, turning every interaction into a learning opportunity without the intimidation factor.
+
 ## 📋 **Prerequisites & Dependencies**
 
 ### **Required Obsidian Plugins**
@@ -112,13 +123,38 @@ scripts/metadata-tools/remove_metadata.sh --no-backup
 ## 🚀 **Quick Start Guide**
 
 ### **Installation**
+
+**Choose your comfort level:**
+
+#### **🖥️ Terminal-Savvy Users**
 ```bash
 # Clone into your Obsidian vault
 cd /path/to/your/obsidian-vault
 git clone https://github.com/ronanchris/professional-markdown-toolkit.git scripts
 ```
 
+#### **🤖 Prefer AI Guidance?**
+1. **Download Cursor** (free from cursor.sh) if you don't have it
+2. **Open your Obsidian vault in Cursor**: File > Open Folder > Select your vault
+3. **Let Cursor help you install**: Type this into Cursor's chat:
+
+```
+I want to install the Professional Markdown Toolkit in my Obsidian vault. Can you:
+
+1. Help me safely clone or download the toolkit into my vault's scripts folder
+2. Explain what each step does as we go
+3. Install any needed dependencies (like Python packages)
+4. Show me how to test that everything is working
+5. Walk me through running my first script safely
+
+My vault is located at: [paste your vault path here]
+```
+
+**Cursor will handle everything step-by-step and explain what's happening!**
+
 ### **Basic Usage**
+
+#### **🖥️ Command Line**
 ```bash
 # Clean metadata from inbox files (with backup)
 scripts/metadata-tools/remove_metadata.sh
@@ -129,6 +165,16 @@ scripts/obsidian-tools/apply_template.sh
 # Clean up markdown formatting vault-wide
 scripts/markdown-processing/clean_all_markdown.sh --dry-run
 ```
+
+#### **🤖 With Cursor's Help**
+**Ask Cursor**: *"I want to clean up metadata in my inbox folder. Can you help me run the right script safely and explain what it does?"*
+
+**Cursor will:**
+- Guide you to the right script for your task
+- Explain what the script does before running it
+- Help you understand the backup system
+- Show you how to restore files if needed
+- Suggest the best options for your situation
 
 ### **Advanced Features**
 ```bash

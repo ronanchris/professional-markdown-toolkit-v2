@@ -19,6 +19,10 @@ Thank you for your interest in contributing to this professional Obsidian vault 
 - Obsidian vault for testing (recommended)
 
 ### **Local Setup**
+
+**Choose your preferred approach:**
+
+#### **🖥️ Comfortable with Terminal?**
 ```bash
 # Clone the repository
 git clone https://github.com/ronanchris/professional-markdown-toolkit.git
@@ -30,6 +34,25 @@ pip install -r requirements.txt
 # Make scripts executable (if needed)
 find . -name "*.sh" -exec chmod +x {} \;
 ```
+
+#### **🤖 Prefer AI Assistance with Cursor?**
+1. **Download and open Cursor** (free from cursor.sh)
+2. **Open this project in Cursor**: File > Open Folder > Select `professional-markdown-toolkit`
+3. **Ask Cursor to help you set up**: Copy this prompt into Cursor's chat:
+
+```
+I want to contribute to this Professional Markdown Toolkit project. Can you help me:
+
+1. Understand what this project does
+2. Set up my development environment safely 
+3. Install any needed dependencies
+4. Show me how to test changes before submitting them
+5. Walk me through making my first contribution
+
+I'm [new to/experienced with] Python and shell scripts, so please adjust your explanations accordingly.
+```
+
+**Cursor will guide you through each step, explain what commands do, and help you avoid mistakes!**
 
 ## 📋 **Contribution Guidelines**
 

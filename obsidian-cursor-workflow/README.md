@@ -34,13 +34,19 @@ This guide explains how to use **Cursor as a powerful companion editor** for Obs
 ## 🚀 Getting Started
 
 ### **1. Setup Your Vault in Cursor**
+
+#### **🖥️ Terminal Method**
 ```bash
 # Open your Obsidian vault as a project in Cursor
 cd /path/to/your/obsidian/vault
 cursor .
-
-# Or use File > Open Folder in Cursor
 ```
+
+#### **🤖 GUI Method (Beginner-Friendly)**
+1. **Open Cursor** (download free from cursor.sh)
+2. **File > Open Folder** in Cursor
+3. **Navigate to and select your Obsidian vault folder**
+4. **Ask Cursor for help**: *"I just opened my Obsidian vault in Cursor. Can you help me understand what I'm looking at and how to get started with vault management?"*
 
 ### **2. Install Recommended Cursor Extensions**
 - **Markdown All in One** - Enhanced markdown editing

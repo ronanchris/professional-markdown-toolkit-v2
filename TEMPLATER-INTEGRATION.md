@@ -135,7 +135,9 @@ If you don't want to use Templater:
 
 ## 🧪 Testing Templater Integration
 
-### **Quick Test Script**
+### **Quick Test**
+
+#### **🖥️ Command Line Testing**
 ```bash
 # Navigate to your vault scripts directory
 cd /path/to/vault/scripts
@@ -146,6 +148,21 @@ cd /path/to/vault/scripts
 # Test template cleanup (works with or without Templater)
 ./metadata-tools/remove_metadata.sh
 ```
+
+#### **🤖 Testing with Cursor's Assistance**
+**Ask Cursor**: 
+```
+I want to test if the Templater integration is working correctly in my vault. Can you help me:
+
+1. Create a test file with Templater syntax
+2. Run the appropriate script to test it
+3. Show me what the script did
+4. Help me restore the test file if needed
+
+I want to make sure I understand how Templater syntax is processed before using this on my real notes.
+```
+
+**Cursor will guide you through safe testing and explain each step!**
 
 ### **Verify Templater Syntax Processing**
 1. Create a test file with Templater syntax

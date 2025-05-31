@@ -89,7 +89,9 @@ Obsidian: See the improved results
 
 ### **🆘 New to Python/Command Line? DON'T PANIC!**
 
-**You don't need to know Python or command-line tools!** Here's what to do:
+**You don't need to know Python or command-line tools!** Choose your approach:
+
+#### **🤖 Prefer AI Guidance? (Recommended for Beginners)**
 
 1. **Download Cursor** (free from cursor.sh)
 2. **Open your vault in Cursor**: File > Open Folder > Select your Obsidian vault
@@ -108,7 +110,11 @@ I'm nervous about breaking my notes, so please guide me step by step.
 
 4. **Let Cursor teach you everything!** It will explain each step in plain English.
 
-**Remember**: Cursor is designed to help beginners. Don't be intimidated by `.py` or `.sh` files - Cursor will explain what they do and help you use them safely.
+#### **🖥️ Comfortable Learning Terminal Commands?**
+
+Follow the terminal commands throughout this guide, but feel free to ask Cursor to explain any command you don't understand by typing: *"Can you explain what this command does: [paste command here]"*
+
+**Remember**: Whether you choose AI guidance or terminal commands, both approaches are equally valid! Cursor is designed to help at any skill level - from complete beginners to experienced developers.
 
 See `cursor-prompts-guide.md` for dozens of example prompts to get help with anything!
 
