@@ -405,4 +405,156 @@ create_backup() {
 
 ---
 
+## 🚀 STRATEGIC ROADMAP: MULTI-EDITION ARCHITECTURE
+
+### **FUTURE ENHANCEMENT: Template Ecosystem Support**
+
+**Current State**: Toolkit heavily integrated with Templater plugin syntax
+**Strategic Goal**: Support multiple Obsidian template ecosystems
+
+### **📋 Proposed Multi-Edition Strategy**
+
+#### **Edition 1: Templater Edition** (Current Implementation)
+**Target Users**: Advanced Obsidian users with Templater plugin
+**Template Syntax**: 
+- `<%* ... -%>` JavaScript execution blocks
+- `` `= this.file.name` `` dynamic references  
+- `<% tp.file.creation_date() %>` date functions
+- Complex logic and file operations
+
+**Current Status**: ✅ Fully implemented and tested
+
+#### **Edition 2: Core Templates Edition** (Planned)
+**Target Users**: Users preferring Obsidian's built-in Core Templates plugin
+**Template Syntax**:
+- `{{title}}` file name insertion
+- `{{date}}`, `{{time}}` simple date/time
+- `{{date:YYYY-MM-DD}}` formatted dates
+- No JavaScript execution
+
+**Implementation Requirements**:
+- [ ] Research Core Templates syntax patterns
+- [ ] Adapt regex processing for `{{...}}` syntax
+- [ ] Create core-templates-edition/ directory structure
+- [ ] Modify template generation scripts
+- [ ] Update documentation for Core Templates workflow
+
+#### **Edition 3: Universal Edition** (Future Consideration)
+**Target Users**: Mixed workflows or template-agnostic users
+**Features**:
+- [ ] Auto-detection of template types
+- [ ] Support both Templater AND Core Templates syntax
+- [ ] Template-agnostic processing options
+- [ ] Unified interface for different template systems
+
+### **🏗️ Implementation Architecture**
+
+**Proposed Repository Structure**:
+```
+professional-markdown-toolkit/
+├── templater-edition/          # Current scripts (Templater-focused)
+│   ├── metadata-tools/
+│   ├── obsidian-tools/
+│   └── shared/
+├── core-templates-edition/     # Core Obsidian templates (planned)
+│   ├── metadata-tools/
+│   ├── obsidian-tools/
+│   └── shared/
+├── universal-edition/          # Multi-template support (future)
+│   ├── metadata-tools/
+│   └── shared/
+├── shared-core/               # Common functionality
+│   ├── backup-functions.sh
+│   └── utility-functions.sh
+└── docs/                      # Edition-specific documentation
+    ├── templater-guide.md
+    ├── core-templates-guide.md
+    └── edition-comparison.md
+```
+
+### **📊 Impact Analysis**
+
+**Scripts Requiring Major Changes**:
+- `obsidian-tools/apply_template.sh` - Complete template content rewrite
+- `obsidian-tools/fix_template.sh` - Different syntax patterns
+- `metadata-tools/remove_metadata.sh` - Different regex patterns
+- `metadata-tools/fix_metadata.sh` - Template-specific processing
+- `metadata-tools/clean_files.sh` - Syntax-aware cleaning
+
+**Scripts Working As-Is**:
+- `obsidian-cursor-workflow/vault-analytics.py` - Template-agnostic
+- `markdown-processing/cleanup_markdown_batch.py` - Formatting focus
+- `shared/backup-functions.sh` - Universal functionality
+
+### **🎯 Implementation Phases**
+
+#### **Phase 1: Research & Design (2-4 weeks)**
+- [ ] Survey Obsidian community template usage patterns
+- [ ] Analyze Core Templates plugin syntax and capabilities
+- [ ] Design unified architecture supporting multiple backends
+- [ ] Create detailed specification for each edition
+- [ ] Plan migration strategy for existing users
+
+#### **Phase 2: Core Templates Edition (4-6 weeks)**
+- [ ] Create core-templates-edition/ directory structure
+- [ ] Adapt template processing for `{{...}}` syntax
+- [ ] Rewrite template generation scripts
+- [ ] Create Core Templates specific documentation
+- [ ] Test with real Core Templates workflows
+
+#### **Phase 3: Universal Edition (6-8 weeks)**
+- [ ] Design template-agnostic processing engine
+- [ ] Implement auto-detection of template types
+- [ ] Create unified configuration system
+- [ ] Develop migration tools between editions
+- [ ] Comprehensive testing across all template types
+
+### **📈 Success Metrics**
+
+**Adoption Metrics**:
+- [ ] Support for 90%+ of Obsidian template workflows
+- [ ] Clear user guidance on edition selection
+- [ ] Smooth migration path between editions
+- [ ] Community feedback validation
+
+**Technical Metrics**:
+- [ ] Code reuse across editions (shared-core functionality)
+- [ ] Consistent backup and error handling across all editions
+- [ ] Performance parity across template types
+- [ ] Unified documentation structure
+
+### **🚧 Considerations & Challenges**
+
+**Maintenance Complexity**:
+- ⚠️ Multiple codebases requiring parallel maintenance
+- ⚠️ Need for comprehensive test coverage across editions
+- ⚠️ Documentation synchronization challenges
+- ⚠️ User support complexity
+
+**User Experience**:
+- ⚠️ Potential confusion about which edition to choose
+- ⚠️ Need for clear migration guidance
+- ⚠️ Consistent user experience across editions
+
+**Mitigation Strategies**:
+- ✅ Shared core functionality to minimize duplication
+- ✅ Automated testing across all editions
+- ✅ Clear edition comparison documentation
+- ✅ Migration tools and guides
+
+### **💡 Decision Framework**
+
+**Proceed with Core Templates Edition if**:
+- [ ] Community shows strong interest in Core Templates support
+- [ ] Sufficient user feedback requests this functionality
+- [ ] Resources available for parallel maintenance
+- [ ] Clear differentiation from existing Templater edition
+
+**Alternative Approaches**:
+- [ ] Plugin-based architecture within single edition
+- [ ] Configuration-driven template processing
+- [ ] Community-contributed template modules
+
+---
+
 **⚡ NEXT ACTION**: Begin implementing Critical Issues #1-3 immediately 

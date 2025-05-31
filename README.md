@@ -215,6 +215,21 @@ This toolkit is designed for professional use with:
 
 **Status**: ✅ **Production Ready** - Comprehensive security audit completed, full backup system implemented
 
+## 🚀 **Future Roadmap**
+
+### **Multi-Edition Strategy** (Planned)
+This toolkit currently focuses on **Templater plugin integration**. Future development will include:
+
+- **📦 Core Templates Edition** - Support for Obsidian's built-in Core Templates (`{{title}}`, `{{date}}` syntax)
+- **📦 Universal Edition** - Multi-template system support with auto-detection
+- **📦 Template-Agnostic Tools** - Processing tools that work regardless of template system
+
+**Current Focus**: Templater Edition (fully functional)  
+**Next Priority**: Community feedback and Core Templates research  
+**Timeline**: Based on user demand and contribution availability
+
+See `PROJECT-SECURITY-PLAN.md` for detailed roadmap and implementation phases.
+
 ## 📄 **License**
 
 MIT License - See `LICENSE` and `LICENSE-EXPLAINED.md` for complete details.
