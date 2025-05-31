@@ -4,6 +4,30 @@
 
 **Context**: Professional scripts collection for Obsidian vault management, markdown processing, and automated workflows
 
+## 📋 **Prerequisites & Dependencies**
+
+### **Required Obsidian Plugins**
+This toolkit is designed for advanced Obsidian workflows and requires:
+
+- **[Templater](https://github.com/SilentVoid13/Templater)** ⚠️ **ESSENTIAL** - Core template functionality
+  - Processes `<%* ... -%>` code blocks
+  - Handles `` `= this.file.name` `` references  
+  - Required for template scripts (`apply_template.sh`, `fix_template.sh`)
+- **[Dataview](https://github.com/blacksmithgu/obsidian-dataview)** (Optional) - For advanced analytics
+
+### **System Requirements**
+- **Python 3.7+** with PyYAML (`pip install -r requirements.txt`)
+- **Bash shell** (macOS/Linux) or WSL (Windows)
+- **Obsidian vault** with `scripts/` folder structure
+
+### **Templater Configuration**
+If using Templater-dependent scripts:
+1. Install Templater plugin in Obsidian
+2. Enable "Trigger Templater on new file creation"
+3. Set template folder if using templates (optional)
+
+⚠️ **Note**: Scripts will work without Templater but may show warnings for unprocessed Templater syntax.
+
 ## 📁 **Directory Structure**
 
 - **Core Tools** (`metadata-tools/`, `obsidian-tools/`, `markdown-processing/`) - Universal Obsidian vault management
@@ -26,6 +50,7 @@ scripts/
 
 #### **`remove_metadata.sh`** **PRODUCTION METADATA REMOVAL**
 **Purpose**: Clean removal of YAML frontmatter and templater code
+**Templater Integration**: Removes Templater syntax (`<%* ... -%>`, `` `= this.file.name` ``)
 **Features**: 
 - ✅ Comprehensive backup system with restoration
 - ✅ YAML frontmatter detection and removal
@@ -51,9 +76,9 @@ scripts/metadata-tools/remove_metadata.sh --no-backup
 ### **Obsidian Integration (`obsidian-tools/`)**
 **Professional Obsidian vault structure and template management**
 
-#### **Template Management Scripts**
-- **`apply_template.sh`** - Apply inbox templates to markdown files
-- **`fix_template.sh`** - Repair and standardize template formatting
+#### **Template Management Scripts** ⚠️ **Requires Templater**
+- **`apply_template.sh`** - Apply inbox templates to markdown files (includes Templater code)
+- **`fix_template.sh`** - Repair and standardize template formatting (processes Templater syntax)
 - **`apply_inbox_template.py`** - Python-based template application with dry-run mode
 
 #### **Metadata Processing**
@@ -169,6 +194,7 @@ All destructive operations automatically create timestamped backups:
 ## 📖 **Documentation & Support**
 
 - **`README.md`** → This comprehensive guide
+- **`TEMPLATER-INTEGRATION.md`** → Complete Templater plugin integration guide
 - **`SECURITY-AUDIT.md`** → Detailed security analysis and validation
 - **`PROJECT-SECURITY-PLAN.md`** → Development roadmap and testing plans
 - **`CONTRIBUTING.md`** → Contribution guidelines and development standards
