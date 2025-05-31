@@ -4,7 +4,7 @@ set -u  # Exit on undefined variable
 
 # Get script directory and work relative to it
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-VAULT_ROOT="$(dirname "$SCRIPT_DIR")"
+VAULT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 INBOX_DIR="$VAULT_ROOT/0-inbox"
 
 # Source backup functions

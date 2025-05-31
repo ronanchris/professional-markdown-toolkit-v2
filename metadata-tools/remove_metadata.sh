@@ -4,7 +4,7 @@ set -u  # Exit on undefined variable
 
 # Get script directory and work relative to it
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-VAULT_ROOT="$(dirname "$SCRIPT_DIR")"
+VAULT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 INBOX_DIR="$VAULT_ROOT/0-inbox"
 
 # Source backup functions
@@ -62,7 +62,8 @@ for file in *.md; do
     content=$(cat "$file")
     
     # Check if the file begins with YAML frontmatter
-    if [[ "$content" =~ ^---.*---$ ]]; then
+    first_line=$(echo "$content" | head -n1)
+    if [[ "$first_line" == "---" ]]; then
       # Extract everything after the second '---' marker (end of YAML frontmatter)
       content=$(echo "$content" | awk 'BEGIN{flag=0; count=0} /^---$/{count++; if(count==2){flag=1; next}} flag{print}')
     fi

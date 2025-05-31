@@ -6,7 +6,7 @@
 # Get the directory where this script is located
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Get the parent directory (vault root)
-VAULT_ROOT="$(dirname "$SCRIPT_DIR")"
+VAULT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
 
 # Default flags
 DRY_RUN=false
