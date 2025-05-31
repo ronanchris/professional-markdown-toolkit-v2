@@ -221,3 +221,9 @@ git reset --hard HEAD~1      # Restore to previous commit (careful!)
 ---
 
 **Remember**: This workflow is about leveraging the strengths of both tools. Use Obsidian for what it does best (note-taking, linking, exploration) and Cursor for what it excels at (bulk operations, advanced editing, automation). 
+
+# Generate comprehensive vault analytics
+python scripts/obsidian-cursor-workflow/vault-analytics.py
+
+# Process markdown files with advanced cleanup
+python scripts/markdown-processing/cleanup_markdown_batch.py . --recursive --verbose 

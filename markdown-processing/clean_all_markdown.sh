@@ -26,15 +26,15 @@ for arg in "$@"; do
   esac
 done
 
-# Build command
-CMD="python $SCRIPT_DIR/cleanup_markdown_batch.py \"$VAULT_ROOT\" --recursive"
+# Build command arguments array
+CMD_ARGS=("$SCRIPT_DIR/cleanup_markdown_batch.py" "$VAULT_ROOT" "--recursive")
 
 if [ "$DRY_RUN" = true ]; then
-  CMD="$CMD --dry-run"
+  CMD_ARGS+=("--dry-run")
 fi
 
 if [ "$VERBOSE" = true ]; then
-  CMD="$CMD --verbose"
+  CMD_ARGS+=("--verbose")
 fi
 
 # Print header
@@ -48,8 +48,8 @@ echo "============================================="
 echo "Starting cleanup process..."
 echo
 
-# Execute command
-eval $CMD
+# Execute command safely (no eval)
+python "${CMD_ARGS[@]}"
 
 echo
 echo "============================================="

@@ -1,155 +1,217 @@
 # Contributing to Professional Markdown Toolkit
 
-Thank you for your interest in contributing to the Professional Markdown Toolkit! This project aims to provide robust, professional-grade tools for markdown processing and document automation.
+Thank you for your interest in contributing to this professional Obsidian vault management toolkit!
 
-## 🎯 Project Goals
+## 🎯 **Project Vision**
 
-- **Professional Quality**: All tools should meet enterprise/executive standards
-- **Safety First**: Scripts should never destroy content, only improve formatting
-- **Cross-Platform**: Support macOS, Linux, and Windows (via WSL)
-- **Documentation**: Every script should be well-documented with clear usage examples
+- **Professional Quality**: All tools should meet enterprise standards
+- **Obsidian Focus**: Specialized for Obsidian vault management and markdown processing
+- **Security First**: Comprehensive backup systems and safe operations
+- **User-Friendly**: Clear documentation and helpful error messages
+- **Cross-Platform**: Works on macOS, Linux, and Windows WSL
 
-## 🚀 Getting Started
+## 🛠️ **Development Setup**
 
-1. **Fork the repository** on GitHub
-2. **Clone your fork** locally
-3. **Create a feature branch** for your changes
-4. **Test thoroughly** before submitting
+### **Prerequisites**
+- Python 3.8+ 
+- Bash shell environment
+- Git for version control
+- Obsidian vault for testing (recommended)
 
-## 📝 Types of Contributions
+### **Local Setup**
+```bash
+# Clone the repository
+git clone https://github.com/ronanchris/professional-markdown-toolkit.git
+cd professional-markdown-toolkit
 
-### **New Scripts**
-- Markdown processing utilities
-- Obsidian vault management tools
-- Document generation automation
-- Metadata processing scripts
+# Install dependencies
+pip install -r requirements.txt
 
-### **Improvements**
-- Performance optimizations
-- Better error handling
-- Enhanced documentation
-- Cross-platform compatibility fixes
+# Make scripts executable (if needed)
+find . -name "*.sh" -exec chmod +x {} \;
+```
 
-### **Bug Fixes**
-- Content preservation issues
-- Unicode/encoding problems
-- Path handling bugs
-- Platform-specific issues
+## 📋 **Contribution Guidelines**
 
-## 🛠️ Development Guidelines
+### **Types of Contributions Welcome**
+1. **Bug fixes** - Security issues, script failures, documentation errors
+2. **Feature enhancements** - New Obsidian tools, improved workflows
+3. **Documentation** - Better guides, examples, troubleshooting
+4. **Testing** - Cross-platform validation, edge case testing
+5. **Security improvements** - Safer operations, better validation
 
 ### **Code Standards**
-- **Python**: Follow PEP 8 style guidelines
-- **Bash**: Use `set -e` for error handling
-- **Comments**: Explain complex logic and regex patterns
-- **Error Handling**: Graceful failure with clear messages
 
-### **Safety Requirements**
-- **Never modify content** - only formatting
-- **Preserve YAML frontmatter** in markdown files
-- **Backup recommendations** in documentation
-- **Dry-run modes** for destructive operations
-
-### **Testing**
-- Test with various file sizes (small, large, very large)
-- Test with Unicode content and special characters
-- Test error conditions (missing files, permissions, etc.)
-- Test on different platforms when possible
-
-## 📋 Submission Process
-
-### **Before Submitting**
-1. **Test your changes** thoroughly
-2. **Update documentation** if needed
-3. **Add usage examples** for new features
-4. **Check for breaking changes**
-
-### **Pull Request Guidelines**
-- **Clear title** describing the change
-- **Detailed description** of what and why
-- **Test results** showing before/after
-- **Documentation updates** included
-
-### **Commit Messages**
-```
-feat: add batch markdown cleanup with dry-run mode
-fix: preserve YAML frontmatter in template application
-docs: update README with new script usage examples
-refactor: improve error handling in metadata tools
-```
-
-## 🧪 Testing Your Changes
-
-### **Basic Testing**
+#### **Shell Scripts (.sh)**
 ```bash
-# Test markdown processing
-python markdown-processing/cleanup_markdown_batch.py test_file.md --dry-run
+#!/bin/bash
+set -e  # Exit on error
+set -u  # Exit on undefined variable
 
-# Test template application
-python obsidian-tools/apply_inbox_template.py test_note.md
+# Use relative paths
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Test document generation
-cd company-executive && ./build-consolidated-doc.sh
+# Include backup functionality
+source "$SCRIPT_DIR/../shared/backup-functions.sh"
+
+# Add help option
+if [[ "${1:-}" == "--help" ]]; then
+    echo "Usage: $0 [options]"
+    exit 0
+fi
 ```
 
-### **Edge Cases to Test**
-- Empty files
-- Files with only YAML frontmatter
-- Very large files (>1MB)
-- Files with Unicode characters
-- Files with Windows line endings
-- Missing or corrupted files
+#### **Python Scripts (.py)**
+```python
+#!/usr/bin/env python3
+import sys
+import os
 
-## 📚 Documentation Standards
+def check_dependencies():
+    """Check required dependencies are available."""
+    missing = []
+    try:
+        import yaml
+    except ImportError:
+        missing.append("PyYAML (pip install pyyaml)")
+    
+    if missing:
+        print("Missing required dependencies:")
+        for dep in missing:
+            print(f"  - {dep}")
+        sys.exit(1)
 
-### **Script Documentation**
-Each script should include:
-- **Purpose**: What problem it solves
-- **Usage**: Command-line examples
-- **Options**: All available flags and parameters
-- **Safety**: What it preserves/modifies
-- **Examples**: Real-world usage scenarios
+# Always include dependency checks
+check_dependencies()
+```
 
-### **README Updates**
-When adding new scripts:
-- Add to appropriate category section
-- Include usage examples
-- Update the directory structure diagram
-- Add to Quick Start Guide if applicable
+### **Security Requirements**
+- ✅ **No hardcoded paths** - Use relative path resolution
+- ✅ **Backup integration** - All destructive operations must include backup options
+- ✅ **Input validation** - Validate all user inputs and file paths
+- ✅ **Error handling** - Graceful failure with helpful error messages
+- ✅ **Safe operations** - No `eval`, proper quoting, validated commands
 
-## 🐛 Reporting Issues
+### **Testing Standards**
+```bash
+# Test with dry-run mode first
+./your-script.sh --dry-run
 
-### **Bug Reports**
-Include:
-- **Operating system** and version
-- **Python version** (`python --version`)
-- **Exact command** that failed
-- **Error message** (full output)
-- **Sample file** that reproduces the issue (if possible)
+# Test with minimal test data
+# Test error conditions
+# Test backup and restore functionality
+```
 
-### **Feature Requests**
-Include:
-- **Use case**: What problem would this solve?
-- **Proposed solution**: How should it work?
-- **Alternatives**: What workarounds exist currently?
+## 🔧 **Development Workflow**
 
-## 🏆 Recognition
+### **1. Issue Creation**
+- Check existing issues first
+- Use issue templates for bug reports
+- Include clear reproduction steps
+- Add appropriate labels
 
-Contributors will be:
-- Listed in the project README
-- Credited in release notes
-- Invited to help maintain the project
+### **2. Development Process**
+```bash
+# Create feature branch
+git checkout -b feature/your-feature-name
 
-## 📞 Getting Help
+# Make changes following code standards
+# Test thoroughly in safe environment
 
-- **GitHub Issues**: For bugs and feature requests
-- **GitHub Discussions**: For questions and ideas
-- **Documentation**: Check README and script comments first
+# Commit with clear messages
+git commit -m "feat: add backup functionality to metadata tools"
 
-## 🎉 Thank You!
+# Push and create pull request
+git push origin feature/your-feature-name
+```
 
-Every contribution helps make this toolkit more useful for the community. Whether it's a bug fix, new feature, or documentation improvement, your help is appreciated!
+### **3. Pull Request Guidelines**
+- **Clear description** of changes made
+- **Testing evidence** - show scripts work correctly  
+- **Security review** - confirm no new vulnerabilities
+- **Documentation updates** - update README if needed
+- **Backward compatibility** - don't break existing workflows
 
----
+## 🧪 **Testing Your Changes**
 
-**Remember**: This toolkit is used in professional environments, so quality and reliability are paramount. When in doubt, err on the side of caution and safety. 
+### **Required Testing**
+```bash
+# 1. Individual script testing
+./your-script.sh --help
+./your-script.sh --dry-run
+
+# 2. Integration testing
+# Test with real Obsidian vault (backup first!)
+
+# 3. Error condition testing
+# Test with missing files, invalid inputs, etc.
+
+# 4. Backup system testing
+# Verify backups are created and can be restored
+```
+
+### **Testing Checklist**
+- [ ] Script runs without errors
+- [ ] Help documentation is accurate
+- [ ] Dry-run mode works correctly
+- [ ] Backup functionality works
+- [ ] Error messages are helpful
+- [ ] No hardcoded paths used
+- [ ] Works on intended platforms
+
+## 📚 **Documentation Standards**
+
+### **Code Documentation**
+- Clear comments explaining complex logic
+- Function docstrings for Python code
+- Usage examples in script headers
+
+### **User Documentation**
+- Update README.md for new features
+- Add troubleshooting entries when relevant
+- Include real usage examples
+
+## 🚀 **Release Process**
+
+### **Pre-Release Checklist**
+- [ ] All tests pass on target platforms
+- [ ] Security audit completed
+- [ ] Documentation updated
+- [ ] Version numbers incremented
+- [ ] Changelog updated
+
+### **Versioning**
+We use semantic versioning:
+- **Major** (1.0.0) - Breaking changes
+- **Minor** (0.1.0) - New features, backward compatible
+- **Patch** (0.0.1) - Bug fixes, backward compatible
+
+## 🤝 **Community Guidelines**
+
+### **Communication**
+- Be respectful and constructive
+- Focus on technical merit
+- Help others learn and improve
+- Share knowledge and best practices
+
+### **Issue Discussion**
+- Stay on topic
+- Provide helpful debugging information
+- Test suggested solutions
+- Report back on outcomes
+
+## 📞 **Getting Help**
+
+- **Documentation**: Check README.md and related guides first
+- **Issues**: Search existing issues before creating new ones  
+- **Discussions**: Use GitHub Discussions for general questions
+- **Security**: Report security issues privately via email
+
+## 🏆 **Recognition**
+
+Contributors are recognized in:
+- README.md contributors section
+- Release notes for significant contributions
+- Special recognition for security improvements
+
+Thank you for helping make Obsidian vault management more professional and reliable! 

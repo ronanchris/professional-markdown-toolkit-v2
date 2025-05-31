@@ -111,20 +111,53 @@ get_backup_info() {
 cleanup_old_backups() {
     local days_to_keep="${1:-7}"
     local script_dir="$2"
+    
+    # Validate inputs
+    if [ -z "$script_dir" ]; then
+        echo "❌ Error: Script directory not provided"
+        return 1
+    fi
+    
+    if ! [[ "$days_to_keep" =~ ^[0-9]+$ ]] || [ "$days_to_keep" -lt 1 ]; then
+        echo "❌ Error: Days to keep must be a positive number (got: $days_to_keep)"
+        return 1
+    fi
+    
     local backup_root="$(dirname "$script_dir")/backups"
+    
+    # Validate backup root path
+    if [ -z "$backup_root" ] || [ "$backup_root" = "/" ] || [ "$backup_root" = "/backups" ]; then
+        echo "❌ Error: Invalid backup root path: $backup_root"
+        return 1
+    fi
     
     if [ ! -d "$backup_root" ]; then
         echo "No backup directory found at $backup_root"
         return 0
     fi
     
-    echo "🧹 Cleaning up backups older than $days_to_keep days..."
+    echo "🧹 Cleaning up backups older than $days_to_keep days from: $backup_root"
     
-    # Find and remove backup directories older than specified days
-    find "$backup_root" -type d -name "*_*" -mtime +$days_to_keep -exec rm -rf {} + 2>/dev/null
+    # Find directories to remove (safer approach)
+    local dirs_to_remove
+    dirs_to_remove=$(find "$backup_root" -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9][0-9][0-9][0-9]" -mtime +$days_to_keep 2>/dev/null)
     
-    local remaining=$(find "$backup_root" -type d -name "*_*" 2>/dev/null | wc -l)
-    echo "📊 Remaining backup sets: $remaining"
+    if [ -z "$dirs_to_remove" ]; then
+        echo "📊 No old backup directories found to clean up"
+        return 0
+    fi
+    
+    local count=0
+    while IFS= read -r dir; do
+        if [ -n "$dir" ] && [ -d "$dir" ]; then
+            echo "🗑️  Removing old backup: $(basename "$dir")"
+            rm -rf "$dir"
+            count=$((count + 1))
+        fi
+    done <<< "$dirs_to_remove"
+    
+    local remaining=$(find "$backup_root" -maxdepth 1 -type d -name "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9][0-9][0-9][0-9]" 2>/dev/null | wc -l)
+    echo "📊 Cleaned up $count old backup sets, $remaining remaining"
 }
 
 # Restore from backup (interactive)
