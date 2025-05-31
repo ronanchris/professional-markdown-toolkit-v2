@@ -6,6 +6,25 @@ set -u  # Exit on undefined variable
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_ROOT="$(dirname "$SCRIPT_DIR")"
 
+# Source backup functions
+source "$SCRIPT_DIR/../shared/backup-functions.sh"
+
+# Parse command line arguments
+for arg in "$@"; do
+    case $arg in
+        --no-backup)
+            disable_backups
+            shift
+            ;;
+        --help)
+            echo "Usage: $0 [--no-backup] [--help]"
+            echo "  --no-backup  Skip backup creation (advanced users only)"
+            echo "  --help       Show this help message"
+            exit 0
+            ;;
+    esac
+done
+
 # Check if vault structure exists
 if [ ! -d "$VAULT_ROOT/0-inbox" ]; then
     echo "Error: Expected Obsidian vault structure not found"
@@ -19,8 +38,20 @@ if [ ! -d "$VAULT_ROOT/0-inbox" ]; then
     exit 1
 fi
 
+# Initialize backup system
+init_backup_system "$SCRIPT_DIR"
+
 # Navigate to the workspace directory (vault root)
 cd "$VAULT_ROOT" || exit 1
+
+echo "🚀 Starting to apply template to files in 0-inbox..."
+echo "📁 Working directory: $VAULT_ROOT"
+
+# Create backup of all markdown files before processing
+if [ "$BACKUP_ENABLED" = true ]; then
+    echo "💾 Creating backup of all markdown files..."
+    create_directory_backup "$VAULT_ROOT/0-inbox" "*.md" "template_application"
+fi
 
 # Template content from inbox-template.md
 TEMPLATE=$(cat <<'EOF'
@@ -54,7 +85,6 @@ EOF
 )
 
 # Process each markdown file in the 0-inbox directory
-echo "Starting to apply template to files in 0-inbox..."
 for file in 0-inbox/*.md; do
   # Skip hidden files and system files
   if [[ "$(basename "$file")" == ".*" || "$(basename "$file")" == ".DS_Store" ]]; then
@@ -81,4 +111,10 @@ for file in 0-inbox/*.md; do
   rm "$temp_file"
 done
 
-echo "Template has been applied to all files in 0-inbox." 
+echo ""
+echo "🎉 Template has been applied to all files in 0-inbox."
+echo ""
+get_backup_info
+echo ""
+echo "💡 To restore files if needed:"
+echo "   $SCRIPT_DIR/../shared/backup-functions.sh restore_from_backup '$SCRIPT_DIR'" 

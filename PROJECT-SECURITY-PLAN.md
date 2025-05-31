@@ -32,10 +32,12 @@
 **Impact**: Users could permanently lose data
 
 - [x] Add backup functionality to `metadata-tools/remove_metadata.sh`
-- [ ] Add backup functionality to `metadata-tools/fix_metadata.sh`
-- [ ] Add backup functionality to all template application scripts
+- [x] Add backup functionality to `metadata-tools/fix_metadata.sh`
+- [x] Add backup functionality to `metadata-tools/clean_files.sh`
+- [x] Add backup functionality to `obsidian-tools/apply_template.sh`
+- [x] Add backup functionality to `obsidian-tools/fix_template.sh`
 - [x] Create standardized backup function for shell scripts
-- [ ] Add `--no-backup` option for advanced users
+- [x] Add `--no-backup` option for advanced users
 - [ ] Test backup and restore procedures
 - [ ] Document backup locations and cleanup procedures
 

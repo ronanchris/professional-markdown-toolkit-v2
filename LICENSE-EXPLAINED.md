@@ -9,7 +9,7 @@ This project uses the **MIT License** - one of the most permissive and widely-us
 - ✅ Modify scripts to fit your specific needs
 - ✅ Run scripts on your documents, websites, or projects
 
-### **Commercial Use** 
+### **Commercial Use**
 - ✅ Use scripts in your business or workplace
 - ✅ Include scripts in products you sell
 - ✅ Offer services using these scripts
@@ -39,7 +39,7 @@ When you distribute or share the scripts:
 If you include these scripts in your project, just add something like:
 ```
 This project includes scripts from Professional Markdown Toolkit
-Copyright (c) 2025 Professional Markdown Toolkit Contributors
+Copyright (c) 2025 Chris Ronan
 Licensed under MIT License - see LICENSE file
 ```
 
@@ -100,5 +100,4 @@ We picked MIT because:
 The goal is to help as many people as possible create better documents and workflows. Enjoy the tools!
 
 ---
-
 *This explanation is for informational purposes only and doesn't constitute legal advice. For specific legal questions, consult a qualified attorney.* 
