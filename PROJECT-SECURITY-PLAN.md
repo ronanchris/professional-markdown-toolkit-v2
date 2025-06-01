@@ -361,6 +361,223 @@ grep -ri "prepared.*by.*ronan" .
 - [ ] Documentation answers common questions
 - [ ] Scripts provide helpful feedback during operation
 
+## 📷 DOCUMENTATION & TESTING: MESSY MARKDOWN EXAMPLES PROJECT
+
+### **🎯 Goal: Create Visual Before/After Documentation**
+**Purpose**: Build comprehensive documentation showing real-world transformation examples while creating robust test cases
+
+### **📋 PHASE 1: Gather Messy Markdown Examples**
+
+#### **Core Categories to Document**
+
+**1. YAML Frontmatter Issues**
+- [ ] **Inconsistent Date Formats**
+  - [ ] Find: Mixed formats (`12/25/2023`, `2023-12-25`, `Dec 25, 2023`)
+  - [ ] Screenshot: Obsidian property panel showing inconsistent dates
+  - [ ] Test: `metadata-tools/fix_metadata.sh` standardization
+  - [ ] Document: Before/after metadata standardization
+
+- [ ] **Missing/Malformed Frontmatter**
+  - [ ] Find: Notes with no frontmatter, broken YAML syntax
+  - [ ] Screenshot: Obsidian showing raw frontmatter vs. parsed properties
+  - [ ] Test: Template application and frontmatter repair
+  - [ ] Document: Complete frontmatter generation process
+
+- [ ] **Mixed Metadata Standards**
+  - [ ] Find: Different field names (`created` vs `date-created` vs `date_created`)
+  - [ ] Screenshot: Obsidian properties showing inconsistent field naming
+  - [ ] Test: Metadata standardization scripts
+  - [ ] Document: Schema normalization process
+
+**2. Templater Syntax Scenarios**
+- [ ] **Unprocessed Templater Code**
+  - [ ] Find: `<%* ... -%>` blocks appearing as literal text
+  - [ ] Screenshot: Obsidian showing raw templater code vs. processed output
+  - [ ] Test: `metadata-tools/remove_metadata.sh` templater cleanup
+  - [ ] Document: Template processing workflow
+
+- [ ] **Mixed Template Systems**
+  - [ ] Find: Both `<%* ... -%>` and `{{title}}` in same documents
+  - [ ] Screenshot: Confusion in Obsidian interface with mixed syntax
+  - [ ] Test: Selective template cleanup
+  - [ ] Document: Template system migration process
+
+- [ ] **Broken Dynamic References**
+  - [ ] Find: `` `= this.file.name` `` showing as literal text
+  - [ ] Screenshot: Obsidian showing unprocessed vs. processed references
+  - [ ] Test: Reference cleanup and standardization
+  - [ ] Document: Dynamic content resolution
+
+**3. Markdown Formatting Chaos**
+- [ ] **Inconsistent Heading Spacing**
+  - [ ] Find: Mixed `#Heading` vs `# Heading` patterns
+  - [ ] Screenshot: Obsidian outline view showing inconsistent hierarchy
+  - [ ] Test: `markdown-processing/cleanup_markdown_batch.py` formatting
+  - [ ] Document: Professional heading standardization
+
+- [ ] **List Formatting Issues**
+  - [ ] Find: Mixed bullet types (`-`, `*`, `+`), inconsistent indentation
+  - [ ] Screenshot: Obsidian editing view showing messy list formatting
+  - [ ] Test: List standardization and cleanup
+  - [ ] Document: Professional list formatting rules
+
+- [ ] **Whitespace and Line Break Chaos**
+  - [ ] Find: Multiple blank lines, trailing spaces, inconsistent line endings
+  - [ ] Screenshot: Obsidian source mode showing whitespace issues
+  - [ ] Test: Comprehensive whitespace cleanup
+  - [ ] Document: Clean whitespace standards
+
+**4. Complex Real-World Scenarios**
+- [ ] **Large Note Cleanup**
+  - [ ] Find: 1000+ line notes with multiple formatting issues
+  - [ ] Screenshot: Performance before/after with progress indicators
+  - [ ] Test: Large file processing and backup systems
+  - [ ] Document: Bulk processing workflows
+
+- [ ] **Nested Folder Processing**
+  - [ ] Find: Deep folder hierarchies with varied formatting
+  - [ ] Screenshot: Vault structure and recursive processing results
+  - [ ] Test: Recursive directory processing
+  - [ ] Document: Vault-wide transformation workflows
+
+### **📸 PHASE 2: Screenshot Documentation Strategy**
+
+#### **Screenshot Categories**
+
+**1. Obsidian Interface Screenshots**
+- [ ] **Before State**: Messy content in Obsidian
+  - [ ] Reading view showing formatting issues
+  - [ ] Properties panel with inconsistent metadata
+  - [ ] Graph view with poorly connected notes
+  - [ ] Source mode showing raw formatting problems
+
+- [ ] **Processing Stage**: Scripts in Action
+  - [ ] Cursor terminal showing script execution
+  - [ ] Progress indicators and backup creation
+  - [ ] Detailed output showing transformations
+
+- [ ] **After State**: Clean, Professional Results
+  - [ ] Reading view with consistent formatting
+  - [ ] Properties panel with standardized metadata
+  - [ ] Source mode showing clean markup
+  - [ ] Performance improvements and organization
+
+**2. Cursor Integration Screenshots**
+- [ ] **Workspace Views**
+  - [ ] Cursor with vault opened showing file structure
+  - [ ] AI assistance helping with script selection
+  - [ ] Terminal integration for running scripts
+  - [ ] Git integration showing before/after diffs
+
+- [ ] **Script Execution Process**
+  - [ ] AI explaining what scripts will do
+  - [ ] Step-by-step guidance for beginners
+  - [ ] Error handling and recovery assistance
+  - [ ] Backup and restore procedures
+
+#### **Screenshot Naming Convention**
+```
+docs/examples/
+├── frontmatter/
+│   ├── 01-inconsistent-dates-before.png
+│   ├── 01-inconsistent-dates-after.png
+│   ├── 02-missing-frontmatter-before.png
+│   └── 02-missing-frontmatter-after.png
+├── templater/
+│   ├── 01-unprocessed-code-before.png
+│   ├── 01-unprocessed-code-after.png
+│   └── 02-mixed-templates-before.png
+├── formatting/
+│   ├── 01-heading-chaos-before.png
+│   ├── 01-heading-chaos-after.png
+│   └── 02-list-formatting-before.png
+└── workflows/
+    ├── 01-cursor-guidance-sequence.png
+    ├── 02-bulk-processing-progress.png
+    └── 03-backup-restore-process.png
+```
+
+### **📝 PHASE 3: Test Case Documentation**
+
+#### **Create Test Document Collection**
+
+**1. Comprehensive Test Vault**
+- [ ] **Create**: `test-vault/` directory with realistic messy examples
+- [ ] **Structure**: Mirror typical Obsidian vault organization
+- [ ] **Content**: Real-world content patterns (with permission/anonymized)
+- [ ] **Size**: Small (10-20 files), Medium (100-200 files), Large (1000+ files)
+
+**2. Individual Test Files**
+- [ ] **`test-cases/messy-frontmatter.md`** - Every type of metadata issue
+- [ ] **`test-cases/templater-chaos.md`** - Mixed template syntax examples
+- [ ] **`test-cases/formatting-nightmare.md`** - All markdown formatting issues
+- [ ] **`test-cases/real-world-complex.md`** - Actual messy note from vault
+- [ ] **`test-cases/edge-cases.md`** - Unusual but valid markdown scenarios
+
+**3. Automated Test Generation**
+- [ ] **Script**: `generate-test-cases.py` to create variations
+- [ ] **Variations**: Different combinations of issues per use case
+- [ ] **Validation**: Ensure test cases cover all script functionality
+- [ ] **Updates**: Keep test cases current with new script features
+
+### **📊 PHASE 4: Documentation Integration**
+
+#### **README.md Enhancements**
+- [ ] **Add Visual Gallery**: Before/after examples in main README
+- [ ] **Script-Specific Examples**: Show what each tool does visually
+- [ ] **Workflow Demonstrations**: Complete processes with screenshots
+- [ ] **User Journey**: From messy vault to professional organization
+
+#### **New Documentation Files**
+- [ ] **`EXAMPLES-GALLERY.md`** - Comprehensive visual showcase
+- [ ] **`BEFORE-AFTER-CASES.md`** - Detailed transformation examples
+- [ ] **`TESTING-WITH-EXAMPLES.md`** - How to use examples for testing
+- [ ] **`REAL-WORLD-SCENARIOS.md`** - Complex use case walkthroughs
+
+#### **Integration with Existing Docs**
+- [ ] **TEMPLATER-INTEGRATION.md**: Add visual examples of syntax processing
+- [ ] **CONTRIBUTING.md**: Include example-based testing requirements
+- [ ] **cursor-prompts-guide.md**: Reference visual examples in prompts
+
+### **🎯 DUAL-PURPOSE ACHIEVEMENT**
+
+#### **Documentation Benefits**
+- [ ] **Professional Showcase**: Visual proof of toolkit capabilities
+- [ ] **User Confidence**: Clear expectations of transformation results
+- [ ] **Onboarding Support**: Visual guides for new users
+- [ ] **Feature Explanation**: Show rather than just tell what scripts do
+
+#### **Testing Benefits**
+- [ ] **Comprehensive Coverage**: Test cases cover all script functionality
+- [ ] **Regression Prevention**: Visual diffs catch unexpected changes
+- [ ] **Performance Validation**: Before/after performance comparisons
+- [ ] **Cross-Platform Testing**: Same examples work across different systems
+
+### **🚀 Implementation Timeline**
+
+#### **DONE TONIGHT: Quick Implementation (1-2 hours)**
+- [x] **Created**: `docs/examples/` directory structure
+- [x] **Generated**: Realistic messy markdown examples
+- [x] **Processed**: Examples through our cleanup scripts
+- [x] **Documented**: Before/after transformations in `QUICK-EXAMPLES.md`
+- [x] **Demonstrated**: Clear visual impact of toolkit capabilities
+
+#### **Optional Future Enhancements**
+- [ ] Take Obsidian interface screenshots if needed
+- [ ] Add more complex examples based on real vault issues
+- [ ] Create automated test suite using these examples
+- [ ] Integrate examples into main README.md
+
+### **📋 Success Criteria**
+
+- [ ] **Visual Impact**: Clear, dramatic before/after transformations
+- [ ] **Comprehensive Coverage**: Examples for every major script function
+- [ ] **User-Friendly**: Screenshots accessible to non-technical users
+- [ ] **Testing Completeness**: Examples serve as thorough test suite
+- [ ] **Professional Quality**: Documentation suitable for enterprise presentation
+
+---
+
 ## 🔧 IMPLEMENTATION NOTES
 
 ### **Standard Patterns to Implement**:
