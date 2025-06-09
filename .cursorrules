@@ -1,0 +1,59 @@
+# Professional Markdown Toolkit - Cursor Rules
+
+## Project Context
+This is a production-ready toolkit for Obsidian vault management and markdown processing with comprehensive security and backup systems.
+
+## Core Safety Rules
+- NEVER modify destructive scripts without implementing backup functionality
+- ALWAYS test script changes with dry-run modes when available
+- PRESERVE all YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
+- VALIDATE file paths use relative resolution, never hardcoded absolute paths
+
+## Code Standards
+- Shell scripts: Use `set -e` and `set -u`, include proper error handling
+- Python scripts: Include dependency checks, handle encoding properly
+- All scripts: Include backup integration from shared/backup-functions.sh
+- Comments: Explain security-critical sections and complex regex patterns
+
+## Documentation Requirements
+- Keep session-continuity/ documents updated when making significant changes
+- Update PROJECT-SECURITY-PLAN.md when completing tasks or discovering issues
+- Maintain before/after examples in docs/examples/ when adding new functionality
+- Use consistent markdown formatting (headings with spaces: `# Heading`)
+
+## Working Style Preferences
+- Prefer rapid iteration over extensive planning
+- Question timeline assumptions - ask "could we do this faster?"
+- Challenge approaches when you see better alternatives
+- Focus on working examples over theoretical explanations
+- Document deviations from plans using DEVIATION-TRACKING-PROTOCOL.md template
+
+## Security Requirements
+- No hardcoded personal information or filesystem paths
+- All destructive operations must have --no-backup option for advanced users
+- Validate inputs, especially file paths and user-provided data
+- Use secure temp file handling with proper cleanup
+
+## Testing Approach
+- Create test cases in docs/examples/ for new functionality
+- Test with both valid and edge-case inputs
+- Verify backup and restore procedures work correctly
+- Document any platform-specific behavior
+
+## Session Management
+- Reference session-continuity documents at start of new sessions
+- Update CURRENT-STATE-SNAPSHOT.md when significant progress is made
+- Capture learning and deviations in appropriate tracking documents
+- Maintain context richness over session brevity
+
+## Obsidian Integration
+- Preserve WikiLink format: [[internal-links]]
+- Maintain Templater syntax when not explicitly removing it
+- Keep tag formats: #tag and #nested/tag
+- Respect vault folder structures and conventions
+
+## Quality Standards
+- Professional-grade error messages with clear recovery instructions
+- Comprehensive help text for all scripts
+- Cross-platform compatibility (macOS, Linux, WSL)
+- Enterprise-ready backup and logging systems 
