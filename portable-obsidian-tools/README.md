@@ -136,6 +136,7 @@ portable-obsidian-tools/
 - **`wikilink_converter.py`** - Convert `[[WikiLinks]]` to `**Bold Text**`
 - **`notion_import_fixer.py`** - Notion-specific formatting fixes
 - **`README-NOTION-TOOLS.md`** - Quick reference guide
+- **Header formatting fix** - Resolves stray asterisks in headers (e.g., "Section 18: Title**")
 
 #### **General Markdown Tools**
 - **`cleanup_markdown_batch.py`** - Remove extra spaces, format whitespace, clean markdown
