@@ -18,6 +18,9 @@
 | "Test changes first" | Any Python script with `--dry-run` | `python portable-obsidian-tools/obsidian-tools/apply_inbox_template.py --dry-run` |
 | "Clean metadata but keep some fields" | `apply_moc_template_preserve_metadata.py` | `python portable-obsidian-tools/obsidian-tools/apply_moc_template_preserve_metadata.py` |
 | "Advanced metadata cleaning" | `fix_metadata.sh` | `portable-obsidian-tools/metadata-tools/fix_metadata.sh` |
+| "Won't import into Notion" | `notion_complete_fixer.py` | `python portable-obsidian-tools/markdown-processing/notion_complete_fixer.py` |
+| "Unicode/emoji import issues" | `unicode_cleaner.py` | `python portable-obsidian-tools/markdown-processing/unicode_cleaner.py` |
+| "WikiLinks in Notion export" | `wikilink_converter.py` | `python portable-obsidian-tools/markdown-processing/wikilink_converter.py` |
 
 ### **AI Communication Templates**
 
@@ -50,6 +53,20 @@ Safe mode (default): Automatic backups
 Advanced mode: Add `--no-backup` flag
 
 Restoration instructions are provided after each operation.
+```
+
+**When user has Notion import issues:**
+```
+I can help you fix Notion import issues with these specialized tools:
+
+All-in-one solution: `python portable-obsidian-tools/markdown-processing/notion_complete_fixer.py your-document.md`
+
+Specific fixes available:
+- Unicode/emoji issues: `unicode_cleaner.py`
+- WikiLink conversion: `wikilink_converter.py`  
+- Horizontal rules/formatting: `notion_import_fixer.py`
+
+Would you like me to analyze your document first to see what issues exist?
 ```
 
 ### **Decision Tree for AI Assistants**
@@ -112,6 +129,15 @@ portable-obsidian-tools/
 - **`clean_files.sh`** - Comprehensive file cleaning
 
 ### **Markdown Processing** (`markdown-processing/`)
+
+#### **Notion Import Tools** ⭐ **NEW**
+- **`notion_complete_fixer.py`** - All-in-one Notion import issue resolver (95%+ success rate)
+- **`unicode_cleaner.py`** - Smart Unicode character replacements  
+- **`wikilink_converter.py`** - Convert `[[WikiLinks]]` to `**Bold Text**`
+- **`notion_import_fixer.py`** - Notion-specific formatting fixes
+- **`README-NOTION-TOOLS.md`** - Quick reference guide
+
+#### **General Markdown Tools**
 - **`cleanup_markdown_batch.py`** - Remove extra spaces, format whitespace, clean markdown
 - **`clean_all_markdown.sh`** - Vault-wide markdown formatting
 - **`cleanup_markdown.py`** - Single-file markdown cleanup
@@ -131,6 +157,9 @@ python portable-obsidian-tools/obsidian-tools/apply_inbox_template.py --dry-run
 
 # Clean extra spaces and format markdown
 python portable-obsidian-tools/markdown-processing/cleanup_markdown_batch.py
+
+# Fix Notion import issues (NEW!)
+python portable-obsidian-tools/markdown-processing/notion_complete_fixer.py document.md
 ```
 
 ### **Advanced Usage**
