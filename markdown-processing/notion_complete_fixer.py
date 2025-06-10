@@ -171,8 +171,27 @@ def fix_complex_tables(text):
 
 def fix_nested_formatting(text):
     """Fix nested bold/italic formatting that can break Notion."""
-    # Fix nested bold within bold
-    text = re.sub(r'\*\*([^*]*)\*\*([^*]*)\*\*([^*]*)\*\*', r'**\1\2\3**', text)
+    # First, fix bold headers that have inconsistent asterisks
+    # Remove any stray asterisks from headers and clean them up
+    
+    # Pattern 1: # **Text** (keep as is - properly formatted)
+    # Pattern 2: # Section Text** (remove trailing asterisks)
+    text = re.sub(r'^(#{1,6}\s+)([^*\n]*[^*\s])\*\*\s*$', r'\1\2', text, flags=re.MULTILINE)
+    
+    # Pattern 3: # **Section Text (remove leading asterisks if no trailing)
+    text = re.sub(r'^(#{1,6}\s+)\*\*([^*\n]*[^*\s])\s*$', r'\1\2', text, flags=re.MULTILINE)
+    
+    # Pattern 4: Clean up any remaining header formatting issues
+    # Remove any lone asterisks at the end of headers
+    text = re.sub(r'^(#{1,6}\s+[^*\n]*)\*+\s*$', r'\1', text, flags=re.MULTILINE)
+    
+    # Fix nested bold within bold (but avoid headers)
+    # Split into lines and process each line to avoid headers
+    lines = text.split('\n')
+    for i, line in enumerate(lines):
+        if not line.strip().startswith('#'):  # Only process non-header lines
+            lines[i] = re.sub(r'\*\*([^*]*)\*\*([^*]*)\*\*([^*]*)\*\*', r'**\1\2\3**', line)
+    text = '\n'.join(lines)
     
     # Fix mixed formatting
     text = re.sub(r'\*\*\*([^*]+)\*\*\*', r'***\1***', text)
