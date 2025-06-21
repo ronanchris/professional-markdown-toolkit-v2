@@ -9,16 +9,17 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 
 **PROJECT**: Professional Markdown Toolkit - Production-ready Obsidian vault management and markdown processing tools
 **REPOSITORY**: https://github.com/ronanchris/profession-markdown-toolkit.git
-**CURRENT STATUS**: Production ready + Notion import tools + Portable distribution complete
+**CURRENT STATUS**: Production ready + Notion import tools + Portable distribution + **Plan-Driven Session Management System**
 
 **KEY CONTEXT**:
 1. This is enterprise-grade toolkit with comprehensive backup systems and safety features
 2. We have two distributions: main repository + portable toolkit (100% feature parity required)
-3. User prefers rapid iteration, challenges assumptions, and values honest feedback over politeness
-4. All scripts include backup functionality - NEVER disable without explicit user request
-5. We maintain session continuity documents and update them as we make progress
+3. **NEW**: Complete plan-driven session management system with automatic triggers and documentation
+4. User prefers rapid iteration, challenges assumptions, and values honest feedback over politeness
+5. All scripts include backup functionality - NEVER disable without explicit user request
+6. **CRITICAL**: Always check for session-continuity/SESSION-PLAN.md and follow session lens approach (4-6 items focus)
 
-**RECENT MAJOR ACHIEVEMENT**: Complete Notion import tools suite with 95%+ success rate, including real-world validation with user's problematic documents and header formatting fixes.
+**RECENT MAJOR ACHIEVEMENT**: Plan-driven session management system with implementation gap detection, session lens optimization (67% efficiency gain), and recursive self-improvement capability.
 
 **WORKING PRINCIPLES**:
 - Question timeline assumptions ("could we do this faster?")
@@ -29,9 +30,11 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 - Preserve YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
 
 **IMMEDIATE ACTIONS**:
-1. Read session-continuity/CURRENT-STATE-SNAPSHOT.md for current project status
-2. Read session-continuity/CONVERSATIONAL-INSIGHTS.md for collaboration preferences
-3. Understand this is Session 2 Extended continuation with focus on quality and refinement
+1. **FIRST**: Check for session-continuity/SESSION-PLAN.md (if no plan exists, offer to create via interview)
+2. Read session-continuity/CURRENT-STATE-SNAPSHOT.md for current project status
+3. Read session-continuity/CONVERSATIONAL-INSIGHTS.md for collaboration preferences
+4. Apply session lens approach - focus on 4-6 items maximum per session
+5. Monitor for trigger phrases: completion, deviation, implementation gaps
 
 **USER PREFERENCES**:
 - Direct, honest communication over diplomatic language
@@ -100,27 +103,30 @@ Please confirm you understand this context and are ready to collaborate effectiv
 4. **`docs/NOTION-IMPORT-GUIDE.md`** - Latest major feature documentation
 5. **`portable-obsidian-tools/README.md`** - Portable distribution overview
 
-## 🎯 **Current Session Context: Session 2 Extended**
+## 🎯 **Current Session Context: Session 3 Complete + Testing Phase**
 
 ### **Major Achievements**
-- ✅ **Notion Import Tools Suite**: Complete ecosystem for fixing Notion import issues
-- ✅ **Real-World Validation**: Successfully processed user's problematic documents (161KB, 4000+ lines)
-- ✅ **Header Formatting Fix**: Resolved stray asterisks in headers (user-discovered issue)
-- ✅ **Portable Toolkit Sync**: Maintained 100% feature parity across distributions
-- ✅ **Documentation Updates**: All session continuity documents reflect current state
+- ✅ **Plan-Driven Session Management**: Complete system with 26-step process guide
+- ✅ **Implementation Gap Detection**: Pattern for identifying design vs. reality gaps
+- ✅ **Session Lens Optimization**: 67% reduction in computational overhead
+- ✅ **Recursive System Validation**: System successfully improved itself
+- ✅ **Comprehensive Testing Framework**: SYSTEM-TEST-PLAN.md with 8 validation scenarios
+- ✅ **Production Deployment Guide**: DEPLOYMENT-GUIDE.md for any project
 
 ### **Recent Work Pattern**
-1. **User identifies real-world problem** (Notion import failures)
-2. **Surgical problem-solving approach** (isolate Unicode, horizontal rules, WikiLinks)
-3. **Iterative testing with actual documents** (not theoretical examples)
-4. **Quality refinement through user feedback** (header formatting discovery)
-5. **Complete ecosystem deployment** (main repo + portable + docs)
+1. **User questions system completeness** ("If system were working, wouldn't X happen?")
+2. **Implementation gap detection** (design vs. reality differences)
+3. **Recursive system improvement** (use system to improve system)
+4. **Computational efficiency analysis** (payload tax vs. benefits)
+5. **Session lens breakthrough** (focus on 4-6 items for 67% efficiency gain)
+6. **Comprehensive documentation** (26-step process guide with testing framework)
 
 ### **Current Quality Standards**
-- **95%+ success rate** for Notion imports after processing
-- **Real-world validation** with large, complex documents
-- **User-driven quality improvements** through expert observation
-- **Comprehensive documentation** for both humans and AI assistants
+- **Systematic AI collaboration** with automatic trigger detection
+- **Implementation gap validation** - systems must actually work, not just be designed
+- **Session lens efficiency** - 67% computational overhead reduction
+- **Recursive self-improvement** - systems that use themselves to improve themselves
+- **Comprehensive testing protocols** - 8 scenarios for real-world validation
 
 ## 🔄 **Maintenance Requirements**
 
@@ -161,17 +167,39 @@ Please confirm you understand this context and are ready to collaborate effectiv
 
 ## 💡 **Conversation Starters for New Sessions**
 
-### **Context Verification**
-"I've read the session continuity documents. It looks like we're in Session 2 Extended with focus on [current area]. The last major achievement was [recent work]. Is that correct, and what would you like to work on today?"
+### **Plan-Driven Session Start**
+"I've checked session-continuity/SESSION-PLAN.md and see we're in [current phase]. The session lens shows [4-6 current focus items]. What would you like to work on from the current focus, or do we need to adjust the plan?"
 
-### **Capability Check**
-"I see the toolkit now includes [list current capabilities]. Are there any issues with the current tools, or new functionality you'd like to add?"
+### **No Plan Detected**
+"I don't see a SESSION-PLAN.md file. Would you like me to create one through a brief interview about your goals and timeline? This will help us stay organized and efficient."
 
-### **Quality Focus**
-"Given your attention to detail (like catching the header formatting issue), are there other quality improvements you've noticed that we should address?"
+### **Implementation Gap Check**
+"I see the system is designed to [behavior]. If it were working correctly, wouldn't we see [expected evidence]? Should we validate the implementation?"
 
-### **Meta-Collaboration**
-"How has the collaboration been working for you? Any adjustments you'd like to make to our working process?"
+### **Session Lens Optimization**
+"The current plan has [total items] items. For optimal efficiency, should we focus on 4-6 items this session? Which are the highest priority?"
+
+## 🎯 **Automatic Trigger Phrases to Monitor**
+
+### **Completion Detection**
+- "That's complete" → Auto-check related SESSION-PLAN.md items
+- "We've finished X" → Mark X complete in session lens
+- "Done with Y" → Update Y status in plan
+- "Successfully implemented" → Check off implementation items
+
+### **Deviation Detection**
+- "Actually, let's..." → Document deviation with date validation
+- "Change of plan..." → Update SESSION-PLAN.md deviations section
+- "Better approach..." → Cascade update to tracking documents
+
+### **Implementation Gap Detection**
+- "If the system were working, wouldn't X happen?" → Validate implementation
+- "Did you just do X because I asked, or is that automatic?" → Check automation
+- "I don't see Y having been updated" → Identify missing automation
+
+### **Session End Indicators**
+- "Let's wrap up" → Auto-archive SESSION-PLAN.md to archive folder
+- "Session complete" → Update CURRENT-STATE-SNAPSHOT.md with progress
 
 ## 🎪 **Project Personality**
 
