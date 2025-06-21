@@ -4,10 +4,10 @@
 
 ## Primary Use Cases
 
-### 1. Notion Import Problem Solving
-**Scenario**: User has problematic Notion exports that fail to import properly
+### 1. Tool Import Problem Solving
+**Scenario**: User has problematic exports from external tools that fail to import properly
 **AI Role**: Systematic diagnosis and surgical fixes
-**Tools Used**: unicode_cleaner.py, wikilink_converter.py, notion_complete_fixer.py
+**Tools Used**: unicode_cleaner.py, wikilink_converter.py, comprehensive_fixer.py
 **Success Pattern**: 95%+ success rate through iterative testing with real documents
 **Key Learning**: Real-world validation beats theoretical solutions
 
@@ -123,7 +123,7 @@
 ## Success Metrics
 
 ### Quantitative Measures
-- **95%+ success rate** for Notion import processing
+- **95%+ success rate** for external tool import processing
 - **67% reduction** in computational overhead through session lens
 - **100% feature parity** between main and portable distributions
 - **Zero data loss incidents** through systematic backup integration
