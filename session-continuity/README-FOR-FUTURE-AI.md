@@ -87,7 +87,7 @@ portable-obsidian-tools/ (21 files, 5 directories)
 ├── markdown-processing/     # Whitespace/formatting tools (NEW)
 ├── shared/                  # Backup system
 ├── AI-INTEGRATION-GUIDE.md  # AI assistant instruction manual
-├── CURSOR-RULES.md         # Ready-to-copy Cursor configuration
+├── OBSIDIAN-TOOLKIT-CURSOR-RULES.md # Ready-to-copy Cursor configuration
 ├── install.sh              # One-click setup
 ├── README.md               # Comprehensive usage guide
 └── requirements.txt        # Dependencies

@@ -11,13 +11,14 @@
 - `PROBLEM-SOLVING-METHODS.md` - Proven approaches for tackling complex challenges  
 - `SESSION-PATTERNS.md` - Templates for productive session structure
 - `CURRENT-PROJECT-CONTEXT.md` - Template for project-specific information
+- `AI-COLLABORATION-CURSOR-RULES.md` - Universal Cursor rule template
 
 ## 🚀 **How to Use:**
 
 ### **For New Projects:**
 1. **Copy this folder** to your project root
 2. **Update `CURRENT-PROJECT-CONTEXT.md`** with project specifics
-3. **Add the universal Cursor rule** (see `CURSOR-RULE-TEMPLATE.md`)
+3. **Add the universal Cursor rule** (see `AI-COLLABORATION-CURSOR-RULES.md`)
 4. **Reference these docs** when starting AI collaboration sessions
 
 ### **During Sessions:**

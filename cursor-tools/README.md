@@ -17,7 +17,7 @@
 2. **Copy `universal-session-continuity/`** to your project root (or reference from cursor-tools)
 3. **Follow setup instructions** in `universal-session-continuity/README.md`
 4. **Customize `CURRENT-PROJECT-CONTEXT.md`** with project specifics
-5. **Add the universal Cursor rule** from `CURSOR-RULE-TEMPLATE.md`
+5. **Add the universal Cursor rule** from `AI-COLLABORATION-CURSOR-RULES.md`
 
 ### **What You Get:**
 - ✅ **Proven collaboration patterns** from successful AI partnerships

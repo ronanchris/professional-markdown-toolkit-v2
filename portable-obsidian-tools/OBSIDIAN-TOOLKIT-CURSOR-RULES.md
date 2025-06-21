@@ -1,4 +1,4 @@
-# Cursor Rules for Portable Obsidian Tools
+# Obsidian Toolkit Cursor Rules
 
 **Copy the following rules to your project's .cursorrules file or Cursor settings:**
 

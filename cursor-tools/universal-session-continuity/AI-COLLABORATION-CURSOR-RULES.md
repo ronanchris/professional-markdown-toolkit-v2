@@ -1,4 +1,4 @@
-# Universal AI Collaboration Cursor Rule
+# Universal AI Collaboration Cursor Rules
 
 **Copy this rule to any Cursor project for effective AI collaboration patterns.**
 
