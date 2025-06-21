@@ -36,10 +36,10 @@ graph TD
     
     Q --> R["✅ Session Complete<br/>Intelligence Preserved"]
     
-    classDef startEnd fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
-    classDef process fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef trigger fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef update fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    classDef startEnd fill:#ffffff,stroke:#0d47a1,stroke-width:3px,color:#000000
+    classDef process fill:#f8f9fa,stroke:#4a148c,stroke-width:3px,color:#000000
+    classDef trigger fill:#fff8e1,stroke:#e65100,stroke-width:3px,color:#000000
+    classDef update fill:#f1f8e9,stroke:#1b5e20,stroke-width:3px,color:#000000
     
     class A,R startEnd
     class B,C,P,Q process
