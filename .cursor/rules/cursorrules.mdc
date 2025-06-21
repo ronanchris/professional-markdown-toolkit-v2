@@ -49,6 +49,7 @@ This is a production-ready toolkit for Obsidian vault management and markdown pr
 - **AUTO-TRIGGER**: Every session start → Check session-continuity/SESSION-PLAN.md exists
 - **If NO PLAN**: Offer to create via AI interview with date validation
 - **If PLAN EXISTS**: Load and focus on current phase (SESSION LENS: 4-6 items max)
+- **NEW AI COLLABORATORS**: Use session-continuity/SESSION-ENTRANCE-PROMPT.md for complete context
 - **COMPLETION DETECTION**: Auto-check SESSION-PLAN.md when tasks complete
 - **DEVIATION MONITORING**: Auto-document when approach changes (with date validation)
 - **SESSION END**: Auto-archive to SESSION-PLAN-ARCHIVE/ and update snapshots
