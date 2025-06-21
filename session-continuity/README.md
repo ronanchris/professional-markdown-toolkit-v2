@@ -70,6 +70,65 @@ graph TD
 
 ---
 
+## 📋 **Complete Step-by-Step Process Guide**
+
+### **🚀 Session Start Process (Steps 1-8)**
+
+1. **User opens Cursor** in project with session continuity system
+2. **AI automatically checks** for `session-continuity/SESSION-PLAN.md` file existence
+3. **If no plan exists**: AI offers to create plan via interview process
+4. **If plan exists**: AI loads current plan and identifies active phase
+5. **AI validates current date** with user to prevent timestamp errors
+6. **AI reviews context documents** (CURRENT-STATE-SNAPSHOT.md, PROBLEM-SOLVING-PATTERNS.md, WORKING-RELATIONSHIP-DNA.md)
+7. **AI applies session lens focus** to 4-6 items from current phase only
+8. **AI summarizes session goals** and asks user how to proceed
+
+### **💻 Active Collaboration Process (Steps 9-16)**
+
+9. **User and AI work together** on tasks within session lens scope
+10. **AI continuously monitors** for trigger phrases during conversation
+11. **When completion phrase detected** ("That's complete", "We've finished X"):
+    - AI identifies related item in current session focus (4-6 items only)
+    - AI updates SESSION-PLAN.md with checkbox completion
+    - AI confirms completion with user
+12. **When deviation phrase detected** ("Actually, let's...", "Change of plan..."):
+    - AI validates current date with user
+    - AI documents deviation in SESSION-PLAN.md deviations section
+    - AI updates DEVIATION-TRACKING-PROTOCOL.md with detailed analysis
+    - AI adjusts plan if major change required
+13. **When implementation gap detected** ("If system were working, wouldn't X happen?"):
+    - AI acknowledges gap between design and implementation
+    - AI updates SESSION-PLAN.md with new corrective phase
+    - AI updates cursor rules to include new detection patterns
+    - AI tests whether fix actually works automatically
+14. **When major milestone achieved**:
+    - AI updates CURRENT-STATE-SNAPSHOT.md with progress
+    - AI captures learning in appropriate documents
+15. **When new pattern discovered**:
+    - AI updates WORKING-RELATIONSHIP-DNA.md or PROBLEM-SOLVING-PATTERNS.md
+    - AI documents insight for future sessions
+16. **When blog-worthy insight emerges**:
+    - AI updates BLOG-LEARNING-MOMENTS.md with new learning
+    - AI includes date validation in all timestamps
+
+### **🏁 Session End Process (Steps 17-22)**
+
+17. **User indicates session ending** ("Let's wrap up", "Session complete", "Good stopping point")
+18. **AI recognizes session end trigger** and offers to archive session
+19. **AI copies current SESSION-PLAN.md** to SESSION-PLAN-ARCHIVE/ with timestamp
+20. **AI updates CURRENT-STATE-SNAPSHOT.md** with session progress and achievements
+21. **AI validates all timestamps** in updated documents for accuracy
+22. **AI prepares system for next session** with clean state and preserved context
+
+### **🔄 Cross-Session Continuity Process (Steps 23-26)**
+
+23. **User closes Cursor** and ends current session
+24. **User reopens Cursor** in same project (new session)
+25. **AI automatically loads** CURRENT-STATE-SNAPSHOT.md for project context
+26. **AI references** SESSION-PLAN-ARCHIVE/ for historical context and continues from step 2
+
+---
+
 ## 📋 **Plan-Driven Session Management**
 
 ### **The Three Plan States**
@@ -256,6 +315,37 @@ WHEN: Problem-solving breakthrough → UPDATE: PROBLEM-SOLVING-PATTERNS.md
 5. **🆕 Make it Efficient** - Session lens approach prevents payload tax
 6. **🆕 Make it Reliable** - Date validation prevents systematic AI errors
 7. **🆕 Make it Scalable** - Focus scope rather than comprehensive monitoring
+8. **🆕 Make it Testable** - Every step should be verifiable and measurable
+
+## 📊 **Payload Tax Analysis by Process Step**
+
+### **Session Start Process (Steps 1-8)**
+- **Token Cost**: ~2,000 tokens (one-time per session)
+- **Time Cost**: 30-60 seconds
+- **Value**: Eliminates 5-10 minutes of context reconstruction
+
+### **Active Collaboration Process (Steps 9-16)**
+- **Token Cost per Trigger**: ~200-900 tokens (session lens optimization)
+- **Frequency**: 5-15 triggers per session
+- **Total Session Cost**: ~18,000 tokens overhead
+- **Value**: Systematic capture of insights, progress tracking, deviation detection
+
+### **Session End Process (Steps 17-22)**
+- **Token Cost**: ~1,500 tokens (one-time per session)
+- **Time Cost**: 60-90 seconds
+- **Value**: Complete context preservation for next session
+
+### **Cross-Session Continuity (Steps 23-26)**
+- **Token Cost**: ~1,000 tokens (loading context)
+- **Time Cost**: 15-30 seconds
+- **Value**: Immediate context restoration vs. 5-10 minutes manual reconstruction
+
+### **Total System Overhead per Session**
+- **Computational Cost**: ~22,500 tokens
+- **Time Cost**: 3-5 minutes
+- **Net Benefit Threshold**: When context reconstruction time > 5 minutes
+- **Verdict for Complex Projects**: NET POSITIVE
+- **Verdict for Simple Projects**: NET NEGATIVE
 
 ## 📊 **Computational Efficiency**
 

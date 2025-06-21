@@ -160,6 +160,34 @@
 5. **Test across projects** (validate portability)
 6. **Iterate based on usage** (real-world feedback)
 
+### **🆕 Session 3: Payload Tax Analysis Pattern**
+**Principle**: Systematic solutions must be computationally efficient to be sustainable
+
+**Problem Discovery**: Full monitoring of comprehensive session plan created 50-70% overhead
+**Analysis Method**: Mathematical calculation of token costs vs benefits
+**Solution**: Session lens approach - focus on 4-6 items instead of everything
+**Result**: 67% reduction in computational tax while maintaining systematic benefits
+
+**Application Pattern:**
+1. **Measure actual computational costs** - Don't assume efficiency
+2. **Calculate critical threshold** - When do benefits exceed costs?
+3. **Design focused scope** - Session lens instead of comprehensive monitoring
+4. **Validate efficiency gains** - Test reduced overhead in practice
+
+### **🆕 Implementation Gap Detection Pattern**
+**Principle**: Question whether designed systems are actually working
+
+**Trigger**: User asks "If the system were working, wouldn't X be happening?"
+**Discovery**: Gap between design and implementation becomes apparent
+**Response**: Immediate testing and correction of system functionality
+**Learning**: The best validation is recursive - use system to improve system
+
+**Application Pattern:**
+1. **Design system with clear outputs** - What should be happening automatically?
+2. **Question implementation regularly** - Is the system actually working?
+3. **Test with real usage** - Use system to build/improve system
+4. **Close gaps immediately** - Don't let design drift from reality
+
 ## 📊 **Success Indicators by Problem Type**
 
 ### **Technical Problems**

@@ -147,6 +147,15 @@ LEARNING: Look for systematic solutions early - individual fixes often indicate 
 | Keep universal session continuity at root | Moved into cursor-tools/ as organized system | User anticipated "a lot more that we're gonna add" | Scalable design requires expandable frameworks, not ad-hoc additions |
 | Simple folder reorganization | Created two distinct product architectures | Realized we had domain-specific + universal intelligence | Clean separation enables maximum reusability and reduces cognitive load |
 
+### **🆕 Session 3 Extended: Plan-Driven Session Management Deviations**
+
+| Original Plan | What Actually Happened | Why We Deviated | Learning |
+|---------------|------------------------|-----------------|-----------|
+| Simple session continuity triggers | Complete plan-driven system with templates | User identified need for baseline to detect deviations | Can't detect "approach deviation" without knowing what the approach was |
+| Comprehensive monitoring system | Session lens approach (4-6 items focus) | Mathematical analysis revealed 50-70% computational overhead | Systematic solutions require efficiency design, not just comprehensive coverage |
+| Theoretical system design | Recursive self-improvement system | User questioned implementation gaps: "If system were working, wouldn't X happen?" | Best validation is using system to build system - exposes design vs reality gaps |
+| Complete within single session | Extended session with accelerated completion | User mentioned flight deadline - "get this as much complete as we can" | Time pressure can increase quality through focused execution |
+
 ### **Patterns to Watch**
 - **Timeline Optimism**: AI tends to suggest longer timelines than necessary
 - **Scope Discovery**: Security work often reveals more issues than initially visible

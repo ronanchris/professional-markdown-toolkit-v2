@@ -45,11 +45,48 @@ This is a production-ready toolkit for Obsidian vault management and markdown pr
 - Verify backup and restore procedures work correctly
 - Document any platform-specific behavior
 
-## Session Management
-- Reference session-continuity documents at start of new sessions
-- Update CURRENT-STATE-SNAPSHOT.md when significant progress is made
-- Capture learning and deviations in appropriate tracking documents
-- Maintain context richness over session brevity
+## Session Management - AUTOMATED SYSTEM
+- **AUTO-TRIGGER**: Every session start → Check session-continuity/SESSION-PLAN.md exists
+- **If NO PLAN**: Offer to create via AI interview with date validation
+- **If PLAN EXISTS**: Load and focus on current phase (SESSION LENS: 4-6 items max)
+- **COMPLETION DETECTION**: Auto-check SESSION-PLAN.md when tasks complete
+- **DEVIATION MONITORING**: Auto-document when approach changes (with date validation)
+- **SESSION END**: Auto-archive to SESSION-PLAN-ARCHIVE/ and update snapshots
+
+### Auto-Checkbox Triggers (Session Lens Scope Only):
+```
+"That's complete" → Check off related item in current session focus
+"We've finished X" → Check off X (if in active 4-6 items)
+"Done with Y" → Check off Y (session lens scope only)
+"Successfully implemented" → Mark implementation complete
+```
+
+### Deviation Detection Phrases:
+```
+"Actually, let's..." → DEVIATION DETECTED → Auto-document with date validation
+"Change of plan..." → DEVIATION DETECTED → Update SESSION-PLAN.md deviations
+"Better approach..." → DEVIATION DETECTED → Cascade update to tracking docs
+```
+
+### Session End Indicators:
+```
+"Let's wrap up" → Auto-archive current plan → Update CURRENT-STATE-SNAPSHOT.md
+"Session complete" → Validate timestamps → Prepare for next session
+```
+
+### Implementation Gap Detection:
+```
+"If the system were working, wouldn't X happen?" → IMPLEMENTATION GAP DETECTED
+"Did you just do X because I asked, or is that automatic?" → IMPLEMENTATION GAP DETECTED
+"I don't see Y having been updated" → IMPLEMENTATION GAP DETECTED
+
+AUTO-RESPONSE:
+1. Acknowledge the gap between design and implementation
+2. Update SESSION-PLAN.md with new deviation
+3. Add corrective phase to plan if needed
+4. Update all relevant cursor rules and documentation
+5. Test whether the fix actually works automatically
+```
 
 ## Obsidian Integration
 - Preserve WikiLink format: [[internal-links]]

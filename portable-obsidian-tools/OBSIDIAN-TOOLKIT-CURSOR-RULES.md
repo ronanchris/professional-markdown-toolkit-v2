@@ -12,6 +12,77 @@
 - **Collaboration Guide**: `portable-obsidian-tools/session-continuity/COLLABORATION-GUIDE.md` for working relationship patterns
 - **Technical Reference**: `portable-obsidian-tools/AI-INTEGRATION-GUIDE.md` for detailed commands and responses
 
+## 🔄 **SESSION CONTINUITY SYSTEM (AUTO-TRIGGERED)**
+
+### **Automatic Session Start Protocol:**
+```
+EVERY SESSION START → Check if session-continuity/SESSION-PLAN.md exists
+                   → If NO: Offer to create plan via AI interview
+                   → If YES: Load current plan and focus on active phase (4-6 items max)
+                   → Always validate dates with user before proceeding
+                   → Apply SESSION LENS approach to avoid payload tax
+```
+
+### **Auto-Checkbox Completion Detection (Session Lens Scope):**
+```
+COMPLETION PHRASES → AUTO-UPDATE SESSION-PLAN.md:
+- "That's complete" → Check off related item in current session focus
+- "We've finished X" → Check off X (if in active 4-6 items)
+- "Done with Y" → Check off Y (session lens scope only)
+- "Task accomplished" → Check off corresponding checkbox
+- "Successfully implemented" → Mark implementation item complete
+
+COMPUTATIONAL COST: ~200 tokens (86% reduction vs full monitoring)
+```
+
+### **Deviation Detection & Auto-Documentation (with Date Validation):**
+```
+DEVIATION PHRASES → TRIGGER CASCADE UPDATES:
+- "Actually, let's..." → DEVIATION DETECTED
+- "Change of plan..." → DEVIATION DETECTED
+- "Better approach..." → DEVIATION DETECTED
+- "Different strategy..." → DEVIATION DETECTED
+
+AUTO-CASCADE RESPONSE:
+1. Validate current date with user (prevent AI timestamp errors)
+2. Update SESSION-PLAN.md deviations section
+3. Update DEVIATION-TRACKING-PROTOCOL.md with detailed analysis
+4. Update CURRENT-STATE-SNAPSHOT.md if major change
+5. All updates include verified timestamps
+```
+
+### **Session End Auto-Archive Protocol:**
+```
+SESSION END INDICATORS:
+- "Let's wrap up"
+- "Session complete"  
+- "Good stopping point"
+- Extended inactivity
+
+AUTO-RESPONSE:
+1. Archive current SESSION-PLAN.md to SESSION-PLAN-ARCHIVE/
+2. Update CURRENT-STATE-SNAPSHOT.md with session progress
+3. Validate all timestamps in documents
+4. Prepare clean SESSION-PLAN.md for next session
+```
+
+### **Implementation Gap Detection Protocol:**
+```
+IMPLEMENTATION GAP TRIGGERS:
+- "If the system were working, wouldn't X happen?"
+- "Did you just do X because I asked, or is that automatic?"
+- "I don't see Y having been updated"
+- "Is this actually working or just designed?"
+
+AUTO-RESPONSE:
+1. Acknowledge gap between design and implementation
+2. Update SESSION-PLAN.md with deviation details
+3. Add corrective phase to plan if needed
+4. Update cursor rules and documentation immediately
+5. Test whether fixes actually work automatically
+6. Document pattern for future gap detection
+```
+
 ### Expanded Tool Selection Matrix:
 
 #### **Obsidian Workflows:**
