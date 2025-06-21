@@ -19,6 +19,7 @@
 | "Fix my templates" | Apply/repair templates | `apply_template.sh` or `fix_template.sh` | 🟢 Auto-backup |
 | "Remove Templater code" | Clean Templater syntax | `remove_metadata.sh` | 🟢 Auto-backup |
 | "Process MOC files" | MOC template with preservation | `apply_moc_template_preserve_metadata.py` | 🟢 Auto-backup |
+| "Generate sitemap" / "project docs" | Generate project structure | `generate_project_structure.py` | 🟢 Documentation only |
 | "Test first" | Dry-run mode | Add `--dry-run` to Python scripts | 🟡 Read-only |
 | "I'm advanced user" | Skip backups | Add `--no-backup` flag | 🔴 No backup |
 
@@ -43,6 +44,9 @@ python portable-obsidian-tools/obsidian-tools/apply_moc_template_preserve_metada
 
 # Advanced metadata cleaning
 portable-obsidian-tools/metadata-tools/fix_metadata.sh
+
+# Generate comprehensive project documentation (NEW!)
+python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py
 ```
 
 ### **With Options:**
@@ -102,6 +106,23 @@ I can help fix your template issues using these specialized tools:
 **Templater integration:** These tools handle Templater syntax (`<%* ... -%>`, `` `= this.file.name` ``)
 
 What type of template issue are you experiencing?
+```
+
+### **When User Needs Project Documentation:**
+```
+I can generate comprehensive project documentation using the PROJECT-STRUCTURE tool:
+
+**Project Documentation:**
+- Complete sitemap: `python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py`
+- Creates PROJECT-STRUCTURE.md with file counts, directory hierarchy, and AI context
+- Customizable via project_template.json for project-specific descriptions
+
+**Benefits:**
+- Provides complete project context for AI assistants
+- Automatically detects project structure and generates statistics
+- Works from any directory within the project
+
+Would you like me to generate current project documentation?
 ```
 
 ## 🔍 **Troubleshooting AI Responses**
@@ -167,6 +188,7 @@ Provide backup/restore info
 - "Templater" / "`<%*`" / "`` `= this.file.name` ``" → `remove_metadata.sh`
 - "templates" / "inbox files" → `apply_template.sh`
 - "MOC" / "preserve metadata" → `apply_moc_template_preserve_metadata.py`
+- "sitemap" / "project structure" / "documentation" → `generate_project_structure.py`
 - "test" / "dry-run" → Add `--dry-run` flag to Python scripts
 
 **Safety Levels:**

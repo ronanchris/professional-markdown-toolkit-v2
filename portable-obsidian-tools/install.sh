@@ -8,6 +8,7 @@ echo "📝 Setting script permissions..."
 chmod +x obsidian-tools/*.sh
 chmod +x metadata-tools/*.sh
 chmod +x shared/*.sh
+chmod +x PROJECT-STRUCTURE/*.py
 
 # Check if Python is available
 if ! command -v python3 &> /dev/null; then

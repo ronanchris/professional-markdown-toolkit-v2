@@ -102,6 +102,11 @@ AUTO-RESPONSE:
 - Batch whitespace normalization → `portable-obsidian-tools/markdown-processing/clean_all_markdown.sh`
 - Cross-platform markdown fixes → Any tool from `markdown-processing/` directory
 
+#### **Project Documentation:** ⭐ **NEW**
+- Complete project structure documentation → `python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py`
+- AI-friendly project context → Creates PROJECT-STRUCTURE.md with hierarchical sitemap
+- Customizable templates → Modify `project_template.json` for project-specific context
+
 #### **Testing & Safety:**
 - Test before applying → Add `--dry-run` flag to Python scripts
 - Analyze Unicode issues → Add `--analyze` flag to `unicode_cleaner.py`
@@ -116,6 +121,7 @@ AUTO-RESPONSE:
 - "Clean my markdown" / "format files" → Use `cleanup_markdown_batch.py`
 - "Remove YAML" / "frontmatter" → Use `remove_metadata.sh`
 - "Apply templates" / "inbox files" → Use `apply_template.sh`
+- "Generate sitemap" / "project documentation" / "project structure" → Use `generate_project_structure.py`
 
 ### Safety Protocol:
 1. Always mention automatic backup system to user
@@ -138,6 +144,9 @@ python portable-obsidian-tools/markdown-processing/unicode_cleaner.py document.m
 
 # Universal markdown processing
 python portable-obsidian-tools/markdown-processing/cleanup_markdown_batch.py
+
+# Project documentation generation (NEW!)
+python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py
 ```
 
 #### **Safe Testing Approach:**

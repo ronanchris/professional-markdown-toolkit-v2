@@ -17,6 +17,14 @@ python portable-obsidian-tools/markdown-processing/notion_complete_fixer.py your
 ```
 **What it does**: Shows you exactly what's causing the import problems without fixing anything.
 
+## 📊 **Generate Project Documentation**
+
+### **Need project sitemap or documentation** → Use this:
+```bash
+python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py
+```
+**What it does**: Creates comprehensive PROJECT-STRUCTURE.md with file counts, directory tree, and AI-friendly project context.
+
 ## 🧹 **Clean Up Obsidian Files**
 
 ### **Remove YAML frontmatter and Templater code** → Use this:
@@ -67,6 +75,9 @@ python portable-obsidian-tools/markdown-processing/notion_import_fixer.py your-d
 
 **Problem**: Want to apply templates  
 **Solution**: `apply_template.sh` ← **For inbox files**
+
+**Problem**: Need project documentation or sitemap  
+**Solution**: `generate_project_structure.py` ← **Creates comprehensive documentation**
 
 ## 🚨 **Safety Notes**
 

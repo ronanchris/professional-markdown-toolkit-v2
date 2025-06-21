@@ -69,6 +69,21 @@ Specific fixes available:
 Would you like me to analyze your document first to see what issues exist?
 ```
 
+**When user needs project documentation:**
+```
+I can generate comprehensive project documentation with the PROJECT-STRUCTURE tool:
+
+`python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py`
+
+This creates PROJECT-STRUCTURE.md with:
+- Complete file inventory and statistics
+- Hierarchical directory structure
+- Project context for AI assistants
+- Customizable templates for different project types
+
+Would you like me to run this to create current project documentation?
+```
+
 ### **Decision Tree for AI Assistants**
 
 ```
@@ -110,6 +125,7 @@ portable-obsidian-tools/
 ├── obsidian-tools/          # Obsidian-specific template and structure tools
 ├── metadata-tools/          # YAML frontmatter and metadata management
 ├── markdown-processing/     # Whitespace cleanup and markdown formatting
+├── PROJECT-STRUCTURE/       # Automated project documentation generator
 ├── shared/                  # Backup system (used by all scripts)
 ├── requirements.txt         # Python dependencies
 └── README.md               # This guide
@@ -127,6 +143,12 @@ portable-obsidian-tools/
 - **`remove_metadata.sh`** - Clean YAML frontmatter and Templater code
 - **`fix_metadata.sh`** - Advanced metadata cleaning and standardization
 - **`clean_files.sh`** - Comprehensive file cleaning
+
+### **Project Documentation** (`PROJECT-STRUCTURE/`)
+- **`generate_project_structure.py`** - Auto-generate comprehensive PROJECT-STRUCTURE.md documentation
+- **Template system** - Customizable project context and descriptions
+- **Universal detection** - Works from any directory, finds project root automatically
+- **AI integration** - Creates context-rich documentation for AI assistants
 
 ### **Markdown Processing** (`markdown-processing/`)
 
@@ -161,6 +183,9 @@ python portable-obsidian-tools/markdown-processing/cleanup_markdown_batch.py
 
 # Fix Notion import issues (NEW!)
 python portable-obsidian-tools/markdown-processing/notion_complete_fixer.py document.md
+
+# Generate project documentation (NEW!)
+python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py
 ```
 
 ### **Advanced Usage**
