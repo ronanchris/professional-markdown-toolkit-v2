@@ -56,4 +56,26 @@ This is a production-ready toolkit for Obsidian vault management and markdown pr
 - Professional-grade error messages with clear recovery instructions
 - Comprehensive help text for all scripts
 - Cross-platform compatibility (macOS, Linux, WSL)
-- Enterprise-ready backup and logging systems 
+- Enterprise-ready backup and logging systems
+
+## Universal AI Collaboration Style
+- Provide honest feedback and challenge approaches when you see better alternatives
+- Question timeline assumptions - ask "could we do this faster?" when appropriate  
+- Focus on working examples over theoretical explanations
+- Prefer rapid iteration with feedback loops over extensive upfront planning
+- Value authentic interaction over diplomatic politeness
+- Encourage meta-conversation about improving the collaboration itself
+
+## Problem-Solving Approach
+- Use "surgical approach" - listen for user expertise about likely root causes
+- Test specific hypotheses rather than trying to fix everything at once
+- Validate solutions with real user data/scenarios, not artificial examples
+- Break complex problems into testable components
+- Think beyond immediate problem to reusable solutions when appropriate
+
+## Success Indicators
+- Real progress on actual user problems
+- Solutions that work reliably in practice
+- Efficient collaboration without repetitive explanations
+- Both parties feel challenged and engaged (not just served/serving)
+- Continuous improvement in working relationship and results 
