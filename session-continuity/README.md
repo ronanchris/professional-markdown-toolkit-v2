@@ -5,46 +5,55 @@
 
 ```mermaid
 graph TD
-    A["🚀 Session Start"] --> B["📋 Check Context<br/>CURRENT-STATE-SNAPSHOT.md<br/>PROBLEM-SOLVING-PATTERNS.md<br/>WORKING-RELATIONSHIP-DNA.md"]
+    A["🚀 Session Start"] --> B{"📄 SESSION-PLAN.md<br/>Exists?"}
     
-    B --> C["💻 Active Collaboration"]
+    B -->|No| C["📝 Create New Plan<br/>AI Interview Process<br/>Document Goals & Approach"]
+    B -->|Yes| D["📋 Load Existing Plan<br/>Check Previous Status<br/>Update Session Goals"]
     
-    C --> D{"🎯 Trigger Events"}
+    C --> E["📋 Check Context<br/>CURRENT-STATE-SNAPSHOT.md<br/>PROBLEM-SOLVING-PATTERNS.md<br/>WORKING-RELATIONSHIP-DNA.md"]
+    D --> E
     
-    D --> E["📈 Major Milestone"] 
-    D --> F["🔄 Approach Deviation"]
-    D --> G["💡 New Pattern Discovery"]
-    D --> H["🌟 Blog-Worthy Insight"]
-    D --> I["🧩 Problem-Solving Win"]
+    E --> F["💻 Active Collaboration<br/>Monitor Progress & Deviations"]
     
-    E --> J["📝 Update<br/>CURRENT-STATE-SNAPSHOT.md"]
-    F --> K["📝 Update<br/>DEVIATION-TRACKING-PROTOCOL.md"]
-    G --> L["📝 Update<br/>WORKING-RELATIONSHIP-DNA.md"]
-    H --> M["📝 Update<br/>BLOG-LEARNING-MOMENTS.md"]
-    I --> N["📝 Update<br/>PROBLEM-SOLVING-PATTERNS.md"]
+    F --> G{"🎯 Trigger Events"}
     
-    J --> O["🔄 Continue Session"]
-    K --> O
-    L --> O
-    M --> O
-    N --> O
+    G --> H["📈 Major Milestone"] 
+    G --> I["🔄 Approach Deviation"]
+    G --> J["💡 New Pattern Discovery"]
+    G --> K["🌟 Blog-Worthy Insight"]
+    G --> L["🧩 Problem-Solving Win"]
+    G --> M["✅ Task Completion"]
     
-    O --> D
+    H --> N["📝 Update<br/>CURRENT-STATE-SNAPSHOT.md"]
+    I --> O["📝 Update<br/>SESSION-PLAN.md (Deviations)<br/>+ DEVIATION-TRACKING-PROTOCOL.md"]
+    J --> P["📝 Update<br/>WORKING-RELATIONSHIP-DNA.md"]
+    K --> Q["📝 Update<br/>BLOG-LEARNING-MOMENTS.md"]
+    L --> R["📝 Update<br/>PROBLEM-SOLVING-PATTERNS.md"]
+    M --> S["📝 Auto-Check<br/>SESSION-PLAN.md Checkboxes"]
     
-    C --> P["🏁 Session End"]
-    P --> Q["📋 Capture Progress<br/>Update CURRENT-STATE-SNAPSHOT.md<br/>Propose Document Updates"]
+    N --> T["🔄 Continue Session"]
+    O --> T
+    P --> T
+    Q --> T
+    R --> T
+    S --> T
     
-    Q --> R["✅ Session Complete<br/>Intelligence Preserved"]
+    T --> G
+    
+    F --> U["🏁 Session End"]
+    U --> V["📋 Final Updates<br/>Archive SESSION-PLAN.md<br/>Update CURRENT-STATE-SNAPSHOT.md<br/>Propose Document Updates"]
+    
+    V --> W["✅ Session Complete<br/>Intelligence Preserved<br/>Plan Ready for Next Session"]
     
     classDef startEnd fill:#ffffff,stroke:#0d47a1,stroke-width:3px,color:#000000
     classDef process fill:#f8f9fa,stroke:#4a148c,stroke-width:3px,color:#000000
     classDef trigger fill:#fff8e1,stroke:#e65100,stroke-width:3px,color:#000000
     classDef update fill:#f1f8e9,stroke:#1b5e20,stroke-width:3px,color:#000000
     
-    class A,R startEnd
-    class B,C,P,Q process
-    class D,E,F,G,H,I trigger
-    class J,K,L,M,N,O update
+    class A,W startEnd
+    class B,C,D,E,F,U,V process
+    class G,H,I,J,K,L,M trigger
+    class N,O,P,Q,R,S,T update
 ```
 
 ## The Problem We're Solving
@@ -52,6 +61,93 @@ graph TD
 
 ## The Solution Framework
 **Layered Automation Approach** - Make good practices automatic, not optional.
+
+---
+
+## 📋 **Plan-Driven Session Management**
+
+### **The Three Plan States**
+
+**State 1: Brand New Project (No Plan Exists)**
+```
+SESSION START → Check for SESSION-PLAN.md
+            → Not found? Create initial plan via AI interview
+            → "What are we trying to accomplish?"
+            → Document initial goals/approach with checkboxes
+```
+
+**State 2: Existing Project (Plan Exists)**
+```
+SESSION START → Load SESSION-PLAN.md
+            → Check previous session status  
+            → Update with new session goals
+            → Continue from where we left off
+```
+
+**State 3: Cursor Tools Deployment (Template System)**
+```
+NEW PROJECT → Deploy cursor tools
+           → Copy SESSION-PLAN-TEMPLATE.md
+           → Initialize with project-specific goals
+           → Systematic setup interview
+```
+
+### **SESSION-PLAN.md Structure**
+```markdown
+# Session Plan - [Date]
+## Goals:
+- [ ] Create cursor rules integration
+- [ ] Test session continuity triggers  
+- [ ] Update documentation
+
+## Approach:
+**Method**: Layered automation approach
+**Timeline**: 2-3 hours
+**Key Decisions**: Start with cursor rules, then test
+
+## Progress Tracking:
+- ✅ Completed items (auto-checked by AI)
+- 🔄 In progress items
+- ⏸️ Deferred items
+
+## Deviations:
+*(Added automatically when approach changes)*
+- **Original**: Use simple triggers
+- **Deviation**: Added plan-driven system for better structure
+- **Reason**: User identified need for baseline to detect deviations
+```
+
+### **Auto-Checkbox System**
+```
+COMPLETION TRIGGERS:
+- "That's complete" → Check off related item
+- "We've finished X" → Check off X  
+- "Done with Y" → Check off Y
+- AI recognizes completion and updates plan
+```
+
+### **Deviation Detection & Cascade Updates**
+```
+DEVIATION PHRASES:
+- "Actually, let's..." → DEVIATION DETECTED
+- "Change of plan..." → DEVIATION DETECTED  
+- "Better approach..." → DEVIATION DETECTED
+
+AUTOMATIC CASCADE:
+DEVIATION → Update SESSION-PLAN.md (add to deviations section)
+         → Update DEVIATION-TRACKING-PROTOCOL.md (detailed analysis)
+         → Update CURRENT-STATE-SNAPSHOT.md (if major change)
+```
+
+### **Plan Template System**
+```
+session-continuity/
+├── SESSION-PLAN-TEMPLATE.md     # For new project deployment
+├── SESSION-PLAN.md              # Current active project plan
+└── SESSION-PLAN-ARCHIVE/        # Historical session records
+    ├── 2025-01-XX-session.md
+    └── 2025-01-YY-session.md
+```
 
 ---
 
