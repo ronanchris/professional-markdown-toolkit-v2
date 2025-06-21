@@ -126,6 +126,7 @@ portable-obsidian-tools/
 ├── metadata-tools/          # YAML frontmatter and metadata management
 ├── markdown-processing/     # Whitespace cleanup and markdown formatting
 ├── PROJECT-STRUCTURE/       # Automated project documentation generator
+├── cursor-rules-templates/  # Ready-to-use Cursor rules for large Obsidian vaults
 ├── shared/                  # Backup system (used by all scripts)
 ├── requirements.txt         # Python dependencies
 └── README.md               # This guide
@@ -149,6 +150,12 @@ portable-obsidian-tools/
 - **Template system** - Customizable project context and descriptions
 - **Universal detection** - Works from any directory, finds project root automatically
 - **AI integration** - Creates context-rich documentation for AI assistants
+
+### **Cursor Rules Templates** (`cursor-rules-templates/`)
+- **Ready-to-use Cursor rules** for large Obsidian vaults (1000+ pages)
+- **4 specialized rules** - syntax preservation, vault safety, selection scope, tool integration
+- **Copy-paste ready** - just copy content into your project's Cursor rules
+- **Safety optimized** - prevents disasters in large vault operations
 
 ### **Markdown Processing** (`markdown-processing/`)
 
@@ -186,6 +193,9 @@ python portable-obsidian-tools/markdown-processing/notion_complete_fixer.py docu
 
 # Generate project documentation (NEW!)
 python portable-obsidian-tools/PROJECT-STRUCTURE/generate_project_structure.py
+
+# Set up Cursor rules for large Obsidian vaults (NEW!)
+# Copy rules from portable-obsidian-tools/cursor-rules-templates/ to your Cursor settings
 ```
 
 ### **Advanced Usage**

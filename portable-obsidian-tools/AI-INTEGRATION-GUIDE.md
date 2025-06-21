@@ -8,6 +8,7 @@
 1. Verify `portable-obsidian-tools/` folder exists in project root
 2. Confirm user has Obsidian vault structure (folders like `0-inbox/`, `00-MOCs/`)
 3. Ask about backup preferences (enabled by default, can disable with `--no-backup`)
+4. For large vaults (1000+ pages), suggest using cursor-rules-templates/ for enhanced safety
 
 ### **Decision Matrix for Common Requests:**
 
@@ -123,6 +124,24 @@ I can generate comprehensive project documentation using the PROJECT-STRUCTURE t
 - Works from any directory within the project
 
 Would you like me to generate current project documentation?
+```
+
+### **When User Has Large Vault (1000+ pages):**
+```
+For large Obsidian vaults, I recommend using the specialized Cursor rules templates:
+
+**Cursor Rules Setup:**
+- Ready-to-use rules in `portable-obsidian-tools/cursor-rules-templates/`
+- 4 specialized rules: syntax preservation, vault safety, selection scope, tool integration
+- Optimized for large vault operations with enhanced safety protocols
+
+**Benefits:**
+- Prevents accidental WikiLink corruption across hundreds of files
+- Enforces dry-run testing before bulk operations
+- Respects user selections precisely
+- Provides intelligent tool suggestions
+
+Would you like me to help you set up these specialized Cursor rules?
 ```
 
 ## 🔍 **Troubleshooting AI Responses**
