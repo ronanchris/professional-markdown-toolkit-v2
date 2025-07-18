@@ -4,6 +4,14 @@
 
 **Context**: Professional scripts collection for Obsidian vault management, markdown processing, and automated workflows
 
+## 🚀 **Quick Start for AI Collaboration**
+
+**New to this project?** Get up and running in 5 minutes:
+
+1. **📋 [One-Shot Deployment →](portable-obsidian-ai-tools/DEPLOYMENT-PROMPT.md)** - Copy one prompt, get complete toolkit
+2. **🤖 [Session Setup →](session-continuity/SESSION-ENTRANCE-PROMPT.md)** - Get AI assistant project context
+3. **📊 [View System Architecture →](#-session-continuity-system-architecture)** - See how everything works together
+
 ## 🎯 **Two Ways to Use This Toolkit**
 
 This toolkit is designed to be accessible to everyone, regardless of technical comfort level:

@@ -2,6 +2,20 @@
 
 **PURPOSE**: This document provides the complete context needed for any AI assistant to effectively collaborate on this project from the first message.
 
+## ⚠️ **CRITICAL PREREQUISITE**
+
+**Before using this prompt, you MUST have the cursor rules installed:**
+
+1. **Copy the cursor rules** from `portable-obsidian-ai-tools/.cursorrules`
+2. **Paste into** your project's `.cursor/rules/cursorrules.mdc` file
+3. **Restart Cursor** to activate the rules
+
+**Without cursor rules:** You'll get project context but **no automatic session continuity behaviors** (auto-triggers, session lens monitoring, completion detection, etc.)
+
+**[📋 See DEPLOYMENT-PROMPT.md for complete setup instructions →](../portable-obsidian-ai-tools/DEPLOYMENT-PROMPT.md)**
+
+---
+
 ## 🎯 **COPY-PASTE ENTRANCE PROMPT**
 
 ```
@@ -30,11 +44,15 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 - Preserve YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
 
 **IMMEDIATE ACTIONS**:
-1. **FIRST**: Check for session-continuity/SESSION-PLAN.md (if no plan exists, offer to create via interview)
+1. **FIRST**: Check for session-continuity/SESSION-PLAN.md (if no plan exists, offer to create via interview with date validation)
 2. Read session-continuity/CURRENT-STATE-SNAPSHOT.md for current project status
 3. Read session-continuity/CONVERSATIONAL-INSIGHTS.md for collaboration preferences
 4. Apply session lens approach - focus on 4-6 items maximum per session
-5. Monitor for trigger phrases: completion, deviation, implementation gaps
+5. **ACTIVELY MONITOR** for these trigger phrases during conversation:
+   - "That's complete" / "We've finished X" → Auto-check SESSION-PLAN.md checkboxes
+   - "Actually, let's..." / "Change of plan" → Document deviation with date validation
+   - "If system were working, wouldn't X happen?" → Implementation gap detection
+   - "Let's wrap up" / "Session complete" → Archive session and update snapshots
 
 **USER PREFERENCES**:
 - Direct, honest communication over diplomatic language
