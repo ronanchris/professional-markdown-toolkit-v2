@@ -9,7 +9,7 @@ This tool can be run from anywhere within a project and will:
 - Analyze the complete project structure
 - Generate accurate file counts and statistics  
 - Create hierarchical directory tree with annotations
-- Output to portable-obsidian-tools/PROJECT-STRUCTURE.md
+- Output to portable-obsidian-ai-tools/PROJECT-STRUCTURE.md
 - Support template-based customization for different project types
 """
 
@@ -20,12 +20,12 @@ from pathlib import Path
 import json
 
 def find_project_root():
-    """Find the project root by looking for portable-obsidian-tools directory."""
+    """Find the project root by looking for portable-obsidian-ai-tools directory."""
     current = Path.cwd()
     
-    # Look up the directory tree for portable-obsidian-tools
+    # Look up the directory tree for portable-obsidian-ai-tools
     while current != current.parent:
-        if (current / 'portable-obsidian-tools').exists():
+        if (current / 'portable-obsidian-ai-tools').exists():
             return current
         current = current.parent
     
@@ -77,7 +77,7 @@ def get_project_stats(project_root):
 
 def load_project_template(project_root):
     """Load project-specific template if it exists, otherwise use default."""
-    template_path = project_root / 'portable-obsidian-tools' / 'PROJECT-STRUCTURE' / 'project_template.json'
+    template_path = project_root / 'portable-obsidian-ai-tools' / 'obsidian-tools' / 'project-structure' / 'project_template.json'
     
     default_template = {
         "project_name": "Documentation Project",
@@ -169,7 +169,7 @@ def create_structure_content(project_root, stats, template):
     content += """
 
 ### 🛠️ **Automation Infrastructure**
-- **portable-obsidian-tools/**: Universal markdown processing suite
+        - **portable-obsidian-ai-tools/**: Universal AI-enhanced markdown processing suite
 - **Automated Workflows**: Project-specific tools and utilities
 - **Template System**: Reusable documentation patterns
 
@@ -242,7 +242,7 @@ def generate_directory_tree(project_root, descriptions):
 
 def create_template_file(project_root):
     """Create a template configuration file for project customization."""
-    template_path = project_root / 'portable-obsidian-tools' / 'PROJECT-STRUCTURE' / 'project_template.json'
+    template_path = project_root / 'portable-obsidian-ai-tools' / 'obsidian-tools' / 'project-structure' / 'project_template.json'
     
     # Detect project characteristics
     project_name = project_root.name.replace('-', ' ').replace('_', ' ').title()
@@ -263,7 +263,7 @@ def create_template_file(project_root):
             }
         ],
         "directory_descriptions": {
-            "portable-obsidian-tools": "Universal markdown toolkit",
+            "portable-obsidian-ai-tools": "Universal AI-enhanced markdown toolkit",
             "README.md": "Project overview and setup",
             "docs": "Main documentation directory",
             "scripts": "Automation and utility scripts"
@@ -298,8 +298,8 @@ def main():
     # Generate content
     content = create_structure_content(project_root, stats, template)
     
-    # Write to portable-obsidian-tools directory
-    output_path = project_root / 'portable-obsidian-tools' / 'PROJECT-STRUCTURE.md'
+    # Write to portable-obsidian-ai-tools directory
+    output_path = project_root / 'portable-obsidian-ai-tools' / 'PROJECT-STRUCTURE.md'
     
     try:
         with open(output_path, 'w') as f:
