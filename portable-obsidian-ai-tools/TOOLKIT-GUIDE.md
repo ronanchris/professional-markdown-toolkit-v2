@@ -27,23 +27,30 @@
 
 ## 🚀 **Quick Setup (GitHub Deployment)**
 
-### **Step 1: Clone to Your Project**
+## Setup Options
+
+### **Option A: One-Shot Deployment (Recommended) 🚀**
+**Copy and paste the complete deployment prompt from `DEPLOYMENT-PROMPT.md` to your Cursor agent.** This handles everything automatically including verification and cursor rules setup.
+
+### **Option B: Manual Setup**
+
+#### **Step 1: Clone to Your Project**
 ```bash
 # In your project directory (e.g., Parkinson's documentation project)
 git clone https://github.com/your-username/professional-markdown-toolkit.git temp-download
-cp -r temp-download/portable-portable-obsidian-ai-tools ./
+cp -r temp-download/portable-obsidian-ai-tools ./
 rm -rf temp-download
 
-# Or ask Cursor AI: "Pull down the portable-portable-obsidian-ai-tools from my GitHub repo"
+# Or ask Cursor AI: "Pull down the portable-obsidian-ai-tools from my GitHub repo"
 ```
 
-### **Step 2: Install Dependencies**
+#### **Step 2: Install Dependencies**
 ```bash
 cd portable-obsidian-ai-tools
 pip install -r requirements.txt
 ```
 
-### **Step 3: You're Ready!**
+#### **Step 3: You're Ready!**
 All tools are now available from your project root. See the tool reference below.
 
 ## 📁 **Toolkit Structure**
