@@ -7,17 +7,22 @@
 **Professional-grade AI collaboration framework** developed and refined through real-world project experience. This system packages **relationship intelligence** - the patterns that make human-AI collaboration truly effective.
 
 ### **Core Components:**
-- **`universal-session-continuity/`** - Complete collaboration framework template
+- **`universal-session-continuity/`** - Complete collaboration framework template with AI interview triggers
+- **Blog learning moments system** - Templates and examples for capturing collaboration insights
 - **[Future expansions]** - Additional AI collaboration tools and patterns
 
 ## 🚀 **How to Use**
 
 ### **For Any New Cursor Project:**
-1. **Copy `cursor-tools/` folder** to your project root
-2. **Copy `universal-session-continuity/`** to your project root (or reference from cursor-tools)
-3. **Follow setup instructions** in `universal-session-continuity/README.md`
-4. **Customize `CURRENT-PROJECT-CONTEXT.md`** with project specifics
-5. **Add the universal Cursor rule** from `AI-COLLABORATION-CURSOR-RULES.md`
+1. **Copy `ai-collaboration/` folder** to your project root  
+2. **Copy `universal-session-continuity/`** to your project root as `session-continuity/`
+3. **Set up blog learning moments** (recommended):
+   ```bash
+   cp ai-collaboration/universal-session-continuity/BLOG-LEARNING-MOMENTS-TEMPLATE.md ./BLOG-LEARNING-MOMENTS.md
+   ```
+4. **Follow setup instructions** in `universal-session-continuity/README.md`
+5. **Customize templates** using AI interview triggers (they'll guide you automatically)
+6. **Add the comprehensive Cursor rules** from `.cursorrules` file
 
 ### **What You Get:**
 - ✅ **Proven collaboration patterns** from successful AI partnerships
@@ -25,6 +30,8 @@
 - ✅ **Session structure templates** for productive AI interactions
 - ✅ **Problem-solving frameworks** validated in real-world scenarios
 - ✅ **Communication preferences** for authentic, effective collaboration
+- ✅ **Blog learning moments system** with auto-creation and templates
+- ✅ **AI interview triggers** for guided template customization
 
 ## 💡 **Key Innovation**
 

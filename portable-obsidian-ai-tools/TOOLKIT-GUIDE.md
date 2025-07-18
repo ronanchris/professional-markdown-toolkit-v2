@@ -144,7 +144,7 @@ Copy `ai-collaboration/universal-session-continuity/` to your project root and f
 **User says "Fix formatting"** → `cleanup_markdown_batch.py` (whitespace/formatting)  
 **User says "Apply templates"** → `apply_template.sh` (inbox templates)  
 **User says "Project documentation"** → `generate_project_structure.py` (sitemap)  
-**User says "Improve AI collaboration"** → Reference `ai-collaboration/` folder
+**User says "Improve AI collaboration"** → Reference `ai-collaboration/` folder (includes blog learning moments system)
 
 ### **AI Communication Templates**
 

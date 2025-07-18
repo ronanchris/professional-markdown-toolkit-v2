@@ -46,10 +46,20 @@ Please help me deploy the Portable Obsidian AI Tools from GitHub into this proje
    echo "- Quick reference: portable-obsidian-ai-tools/DEAD-SIMPLE.md"
    ```
 
-6. **Test Template Interview System:**
+6. **Set Up Blog Learning Moments:**
+   ```bash
+   cp portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity/BLOG-LEARNING-MOMENTS-TEMPLATE.md ./BLOG-LEARNING-MOMENTS.md
+   ```
+
+7. **Test Template Interview System:**
    - Open `session-continuity/CURRENT-PROJECT-CONTEXT.md`
    - Offer to run the AI customization interview to set up my project context
    - Walk me through the guided setup if I say yes
+
+8. **Verify Blog Auto-Creation System:**
+   - Confirm that `BLOG-LEARNING-MOMENTS.md` file exists in project root
+   - Test blog auto-creation by saying "This insight about [something innovative] could help others"
+   - Verify AI offers to create blog post automatically
 
 Please execute all these steps and let me know when the deployment is complete and ready for the cursor rules setup.
 ```
