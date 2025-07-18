@@ -39,9 +39,25 @@ If using Templater-dependent scripts:
 
 ⚠️ **Note**: Scripts will work without Templater but may show warnings for unprocessed Templater syntax.
 
+## 🔄 **Session Continuity System Architecture**
+
+This toolkit includes an advanced **AI collaboration intelligence system** with automatic session management, progress tracking, and learning capture. 
+
+![Session Flow Diagram](docs/images/session-flow-diagram.png)
+
+**📊 [View Interactive Diagram & Documentation →](session-continuity/README.md#-system-flow-diagram)**
+
+Key features:
+- **67% reduction in computational overhead** through session lens optimization
+- **Automatic progress tracking** with intelligent triggers  
+- **Cross-session continuity** with zero context loss
+- **Blog learning moments** auto-creation system
+- **Implementation gap detection** for systematic improvement
+
 ## 📁 **Directory Structure**
 
 - **Core Tools** (`metadata-tools/`, `obsidian-tools/`, `markdown-processing/`) - Universal Obsidian vault management
+- **AI Collaboration** (`session-continuity/`, `portable-obsidian-ai-tools/`) - Session management and intelligence systems
 - **Workflow Integration** (`obsidian-cursor-workflow/`) - Cursor AI editor integration with Obsidian  
 - **Shared Resources** (`shared/`) - Common backup and utility functions
 

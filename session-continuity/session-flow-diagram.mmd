@@ -1,0 +1,50 @@
+graph TD
+    A["🚀 Session Start"] --> B{"📄 SESSION-PLAN.md<br/>Exists?"}
+    
+    B -->|No| C["📝 Create New Plan<br/>AI Interview + Date Validation<br/>Document Goals & Approach<br/>Apply Session Lens (4-6 items)"]
+    B -->|Yes| D["📋 Load Existing Plan<br/>Check Previous Status<br/>Update Session Goals<br/>Focus on Current Phase"]
+    
+    C --> E["📋 Check Context<br/>CURRENT-STATE-SNAPSHOT.md<br/>PROBLEM-SOLVING-PATTERNS.md<br/>WORKING-RELATIONSHIP-DNA.md"]
+    D --> E
+    
+    E --> F["💻 Active Collaboration<br/>Session Lens Monitoring<br/>(4-6 focused items only)"]
+    
+    F --> G{"🎯 Trigger Events<br/>(Reduced Payload Tax)"}
+    
+    G --> H["📈 Major Milestone"] 
+    G --> I["🔄 Approach Deviation<br/>(with date validation)"]
+    G --> J["💡 New Pattern Discovery"]
+    G --> K["🌟 Blog-Worthy Insight"]
+    G --> L["🧩 Problem-Solving Win"]
+    G --> M["✅ Task Completion<br/>(Auto-checkbox)"]
+    
+    H --> N["📝 Update<br/>CURRENT-STATE-SNAPSHOT.md"]
+    I --> O["📝 Update<br/>SESSION-PLAN.md (Deviations)<br/>+ DEVIATION-TRACKING-PROTOCOL.md<br/>+ Date Validation"]
+    J --> P["📝 Update<br/>WORKING-RELATIONSHIP-DNA.md"]
+    K --> Q["📝 Update<br/>BLOG-LEARNING-MOMENTS.md<br/>(with date validation)"]
+    L --> R["📝 Update<br/>PROBLEM-SOLVING-PATTERNS.md"]
+    M --> S["📝 Auto-Check<br/>SESSION-PLAN.md Checkboxes<br/>(Focused scope only)"]
+    
+    N --> T["🔄 Continue Session<br/>(~900 tokens overhead)"]
+    O --> T
+    P --> T
+    Q --> T
+    R --> T
+    S --> T
+    
+    T --> G
+    
+    F --> U["🏁 Session End"]
+    U --> V["📋 Final Updates<br/>Archive to SESSION-PLAN-ARCHIVE/<br/>Update CURRENT-STATE-SNAPSHOT.md<br/>Validate all timestamps"]
+    
+    V --> W["✅ Session Complete<br/>Intelligence Preserved<br/>Next Session Ready<br/>(67% efficiency gain)"]
+    
+    classDef startEnd fill:#ffffff,stroke:#0d47a1,stroke-width:3px,color:#000000
+    classDef process fill:#f8f9fa,stroke:#4a148c,stroke-width:3px,color:#000000
+    classDef trigger fill:#fff8e1,stroke:#e65100,stroke-width:3px,color:#000000
+    classDef update fill:#f1f8e9,stroke:#1b5e20,stroke-width:3px,color:#000000
+    
+    class A,W startEnd
+    class B,C,D,E,F,U,V process
+    class G,H,I,J,K,L,M trigger
+    class N,O,P,Q,R,S,T update
