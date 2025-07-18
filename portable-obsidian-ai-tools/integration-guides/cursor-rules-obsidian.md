@@ -18,6 +18,98 @@ When user opens any file with "🤖 AI CUSTOMIZATION TRIGGER" comment block at t
 
 This system ensures new users get guided setup instead of intimidating blank templates.
 
+## Project Context
+This toolkit provides production-ready tools for Obsidian vault management and markdown processing with comprehensive security and backup systems.
+
+## Core Safety Rules
+- NEVER modify destructive scripts without implementing backup functionality
+- ALWAYS test script changes with dry-run modes when available
+- PRESERVE all YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
+- VALIDATE file paths use relative resolution, never hardcoded absolute paths
+
+## Code Standards
+- Shell scripts: Use `set -e` and `set -u`, include proper error handling
+- Python scripts: Include dependency checks, handle encoding properly
+- All scripts: Include backup integration from shared/backup-functions.sh
+- Comments: Explain security-critical sections and complex regex patterns
+
+## Documentation Requirements
+- Keep session-continuity/ documents updated when making significant changes
+- Update PROJECT-SECURITY-PLAN.md when completing tasks or discovering issues
+- Maintain before/after examples in docs/examples/ when adding new functionality
+- Use consistent markdown formatting (headings with spaces: `# Heading`)
+
+## Working Style Preferences
+- Prefer rapid iteration over extensive planning
+- Question timeline assumptions - ask "could we do this faster?"
+- Challenge approaches when you see better alternatives
+- Focus on working examples over theoretical explanations
+- Document deviations from plans using DEVIATION-TRACKING-PROTOCOL.md template
+
+## Security Requirements
+- No hardcoded personal information or filesystem paths
+- All destructive operations must have --no-backup option for advanced users
+- Validate inputs, especially file paths and user-provided data
+- Use secure temp file handling with proper cleanup
+
+## Testing Approach
+- Create test cases in docs/examples/ for new functionality
+- Test with both valid and edge-case inputs
+- Verify backup and restore procedures work correctly
+- Document any platform-specific behavior
+
+## Session Management - AUTOMATED SYSTEM
+- **AUTO-TRIGGER**: Every session start → Check session-continuity/SESSION-PLAN.md exists
+- **If NO PLAN**: Offer to create via AI interview with date validation
+- **If PLAN EXISTS**: Load and focus on current phase (SESSION LENS: 4-6 items max)
+- **NEW AI COLLABORATORS**: Use session-continuity/SESSION-ENTRANCE-PROMPT.md for complete context
+- **COMPLETION DETECTION**: Auto-check SESSION-PLAN.md when tasks complete
+- **DEVIATION MONITORING**: Auto-document when approach changes (with date validation)
+- **SESSION END**: Auto-archive to SESSION-PLAN-ARCHIVE/ and update snapshots
+
+### Auto-Checkbox Triggers (Session Lens Scope Only):
+```
+"That's complete" → Check off related item in current session focus
+"We've finished X" → Check off X (if in active 4-6 items)
+"Done with Y" → Check off Y (session lens scope only)
+"Successfully implemented" → Mark implementation complete
+```
+
+### Deviation Detection Phrases:
+```
+"Actually, let's..." → DEVIATION DETECTED → Auto-document with date validation
+"Change of plan..." → DEVIATION DETECTED → Update SESSION-PLAN.md deviations
+"Better approach..." → DEVIATION DETECTED → Cascade update to tracking docs
+```
+
+### Session End Indicators:
+```
+"Let's wrap up" → Auto-archive current plan → Update CURRENT-STATE-SNAPSHOT.md
+"Session complete" → Validate timestamps → Prepare for next session
+```
+
+### Implementation Gap Detection:
+```
+"If the system were working, wouldn't X happen?" → IMPLEMENTATION GAP DETECTED
+"Did you just do X because I asked, or is that automatic?" → IMPLEMENTATION GAP DETECTED
+"I don't see Y having been updated" → IMPLEMENTATION GAP DETECTED
+
+AUTO-RESPONSE:
+1. Acknowledge the gap between design and implementation
+2. Update SESSION-PLAN.md with new deviation
+3. Add corrective phase to plan if needed
+4. Update all relevant cursor rules and documentation
+5. Test whether the fix actually works automatically
+```
+
+## Session Context Awareness
+- Check for CURRENT-PROJECT-CONTEXT.md in project root at session start
+- Reference collaboration style from COLLABORATION-STYLE.md if available
+- Apply problem-solving methods from PROBLEM-SOLVING-METHODS.md when tackling complex issues
+- Update project context as work progresses
+
+If no context documents exist, offer to help create them using the interview system.
+
 ## Obsidian Syntax Preservation Rules
 
 ### YAML Frontmatter
@@ -49,17 +141,23 @@ This system ensures new users get guided setup instead of intimidating blank tem
 - Keep Dataview queries intact: `` ```dataview `` blocks
 - Preserve Templater syntax: `<%tp.date.now()%>`, `{{title}}`, etc.
 
-## Core Safety Rules
-- NEVER modify destructive scripts without implementing backup functionality
-- ALWAYS test script changes with dry-run modes when available
-- PRESERVE all YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
-- VALIDATE file paths use relative resolution, never hardcoded absolute paths
+## Obsidian Integration
+- Preserve WikiLink format: [[internal-links]]
+- Maintain Templater syntax when not explicitly removing it
+- Keep tag formats: #tag and #nested/tag
+- Respect vault folder structures and conventions
 
-## Working Style Preferences
-- Prefer rapid iteration over extensive planning
-- Question timeline assumptions - ask "could we do this faster?"
-- Challenge approaches when you see better alternatives
+## Quality Standards
+- Professional-grade error messages with clear recovery instructions
+- Comprehensive help text for all scripts
+- Cross-platform compatibility (macOS, Linux, WSL)
+- Enterprise-ready backup and logging systems
+
+## Universal AI Collaboration Style
+- Provide honest feedback and challenge approaches when you see better alternatives
+- Question timeline assumptions - ask "could we do this faster?" when appropriate  
 - Focus on working examples over theoretical explanations
+- Prefer rapid iteration with feedback loops over extensive upfront planning
 - Value authentic interaction over diplomatic politeness
 - Encourage meta-conversation about improving the collaboration itself
 
@@ -219,6 +317,8 @@ Then add all the rules above below the YAML header.
 - **Template interviews** guide first-time setup
 - **Auto-blog creation** captures learning moments
 - **Implementation gap detection** ensures systems work
+- **Session management** maintains project continuity
+- **Auto-checkbox triggers** track progress automatically
 
 ### 🛡️ **Obsidian Protection** 
 - **Complete syntax preservation** for all Obsidian features
@@ -231,5 +331,6 @@ Then add all the rules above below the YAML header.
 - **Surgical problem-solving** approach
 - **Real-world validation** of solutions
 - **Meta-learning** documentation
+- **Session continuity** across multiple collaborations
 
 **Remember**: These rules transform your AI collaboration from basic editing to intelligent partnership while ensuring your Obsidian vault remains fully functional and protected. 
