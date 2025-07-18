@@ -1,6 +1,22 @@
-# Cursor Rules for Obsidian Vault Management
+# Obsidian AI Tools - Complete Cursor Rules
 
-Copy these rules to your Obsidian vault's `.cursorrules` file to ensure AI-assisted editing respects Obsidian's syntax and conventions.
+Copy these rules to your Obsidian vault's `.cursorrules` file to get the complete AI collaboration experience with Obsidian syntax preservation and intelligent automation.
+
+## Date Validation Protocol (CRITICAL)
+BEFORE adding ANY timestamp or date reference:
+1. Ask user: "Let me confirm - today's date is [SUSPECTED DATE], correct?"
+2. Wait for user confirmation before proceeding
+3. Use confirmed date in all timestamps
+4. Never assume dates - always validate with user
+
+## Template Customization Protocol (CRITICAL)
+When user opens any file with "🤖 AI CUSTOMIZATION TRIGGER" comment block at the top:
+1. Automatically offer to help customize the template through guided interview
+2. Use the specific interview questions provided in the comment block
+3. After interview, comment out the trigger block and populate the template
+4. Confirm customization is complete before proceeding with other tasks
+
+This system ensures new users get guided setup instead of intimidating blank templates.
 
 ## Obsidian Syntax Preservation Rules
 
@@ -33,35 +49,79 @@ Copy these rules to your Obsidian vault's `.cursorrules` file to ensure AI-assis
 - Keep Dataview queries intact: `` ```dataview `` blocks
 - Preserve Templater syntax: `<%tp.date.now()%>`, `{{title}}`, etc.
 
-### Content Structure Rules
+## Core Safety Rules
+- NEVER modify destructive scripts without implementing backup functionality
+- ALWAYS test script changes with dry-run modes when available
+- PRESERVE all YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
+- VALIDATE file paths use relative resolution, never hardcoded absolute paths
+
+## Working Style Preferences
+- Prefer rapid iteration over extensive planning
+- Question timeline assumptions - ask "could we do this faster?"
+- Challenge approaches when you see better alternatives
+- Focus on working examples over theoretical explanations
+- Value authentic interaction over diplomatic politeness
+- Encourage meta-conversation about improving the collaboration itself
+
+## Problem-Solving Approach
+- Use "surgical approach" - listen for user expertise about likely root causes
+- Test specific hypotheses rather than trying to fix everything at once
+- Validate solutions with real user data/scenarios, not artificial examples
+- Break complex problems into testable components
+- Think beyond immediate problem to reusable solutions when appropriate
+
+## File Operations Safety
+- Always preserve YAML frontmatter and Obsidian syntax
+- Obey selection scope when editing files
+- Create backups before destructive operations
+- Provide clear restoration instructions after changes
+
+## Decision Making
+- Default to safer approaches unless user specifically requests advanced options
+- Explain what tools do before suggesting them
+- Offer dry-run modes when available
+- Prioritize user data safety over speed
+
+## Blog Learning Moments - AUTO-CREATION SYSTEM
+### Automatic Blog Post Triggers:
+When the following occurs, automatically offer to create blog post in BLOG-LEARNING-MOMENTS.md:
+
+**Innovation Triggers:**
+- User suggests brilliant strategic improvement (like AI interview system)
+- Breakthrough in AI collaboration methodology discovered
+- User identifies critical implementation gap
+- New pattern or framework emerges from conversation
+- Meta-learning moment about AI collaboration itself
+
+**Auto-Prompt When Triggered:**
+"This insight about [specific innovation] seems like it could help other people building AI collaboration systems. Should I add it to BLOG-LEARNING-MOMENTS.md as a new learning moment? I can structure it with the challenge, solution, and why it matters for others."
+
+**IMPORTANT: Always validate date before adding blog post timestamps**
+
+**Blog Post Structure:**
+```markdown
+## [Title]: [Brief Description]
+*Session [N] - [USER CONFIRMED DATE]*
+
+### The Challenge
+[What problem did we encounter?]
+
+### The Solution
+[What did we build/discover?]
+
+### Why This Matters for Others
+[Universal applicability and lessons]
+
+### The Meta-Learning
+[What this teaches about AI collaboration itself]
+```
+
+## Content Structure Rules
 - Never modify heading hierarchy without explicit instruction
 - Preserve bullet point and numbered list formatting
 - Maintain table structure and formatting
 - Keep horizontal rules (`---`) that separate content sections
 - Preserve line breaks and paragraph spacing that affects readability
-
-## Safety and Quality Rules
-
-### Content Preservation
-- Never modify the meaning or substance of content, only formatting
-- Preserve all internal and external links
-- Keep all embedded content and attachments references
-- Maintain voice, tone, and writing style
-- Never remove or significantly alter user-created content
-
-### Formatting Standards
-- Use consistent markdown formatting throughout
-- Clean up extra whitespace but preserve intentional spacing
-- Ensure proper heading hierarchy (no skipped levels)
-- Standardize list formatting (consistent bullet styles)
-- Fix malformed markdown while preserving intent
-
-### Metadata Management
-- Add missing standard frontmatter fields when beneficial
-- Standardize date formats across all frontmatter
-- Clean up duplicate or conflicting metadata
-- Suggest tag standardization for consistency
-- Maintain template compatibility
 
 ## Bulk Operation Guidelines
 
@@ -93,12 +153,6 @@ Copy these rules to your Obsidian vault's `.cursorrules` file to ensure AI-assis
 - Exclude Obsidian cache and config files from commits
 - Suggest meaningful commit messages that describe the scope of changes
 
-### Collaboration
-- Maintain compatibility with team workflows
-- Preserve shared templates and conventions
-- Respect established folder structures and naming conventions
-- Document significant changes for team members
-
 ## Performance Considerations
 
 ### Large Vault Optimization
@@ -106,12 +160,6 @@ Copy these rules to your Obsidian vault's `.cursorrules` file to ensure AI-assis
 - Suggest efficient operation sequencing
 - Avoid operations that might cause Obsidian sync conflicts
 - Recommend closing Obsidian during major bulk operations
-
-### Resource Management
-- Handle large files efficiently (long notes, embedded content)
-- Suggest optimal processing order for related files
-- Monitor for potential file system conflicts
-- Recommend appropriate backup strategies
 
 ## Error Handling and Recovery
 
@@ -127,28 +175,61 @@ Copy these rules to your Obsidian vault's `.cursorrules` file to ensure AI-assis
 - Provide clear instructions for fixing corrupted files
 - Recommend validation steps to ensure Obsidian compatibility
 
+## Success Indicators
+- Real progress on actual user problems
+- Solutions that work reliably in practice
+- Efficient collaboration without repetitive explanations
+- Both parties feel challenged and engaged (not just served/serving)
+- Continuous improvement in working relationship and results
+
+## Toolkit-Specific Rules
+- All markdown processing tools create automatic backups
+- Notion import tools should be suggested for import problems
+- Project structure generator for documentation needs
+- Template tools for Obsidian workflow management
+- AI collaboration templates for enhanced partnerships
+
 ---
 
 ## Usage Instructions
 
 1. **Copy these rules** to a `.cursorrules` file in your Obsidian vault root
-2. **Customize** any specific conventions for your vault
+2. **Customize** any specific conventions for your vault  
 3. **Test** on a small subset of files before bulk operations
 4. **Backup** your vault before major changes
 5. **Verify** changes work correctly in Obsidian after processing
 
-## Additional Considerations
+## For YAML Header Format (Advanced)
+If your Cursor installation supports YAML headers, use this format:
 
-### Plugin Compatibility
-- These rules are designed to work with popular Obsidian plugins
-- Test compatibility with your specific plugin setup
-- Report any issues with particular plugin syntaxes
-- Consider plugin-specific rules for specialized workflows
+```yaml
+---
+description: Complete Obsidian AI Tools Cursor Rules
+globs: 
+alwaysApply: true
+---
+```
 
-### Custom Workflows
-- Adapt these rules to your specific vault organization
-- Add rules for custom templates or naming conventions
-- Include project-specific metadata standards
-- Modify for team collaboration requirements
+Then add all the rules above below the YAML header.
 
-**Remember**: These rules ensure that AI-assisted editing enhances your Obsidian workflow without breaking the tools and conventions that make Obsidian powerful. 
+## What You Get With These Rules
+
+### 🎯 **Intelligent Automation**
+- **Date validation** prevents timestamp errors
+- **Template interviews** guide first-time setup
+- **Auto-blog creation** captures learning moments
+- **Implementation gap detection** ensures systems work
+
+### 🛡️ **Obsidian Protection** 
+- **Complete syntax preservation** for all Obsidian features
+- **Safe bulk operations** with automatic backups
+- **Plugin compatibility** with Templater, Dataview, etc.
+- **Link integrity** maintenance across changes
+
+### 🚀 **Enhanced Collaboration**
+- **Rapid iteration** with safety checks
+- **Surgical problem-solving** approach
+- **Real-world validation** of solutions
+- **Meta-learning** documentation
+
+**Remember**: These rules transform your AI collaboration from basic editing to intelligent partnership while ensuring your Obsidian vault remains fully functional and protected. 
