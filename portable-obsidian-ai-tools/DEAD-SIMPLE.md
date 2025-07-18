@@ -6,14 +6,14 @@
 
 ### **Document won't import to Notion** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py your-document.md
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py your-document.md
 ```
 **What it does**: Fixes Unicode, emojis, WikiLinks, horizontal rules - everything that breaks Notion imports.  
 **Success rate**: 95%+ for import failures
 
 ### **Want to see what's wrong first** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py your-document.md --analyze
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py your-document.md --analyze
 ```
 **What it does**: Shows you exactly what's causing the import problems without fixing anything.
 
@@ -21,7 +21,7 @@ python obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixe
 
 ### **Need project sitemap or documentation** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/project-structure/generate_project_structure.py
+python portable-obsidian-ai-tools/obsidian-tools/project-structure/generate_project_structure.py
 ```
 **What it does**: Creates comprehensive PROJECT-STRUCTURE.md with file counts, directory tree, and AI-friendly project context.
 
@@ -29,31 +29,31 @@ python obsidian-ai-tools/obsidian-tools/project-structure/generate_project_struc
 
 ### **Remove YAML frontmatter and Templater code** → Use this:
 ```bash
-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
 ```
 **What it does**: Strips `<%* code %>`, `` `= this.file.name` ``, and YAML frontmatter from markdown files.
 
 ### **Safe metadata removal (Python version)** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/metadata-tools/safe_metadata_removal.py
+python portable-obsidian-ai-tools/obsidian-tools/metadata-tools/safe_metadata_removal.py
 ```
 **What it does**: More granular control over metadata removal with detailed reporting.
 
 ### **Fix broken metadata and standardize** → Use this:
 ```bash
-obsidian-ai-tools/obsidian-tools/metadata-tools/fix_metadata.sh
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/fix_metadata.sh
 ```
 **What it does**: Repairs malformed YAML frontmatter and standardizes metadata formatting.
 
 ### **Clean up old/corrupted files** → Use this:
 ```bash
-obsidian-ai-tools/obsidian-tools/metadata-tools/clean_files.sh
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/clean_files.sh
 ```
 **What it does**: Advanced file cleanup for corrupted or problematic markdown files.
 
 ### **Update old date fields to Templater format** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/metadata-tools/update_date_created_to_templater.py
+python portable-obsidian-ai-tools/obsidian-tools/metadata-tools/update_date_created_to_templater.py
 ```
 **What it does**: Converts old date_created fields to Templater `<%* tp.file.creation_date() %>` format.
 
@@ -61,37 +61,37 @@ python obsidian-ai-tools/obsidian-tools/metadata-tools/update_date_created_to_te
 
 ### **Apply templates to inbox files** → Use this:
 ```bash
-obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh
+portable-obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh
 ```
 **What it does**: Applies your inbox template to new markdown files.
 
 ### **Fix broken templates** → Use this:
 ```bash
-obsidian-ai-tools/obsidian-tools/template-management/fix_template.sh
+portable-obsidian-ai-tools/obsidian-tools/template-management/fix_template.sh
 ```
 **What it does**: Repairs and standardizes template formatting.
 
 ### **Apply templates (Python version with dry-run)** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/template-management/apply_inbox_template.py --dry-run
+python portable-obsidian-ai-tools/obsidian-tools/template-management/apply_inbox_template.py --dry-run
 ```
 **What it does**: More control over template application with preview mode.
 
 ### **Apply templates to entire folders** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/template-management/apply_inbox_template_to_folder.py
+python portable-obsidian-ai-tools/obsidian-tools/template-management/apply_inbox_template_to_folder.py
 ```
 **What it does**: Batch apply templates to all files in a directory.
 
 ### **Apply MOC templates safely** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/template-management/apply_moc_template_preserve_metadata.py
+python portable-obsidian-ai-tools/obsidian-tools/template-management/apply_moc_template_preserve_metadata.py
 ```
 **What it does**: Applies MOC (Map of Content) templates while preserving existing metadata.
 
 ### **Update inbox files with new template** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/template-management/update_inbox_with_template.py
+python portable-obsidian-ai-tools/obsidian-tools/template-management/update_inbox_with_template.py
 ```
 **What it does**: Updates existing inbox files with new template format.
 
@@ -99,19 +99,19 @@ python obsidian-ai-tools/obsidian-tools/template-management/update_inbox_with_te
 
 ### **Clean up extra spaces and formatting** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown_batch.py
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown_batch.py
 ```
 **What it does**: Removes extra whitespace, fixes bullet points, normalizes markdown formatting.
 
 ### **Clean single file formatting** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown.py your-file.md
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown.py your-file.md
 ```
 **What it does**: Same as batch version but for individual files.
 
 ### **Clean all markdown files in directory** → Use this:
 ```bash
-obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh
+portable-obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh
 ```
 **What it does**: Runs cleanup on all .md files in current directory and subdirectories.
 
@@ -119,17 +119,17 @@ obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh
 
 ### **Emojis and special characters breaking import** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/unicode_cleaner.py your-document.md
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/unicode_cleaner.py your-document.md
 ```
 
 ### **WikiLinks not working in Notion** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/wikilink_converter.py your-document.md
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/wikilink_converter.py your-document.md
 ```
 
 ### **Too many horizontal rules (---) causing issues** → Use this:
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/notion_import_fixer.py your-document.md
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_import_fixer.py your-document.md
 ```
 
 ## 🧠 **AI Collaboration Enhancement**
@@ -137,14 +137,14 @@ python obsidian-ai-tools/obsidian-tools/markdown-processing/notion_import_fixer.
 ### **Want better AI collaboration patterns** → Use this:
 ```bash
 # Copy the session continuity templates to your project root
-cp -r obsidian-ai-tools/ai-collaboration/universal-session-continuity ./
+cp -r portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity ./
 ```
 **What it does**: Deploys proven AI collaboration patterns for better human-AI partnerships.
 
 ### **Need Cursor integration help** → Check this:
 ```bash
 # Read the integration guides
-open obsidian-ai-tools/integration-guides/README.md
+open portable-obsidian-ai-tools/integration-guides/README.md
 ```
 **What it does**: Provides complete Cursor + Obsidian workflow setup and troubleshooting.
 
@@ -182,7 +182,7 @@ open obsidian-ai-tools/integration-guides/README.md
 
 ## 🚨 **Safety Notes**
 
-- **All scripts create automatic backups** in `obsidian-ai-tools/shared/backups/`
+- **All scripts create automatic backups** in `portable-obsidian-ai-tools/shared/backups/`
 - **Add `--dry-run` to Python scripts** to test without changing files
 - **Add `--analyze` to see what would change** without doing it
 

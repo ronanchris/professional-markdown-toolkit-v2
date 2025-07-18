@@ -55,7 +55,7 @@ professional-markdown-toolkit/
 │   ├── remove_metadata.sh
 │   ├── safe_metadata_removal.py
 │   └── update_date_created_to_templater.py
-├── obsidian-ai-tools/
+├── portable-obsidian-ai-tools/
 │   ├── ai-collaboration/
 │   │   ├── universal-session-continuity/
 │   │   │   ├── AI-COLLABORATION-CURSOR-RULES.md

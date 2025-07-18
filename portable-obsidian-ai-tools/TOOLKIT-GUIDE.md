@@ -31,15 +31,15 @@
 ```bash
 # In your project directory (e.g., Parkinson's documentation project)
 git clone https://github.com/your-username/professional-markdown-toolkit.git temp-download
-cp -r temp-download/obsidian-ai-tools ./
+cp -r temp-download/portable-portable-obsidian-ai-tools ./
 rm -rf temp-download
 
-# Or ask Cursor AI: "Pull down the obsidian-ai-tools from my GitHub repo"
+# Or ask Cursor AI: "Pull down the portable-portable-obsidian-ai-tools from my GitHub repo"
 ```
 
 ### **Step 2: Install Dependencies**
 ```bash
-cd obsidian-ai-tools
+cd portable-obsidian-ai-tools
 pip install -r requirements.txt
 ```
 
@@ -49,7 +49,7 @@ All tools are now available from your project root. See the tool reference below
 ## 📁 **Toolkit Structure**
 
 ```
-obsidian-ai-tools/
+portable-obsidian-ai-tools/
 ├── obsidian-tools/                    # Core Obsidian management tools
 │   ├── markdown-processing/           # Notion import fixes & formatting
 │   ├── metadata-tools/               # YAML frontmatter management
@@ -70,26 +70,26 @@ obsidian-ai-tools/
 
 ### **Problem: Document won't import to Notion**
 ```bash
-python obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py your-document.md
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py your-document.md
 ```
 **What it does**: Fixes Unicode, emojis, WikiLinks, formatting - everything that breaks Notion imports  
 **Success rate**: 95%+ for import failures
 
 ### **Problem: Need to clean Obsidian vault files**
 ```bash
-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
 ```
 **What it does**: Removes YAML frontmatter and Templater code safely
 
 ### **Problem: Want to apply templates**
 ```bash
-obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh
+portable-obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh
 ```
 **What it does**: Applies templates to inbox files with full backup support
 
 ### **Problem: Need project documentation**
 ```bash
-python obsidian-ai-tools/obsidian-tools/project-structure/generate_project_structure.py
+python portable-obsidian-ai-tools/obsidian-tools/project-structure/generate_project_structure.py
 ```
 **What it does**: Creates comprehensive PROJECT-STRUCTURE.md with file inventory
 
@@ -101,32 +101,32 @@ Copy `ai-collaboration/universal-session-continuity/` to your project root and f
 ### **Markdown Processing (`obsidian-tools/markdown-processing/`)**
 | Tool | Purpose | Command |
 |------|---------|---------|
-| `notion_complete_fixer.py` | **All-in-one Notion import fix** | `python obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py file.md` |
-| `unicode_cleaner.py` | Fix emoji/special character issues | `python obsidian-ai-tools/obsidian-tools/markdown-processing/unicode_cleaner.py file.md` |
-| `wikilink_converter.py` | Convert WikiLinks for Notion | `python obsidian-ai-tools/obsidian-tools/markdown-processing/wikilink_converter.py file.md` |
-| `cleanup_markdown_batch.py` | Clean formatting/whitespace | `python obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown_batch.py` |
-| `clean_all_markdown.sh` | Batch process all markdown files | `obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh` |
+| `notion_complete_fixer.py` | **All-in-one Notion import fix** | `python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py file.md` |
+| `unicode_cleaner.py` | Fix emoji/special character issues | `python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/unicode_cleaner.py file.md` |
+| `wikilink_converter.py` | Convert WikiLinks for Notion | `python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/wikilink_converter.py file.md` |
+| `cleanup_markdown_batch.py` | Clean formatting/whitespace | `python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown_batch.py` |
+| `clean_all_markdown.sh` | Batch process all markdown files | `portable-obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh` |
 
 ### **Metadata Management (`obsidian-tools/metadata-tools/`)**
 | Tool | Purpose | Command |
 |------|---------|---------|
-| `remove_metadata.sh` | **Remove YAML frontmatter safely** | `obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh` |
-| `fix_metadata.sh` | Repair malformed YAML | `obsidian-ai-tools/obsidian-tools/metadata-tools/fix_metadata.sh` |
-| `safe_metadata_removal.py` | Granular metadata control | `python obsidian-ai-tools/obsidian-tools/metadata-tools/safe_metadata_removal.py` |
-| `clean_files.sh` | Advanced file cleanup | `obsidian-ai-tools/obsidian-tools/metadata-tools/clean_files.sh` |
+| `remove_metadata.sh` | **Remove YAML frontmatter safely** | `portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh` |
+| `fix_metadata.sh` | Repair malformed YAML | `portable-obsidian-ai-tools/obsidian-tools/metadata-tools/fix_metadata.sh` |
+| `safe_metadata_removal.py` | Granular metadata control | `python portable-obsidian-ai-tools/obsidian-tools/metadata-tools/safe_metadata_removal.py` |
+| `clean_files.sh` | Advanced file cleanup | `portable-obsidian-ai-tools/obsidian-tools/metadata-tools/clean_files.sh` |
 
 ### **Template Management (`obsidian-tools/template-management/`)**
 | Tool | Purpose | Command |
 |------|---------|---------|
-| `apply_template.sh` | **Apply templates to inbox files** | `obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh` |
-| `fix_template.sh` | Repair broken templates | `obsidian-ai-tools/obsidian-tools/template-management/fix_template.sh` |
-| `apply_moc_template_preserve_metadata.py` | Safe MOC template application | `python obsidian-ai-tools/obsidian-tools/template-management/apply_moc_template_preserve_metadata.py` |
-| `apply_inbox_template_to_folder.py` | Batch template application | `python obsidian-ai-tools/obsidian-tools/template-management/apply_inbox_template_to_folder.py` |
+| `apply_template.sh` | **Apply templates to inbox files** | `portable-obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh` |
+| `fix_template.sh` | Repair broken templates | `portable-obsidian-ai-tools/obsidian-tools/template-management/fix_template.sh` |
+| `apply_moc_template_preserve_metadata.py` | Safe MOC template application | `python portable-obsidian-ai-tools/obsidian-tools/template-management/apply_moc_template_preserve_metadata.py` |
+| `apply_inbox_template_to_folder.py` | Batch template application | `python portable-obsidian-ai-tools/obsidian-tools/template-management/apply_inbox_template_to_folder.py` |
 
 ### **Project Documentation (`obsidian-tools/project-structure/`)**
 | Tool | Purpose | Command |
 |------|---------|---------|
-| `generate_project_structure.py` | **Create comprehensive project docs** | `python obsidian-ai-tools/obsidian-tools/project-structure/generate_project_structure.py` |
+| `generate_project_structure.py` | **Create comprehensive project docs** | `python portable-obsidian-ai-tools/obsidian-tools/project-structure/generate_project_structure.py` |
 
 ## 🤖 **AI Assistant Quick Reference**
 
@@ -145,7 +145,7 @@ Copy `ai-collaboration/universal-session-continuity/` to your project root and f
 ```
 I can fix Notion import problems using the specialized tools in this toolkit.
 
-All-in-one solution: obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py
+All-in-one solution: portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py
 Success rate: 95%+ for import failures
 
 Would you like me to analyze your document first to see what issues exist?
@@ -155,7 +155,7 @@ Would you like me to analyze your document first to see what issues exist?
 ```
 I can help clean up your Obsidian files using the toolkit's metadata tools.
 
-Safe removal: obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
+Safe removal: portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
 All tools have automatic backup systems.
 
 Should I run with backups enabled (safer) or disabled (faster)?
