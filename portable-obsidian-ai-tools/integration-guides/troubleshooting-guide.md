@@ -165,7 +165,7 @@ grep -r "\^[a-zA-Z0-9-]*" vault/
 **Solutions:**
 ```bash
 # Find broken file references
-python obsidian-cursor-workflow/vault-analytics.py /path/to/vault
+python portable-obsidian-ai-tools/integration-guides/vault-analytics.py /path/to/vault
 
 # Search for missing images
 find vault/ -name "*.md" -exec grep -l "!\[\[.*\.\(png\|jpg\|pdf\)\]\]" {} \; | \

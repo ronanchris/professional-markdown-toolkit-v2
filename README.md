@@ -64,23 +64,25 @@ Key features:
 
 ## 📁 **Directory Structure**
 
-- **Core Tools** (`metadata-tools/`, `obsidian-tools/`, `markdown-processing/`) - Universal Obsidian vault management
-- **AI Collaboration** (`session-continuity/`, `portable-obsidian-ai-tools/`) - Session management and intelligence systems
-- **Workflow Integration** (`obsidian-cursor-workflow/`) - Cursor AI editor integration with Obsidian  
+- **Portable AI Tools** (`portable-obsidian-ai-tools/`) - Complete toolkit with AI collaboration enhancements
+- **Session Management** (`session-continuity/`) - Project-specific session tracking and planning
+- **Documentation** (`docs/`) - Examples, guides, and API documentation
 - **Shared Resources** (`shared/`) - Common backup and utility functions
 
 ```
-scripts/
-├── metadata-tools/              # YAML frontmatter and metadata management  
-├── obsidian-tools/             # Obsidian-specific template and structure tools
-├── markdown-processing/        # General markdown cleanup and processing
-├── obsidian-cursor-workflow/   # Cursor AI editor integration guide
+project/
+├── portable-obsidian-ai-tools/  # Complete portable toolkit with AI enhancements
+│   ├── obsidian-tools/         # Template management, metadata tools, markdown processing
+│   ├── ai-collaboration/       # Session continuity and AI collaboration templates
+│   └── integration-guides/     # Cursor integration and setup guides
+├── session-continuity/         # Project-specific session management
+├── docs/                       # Documentation and examples
 └── shared/                     # Shared backup and utility functions
 ```
 
 ## 🛠️ **Core Tool Categories**
 
-### **Metadata Management (`metadata-tools/`)**
+### **Metadata Management (`portable-obsidian-ai-tools/obsidian-tools/metadata-tools/`)**
 **Professional YAML frontmatter and metadata processing**
 
 #### **`remove_metadata.sh`** **PRODUCTION METADATA REMOVAL**
@@ -96,10 +98,10 @@ scripts/
 **Usage**:
 ```bash
 # Basic usage with automatic backups
-scripts/metadata-tools/remove_metadata.sh
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
 
 # Advanced usage without backups
-scripts/metadata-tools/remove_metadata.sh --no-backup
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh --no-backup
 ```
 
 **Output**: Professional-grade cleaning with detailed backup information
@@ -150,7 +152,7 @@ scripts/metadata-tools/remove_metadata.sh --no-backup
 #### **`clean_all_markdown.sh`** **VAULT-WIDE PROCESSING**
 **Purpose**: Execute markdown cleanup across entire Obsidian vault
 
-### **Cursor Integration (`obsidian-cursor-workflow/`)**
+### **Cursor Integration (`portable-obsidian-ai-tools/integration-guides/`)**
 **Complete integration guide for using Cursor AI editor with Obsidian**
 
 #### **Core Integration Files**
@@ -196,16 +198,16 @@ My vault is located at: [paste your vault path here]
 #### **🖥️ Command Line**
 ```bash
 # Clean metadata from inbox files (with backup)
-scripts/metadata-tools/remove_metadata.sh
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh
 
 # Apply templates to files  
-scripts/obsidian-tools/apply_template.sh
+portable-obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh
 
 # Clean up markdown formatting vault-wide
-scripts/markdown-processing/clean_all_markdown.sh --dry-run
+portable-obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh --dry-run
 
 # Fix Notion import issues (NEW!)
-scripts/markdown-processing/notion_complete_fixer.py document.md
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py document.md
 ```
 
 #### **🤖 With Cursor's Help**
@@ -223,16 +225,16 @@ scripts/markdown-processing/notion_complete_fixer.py document.md
 ### **Advanced Features**
 ```bash
 # Disable backups for advanced users
-scripts/metadata-tools/remove_metadata.sh --no-backup
+portable-obsidian-ai-tools/obsidian-tools/metadata-tools/remove_metadata.sh --no-backup
 
 # Recursive markdown cleanup with verbose output
-scripts/markdown-processing/clean_all_markdown.sh --verbose
+portable-obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh --verbose
 
 # Vault analytics and insights
-python scripts/obsidian-cursor-workflow/vault-analytics.py
+python portable-obsidian-ai-tools/integration-guides/vault-analytics.py
 
 # Notion import analysis and fixing
-scripts/markdown-processing/notion_complete_fixer.py document.md --analyze
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_complete_fixer.py document.md --analyze
 ```
 
 ## 📚 **Integration Workflows**
@@ -293,7 +295,7 @@ All destructive operations automatically create timestamped backups:
 - **`CONTRIBUTING.md`** → Contribution guidelines and development standards
 
 ### **Cursor AI Integration**
-- **`obsidian-cursor-workflow/README.md`** → Complete Cursor integration guide
+- **`portable-obsidian-ai-tools/integration-guides/README.md`** → Complete Cursor integration guide
 - **`cursor-prompts-guide.md`** → Professional prompt library for content creation
 - **`troubleshooting-guide.md`** → Common issues and solutions
 

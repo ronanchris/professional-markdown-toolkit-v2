@@ -435,7 +435,7 @@ Extensions to install in Cursor:
 cd /path/to/your/obsidian/vault
 
 # Copy the rules template
-cp /path/to/professional-markdown-toolkit/obsidian-cursor-workflow/cursor-rules-obsidian.md .cursorrules
+cp /path/to/professional-markdown-toolkit/portable-obsidian-ai-tools/integration-guides/cursor-rules-obsidian.md .cursorrules
 
 # Edit to customize for your specific vault
 cursor .cursorrules
@@ -707,7 +707,7 @@ grep -r "^---" vault/ | grep -v "^---$"
 python -c "import yaml; [yaml.safe_load(open(f).read().split('---')[1]) for f in glob.glob('**/*.md', recursive=True) if '---' in open(f).read()]"
 
 # 3. Run cleanup scripts
-python scripts/markdown-processing/cleanup_markdown_batch.py vault/ --dry-run
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown_batch.py vault/ --dry-run
 
 # 4. Check Git status
 git status

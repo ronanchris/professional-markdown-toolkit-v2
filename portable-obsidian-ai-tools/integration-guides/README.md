@@ -84,7 +84,7 @@ Create a `.cursorrules` file in your vault root with these rules:
 ### **Bulk Metadata Updates**
 ```bash
 # Add missing 'modified' dates to all notes
-python scripts/metadata-tools/update_date_created_to_templater.py vault/
+python portable-obsidian-ai-tools/obsidian-tools/metadata-tools/update_date_created_to_templater.py vault/
 
 # Standardize tag formats across vault
 # Use Cursor's find/replace with regex
@@ -93,10 +93,10 @@ python scripts/metadata-tools/update_date_created_to_templater.py vault/
 ### **Format Cleanup**
 ```bash
 # Clean up markdown formatting issues
-python scripts/markdown-processing/cleanup_markdown_batch.py vault/ --recursive
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown_batch.py vault/ --recursive
 
 # Apply templates to inbox notes
-python scripts/obsidian-tools/apply_inbox_template_to_folder.py vault/inbox/
+python portable-obsidian-ai-tools/obsidian-tools/template-management/apply_inbox_template_to_folder.py vault/inbox/
 ```
 
 ### **Quality Assurance**
@@ -115,7 +115,7 @@ python scripts/obsidian-tools/apply_inbox_template_to_folder.py vault/inbox/
 # Process multiple vaults efficiently
 for vault in ~/vaults/*/; do
     echo "Processing $vault"
-    python scripts/markdown-processing/clean_all_markdown.sh "$vault"
+    portable-obsidian-ai-tools/obsidian-tools/markdown-processing/clean_all_markdown.sh "$vault"
 done
 ```
 
@@ -229,7 +229,7 @@ git reset --hard HEAD~1      # Restore to previous commit (careful!)
 **Remember**: This workflow is about leveraging the strengths of both tools. Use Obsidian for what it does best (note-taking, linking, exploration) and Cursor for what it excels at (bulk operations, advanced editing, automation). 
 
 # Generate comprehensive vault analytics
-python scripts/obsidian-cursor-workflow/vault-analytics.py
+python portable-obsidian-ai-tools/integration-guides/vault-analytics.py
 
 # Process markdown files with advanced cleanup
-python scripts/markdown-processing/cleanup_markdown_batch.py . --recursive --verbose 
+python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/cleanup_markdown_batch.py . --recursive --verbose 

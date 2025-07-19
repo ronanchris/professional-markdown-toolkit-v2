@@ -3,10 +3,10 @@
 **Complete hierarchical sitemap of the signpilot documentation where these portable tools are deployed.**
 
 ## Project Overview
-- **Total Files**: 153
-- **Documentation System**: Obsidian Vault with 81 markdown files
-- **Automation Scripts**: 37 Python scripts + 21 shell scripts
-- **Visual Assets**: 0 images and media files
+- **Total Files**: 125
+- **Documentation System**: Obsidian Vault with 70 markdown files
+- **Automation Scripts**: 24 Python scripts + 15 shell scripts
+- **Visual Assets**: 1 images and media files
 - **Configuration**: 5 configuration files
 - **Field Survey System**: Integrated system component
 - **Sign Type Classification**: Integrated system component
@@ -21,15 +21,6 @@
 ```
 professional-markdown-toolkit/
 ├── company-executive/
-├── cursor-tools/
-│   ├── universal-session-continuity/
-│   │   ├── AI-COLLABORATION-CURSOR-RULES.md
-│   │   ├── COLLABORATION-STYLE.md
-│   │   ├── CURRENT-PROJECT-CONTEXT.md
-│   │   ├── PROBLEM-SOLVING-METHODS.md
-│   │   ├── README.md
-│   │   └── SESSION-PATTERNS.md
-│   └── README.md
 ├── docs/
 │   ├── examples/
 │   │   ├── after/
@@ -39,37 +30,9 @@ professional-markdown-toolkit/
 │   │   │   ├── complex-formatting-mess.md
 │   │   │   └── messy-frontmatter-example.md
 │   │   └── QUICK-EXAMPLES.md
+│   ├── images/
+│   │   └── session-flow-diagram.png
 │   └── NOTION-IMPORT-GUIDE.md
-├── markdown-processing/
-│   ├── clean_all_markdown.sh
-│   ├── cleanup_markdown.py
-│   ├── cleanup_markdown_batch.py
-│   ├── notion_complete_fixer.py
-│   ├── notion_import_fixer.py
-│   ├── README-NOTION-TOOLS.md
-│   ├── unicode_cleaner.py
-│   └── wikilink_converter.py
-├── metadata-tools/
-│   ├── clean_files.sh
-│   ├── fix_metadata.sh
-│   ├── remove_metadata.sh
-│   ├── safe_metadata_removal.py
-│   └── update_date_created_to_templater.py
-├── obsidian-cursor-workflow/
-│   ├── cursor-prompts-guide.md
-│   ├── cursor-rules-obsidian.md
-│   ├── obsidian-cursor-setup.md
-│   ├── README.md
-│   ├── template-examples.md
-│   ├── troubleshooting-guide.md
-│   └── vault-analytics.py
-├── obsidian-tools/
-│   ├── apply_inbox_template.py
-│   ├── apply_inbox_template_to_folder.py
-│   ├── apply_moc_template_preserve_metadata.py
-│   ├── apply_template.sh
-│   ├── fix_template.sh
-│   └── update_inbox_with_template.py
 ├── portable-obsidian-ai-tools/
 │   ├── ai-collaboration/
 │   │   ├── universal-session-continuity/
@@ -80,6 +43,7 @@ professional-markdown-toolkit/
 │   │   │   ├── CURRENT-PROJECT-CONTEXT.md
 │   │   │   ├── PROBLEM-SOLVING-METHODS.md
 │   │   │   ├── README.md
+│   │   │   ├── SESSION-ENTRANCE-PROMPT-GENERIC.md
 │   │   │   └── SESSION-PATTERNS.md
 │   │   └── README.md
 │   ├── integration-guides/
@@ -124,8 +88,10 @@ professional-markdown-toolkit/
 │   ├── DEAD-SIMPLE.md
 │   ├── DEPLOYMENT-PROMPT.md
 │   ├── install.sh
+│   ├── POST-DEPLOYMENT-GUIDE.md
+│   ├── PROJECT-STRUCTURE.md
 │   ├── requirements.txt
-│   └── TOOLKIT-GUIDE.md
+│   └── [+1 more items...]
 ├── session-continuity/
 │   ├── notion/
 │   │   ├── AI-INSTRUCTIONS.md
@@ -141,7 +107,7 @@ professional-markdown-toolkit/
 │   ├── PROBLEM-SOLVING-PATTERNS.md
 │   ├── README-FOR-FUTURE-AI.md
 │   ├── README.md
-│   └── [+5 more items...]
+│   └── [+6 more items...]
 ├── shared/
 │   └── backup-functions.sh
 ├── test-cases/
@@ -209,18 +175,18 @@ professional-markdown-toolkit/
 ```
 
 ## Summary Statistics
-- **Total Project Files**: 153
-- **Markdown Documentation**: 81 files
-- **Python Scripts**: 37 automation tools
-- **Shell Scripts**: 21 utilities
-- **Visual Assets**: 0 media files
+- **Total Project Files**: 125
+- **Markdown Documentation**: 70 files
+- **Python Scripts**: 24 automation tools
+- **Shell Scripts**: 15 utilities
+- **Visual Assets**: 1 media files
 - **Configuration Files**: 5 config files
 
 ## Key System Components
 
 ### 📊 **Documentation Architecture**
 - **Markdown Processing**: Universal documentation tools
-- **File Organization**: Structured hierarchy with 153 total files
+- **File Organization**: Structured hierarchy with 125 total files
 
 ### 🛠️ **Automation Infrastructure**
         - **portable-obsidian-ai-tools/**: Universal AI-enhanced markdown processing suite
