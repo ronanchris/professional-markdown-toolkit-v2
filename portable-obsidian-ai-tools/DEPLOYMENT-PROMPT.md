@@ -71,7 +71,19 @@ Please help me deploy the Portable Obsidian AI Tools from GitHub into this proje
    - Test blog auto-creation by saying "This insight about [something innovative] could help others"
    - Verify AI offers to create blog post automatically
 
-Please execute all these steps and let me know when the deployment is complete and ready for the cursor rules setup.
+9. **Final Setup Instructions:**
+   After completing all steps above, please say:
+   
+   "🎉 Deployment complete! The Portable Obsidian AI Tools are now installed in your project. 
+   
+   **Next steps:**
+   1. See `POST-DEPLOYMENT-GUIDE.md` for what to do next
+   2. Use `SESSION-ENTRANCE-PROMPT-GENERIC.md` to set up AI context for this specific project
+   3. Test the automation by saying 'Let's start working on the project'
+   
+   The toolkit is ready to enhance your AI collaboration with session continuity, automatic progress tracking, and intelligent triggers!"
+
+Please execute all these steps and let me know when the deployment is complete.
 ```
 
 ---
