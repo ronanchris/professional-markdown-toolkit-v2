@@ -14,28 +14,21 @@ Please help me deploy the Portable Obsidian AI Tools from GitHub into this proje
    git clone https://github.com/ronanchris/professional-markdown-toolkit.git temp-toolkit
    cp -r temp-toolkit/portable-obsidian-ai-tools ./
    rm -rf temp-toolkit
+   cd portable-obsidian-ai-tools && ./install.sh && cd ..
    ```
 
-2. **Run Installation:**
-   ```bash
-   cd portable-obsidian-ai-tools
-   chmod +x install.sh
-   ./install.sh
-   cd ..
-   ```
-
-3. **Set Up Session Continuity Templates:**
+2. **Set Up Session Continuity Templates:**
    ```bash
    cp -r portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity ./session-continuity
    ```
 
-4. **Display Cursor Rules Setup Instructions:**
+3. **Display Cursor Rules Setup Instructions:**
    After completing the above, please:
    - Read the contents of `portable-obsidian-ai-tools/.cursorrules`
-   - Tell me: "The toolkit is deployed! Now you need to copy the cursor rules. I'll show you the complete rules file content below. Please copy it and paste it into your `.cursor/rules/cursorrules.mdc` file."
+   - Tell me: "The toolkit is deployed! Now you need to copy the cursor rules. I'll show you the complete rules file content below. Please copy it and paste it into your project's `.cursorrules` file."
    - Display the complete contents of the `.cursorrules` file for me to copy
 
-5. **Verify Installation:**
+4. **Verify Installation:**
    ```bash
    ls -la portable-obsidian-ai-tools/
    echo "🎯 Available tools:"
@@ -46,12 +39,12 @@ Please help me deploy the Portable Obsidian AI Tools from GitHub into this proje
    echo "- Quick reference: portable-obsidian-ai-tools/DEAD-SIMPLE.md"
    ```
 
-6. **Set Up Blog Learning Moments:**
+5. **Set Up Blog Learning Moments:**
    ```bash
    cp portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity/BLOG-LEARNING-MOMENTS-TEMPLATE.md ./BLOG-LEARNING-MOMENTS.md
    ```
 
-7. **Session Continuity Setup Interview:**
+6. **Session Continuity Setup Interview:**
    Please offer to help me set up my complete session continuity system by saying:
    
    "Great! The toolkit is deployed and ready. Now I can help you set up a personalized AI collaboration system for your project through guided interviews. This usually takes 10-15 minutes and gives you a completely customized system.
@@ -66,12 +59,12 @@ Please help me deploy the Portable Obsidian AI Tools from GitHub into this proje
    
    If I say yes, guide me through customizing each template using their built-in AI interview triggers.
 
-8. **Verify Blog Auto-Creation System:**
+7. **Verify Blog Auto-Creation System:**
    - Confirm that `BLOG-LEARNING-MOMENTS.md` file exists in project root
    - Test blog auto-creation by saying "This insight about [something innovative] could help others"
    - Verify AI offers to create blog post automatically
 
-9. **Final Setup Instructions:**
+8. **Final Setup Instructions:**
    After completing all steps above, please say:
    
    "🎉 Deployment complete! The Portable Obsidian AI Tools are now installed in your project. 
