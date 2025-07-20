@@ -421,6 +421,35 @@ After multiple development sessions, the project had accumulated **significant b
 
 **Result**: Project is now more powerful, easier to navigate, and ready for broader adoption.
 
+## ASCII vs Mermaid: When Simple Beats Complex for Documentation
+*Session 3 Extended - July 19, 2025*
+
+### The Challenge
+After adding comprehensive cross-session context loading to cursor rules, the user asked for a visual diagram showing which documents are involved. The existing system had a Mermaid diagram for session flow, creating an assumption that all diagrams should use Mermaid.
+
+### The Solution
+**User question revealed better approach**: "I think for this we don't need a Mermaid document. It could just be an ASCII diagram. Is that what you just did?"
+
+**Created pure ASCII diagram instead**:
+- Box drawing characters for visual structure
+- Immediate rendering in any markdown viewer
+- No external dependencies or processing
+- Copy-pasteable to any text environment
+- Version control friendly with clear diffs
+- Always visible - no broken image links
+
+### Why This Matters for Others
+**Tool selection should match the use case**, not default to "most advanced":
+- **ASCII diagrams** are perfect for **process flows and document relationships**
+- **Mermaid diagrams** are better for **complex interactive workflows**
+- **User accessibility** often trumps technical sophistication
+- **Immediate visibility** beats fancy rendering for reference documentation
+
+### The Meta-Learning
+**User feedback that challenges tool choices often reveals better solutions.** The question "Do we need Mermaid for this?" forced evaluation of whether complexity was actually serving the user need. Sometimes the simpler tool is the right tool, even when you have access to more sophisticated options.
+
+**Result**: Documentation that's immediately useful anywhere, anytime, without dependencies.
+
 ---
 
 *More learning moments will be added above this line as we discover them...* 
