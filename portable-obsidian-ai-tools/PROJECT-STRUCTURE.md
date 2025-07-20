@@ -3,8 +3,8 @@
 **Complete hierarchical sitemap of the signpilot documentation where these portable tools are deployed.**
 
 ## Project Overview
-- **Total Files**: 125
-- **Documentation System**: Obsidian Vault with 70 markdown files
+- **Total Files**: 126
+- **Documentation System**: Obsidian Vault with 71 markdown files
 - **Automation Scripts**: 24 Python scripts + 15 shell scripts
 - **Visual Assets**: 1 images and media files
 - **Configuration**: 5 configuration files
@@ -42,6 +42,7 @@ professional-markdown-toolkit/
 │   │   │   ├── COLLABORATION-STYLE.md
 │   │   │   ├── CURRENT-PROJECT-CONTEXT.md
 │   │   │   ├── PROBLEM-SOLVING-METHODS.md
+│   │   │   ├── PROJECT-INSTRUCTIONS-TEMPLATE.md
 │   │   │   ├── README.md
 │   │   │   ├── SESSION-ENTRANCE-PROMPT-GENERIC.md
 │   │   │   └── SESSION-PATTERNS.md
@@ -175,8 +176,8 @@ professional-markdown-toolkit/
 ```
 
 ## Summary Statistics
-- **Total Project Files**: 125
-- **Markdown Documentation**: 70 files
+- **Total Project Files**: 126
+- **Markdown Documentation**: 71 files
 - **Python Scripts**: 24 automation tools
 - **Shell Scripts**: 15 utilities
 - **Visual Assets**: 1 media files
@@ -186,7 +187,7 @@ professional-markdown-toolkit/
 
 ### 📊 **Documentation Architecture**
 - **Markdown Processing**: Universal documentation tools
-- **File Organization**: Structured hierarchy with 125 total files
+- **File Organization**: Structured hierarchy with 126 total files
 
 ### 🛠️ **Automation Infrastructure**
         - **portable-obsidian-ai-tools/**: Universal AI-enhanced markdown processing suite

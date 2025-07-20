@@ -101,7 +101,9 @@ python portable-obsidian-ai-tools/obsidian-tools/project-structure/generate_proj
 **What it does**: Creates comprehensive PROJECT-STRUCTURE.md with file inventory
 
 ### **Problem: Want AI collaboration enhancement**
-Copy `ai-collaboration/universal-session-continuity/` to your project root and follow the README instructions for instant AI partnership improvement.
+**Basic Setup**: Copy `ai-collaboration/universal-session-continuity/` to your project root and follow the README instructions for instant AI partnership improvement.
+
+**Complex Projects**: Use `ai-collaboration/universal-session-continuity/PROJECT-INSTRUCTIONS-TEMPLATE.md` for comprehensive AI context on ongoing, high-stakes projects (healthcare, family coordination, professional projects). Includes AI interview-driven customization, team coordination framework, and emergency protocols.
 
 ## 🛠️ **Complete Tool Reference**
 
@@ -144,7 +146,8 @@ Copy `ai-collaboration/universal-session-continuity/` to your project root and f
 **User says "Fix formatting"** → `cleanup_markdown_batch.py` (whitespace/formatting)  
 **User says "Apply templates"** → `apply_template.sh` (inbox templates)  
 **User says "Project documentation"** → `generate_project_structure.py` (sitemap)  
-**User says "Improve AI collaboration"** → Reference `ai-collaboration/` folder (includes blog learning moments system)
+**User says "Improve AI collaboration"** → Reference `ai-collaboration/` folder (includes blog learning moments system)  
+**User says "Complex ongoing project"** → `PROJECT-INSTRUCTIONS-TEMPLATE.md` (comprehensive AI context for high-stakes situations)
 
 ### **AI Communication Templates**
 

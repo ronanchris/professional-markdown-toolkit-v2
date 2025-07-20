@@ -51,6 +51,13 @@ cd professional-markdown-toolkit/portable-obsidian-ai-tools
 - ✅ Complete setup automation  
 - ✅ Session continuity included
 
+### **🧠 For Complex Projects**
+**[PROJECT-INSTRUCTIONS-TEMPLATE.md →](portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity/PROJECT-INSTRUCTIONS-TEMPLATE.md)** - Comprehensive AI context for ongoing, high-stakes projects
+- ✅ AI interview-driven customization
+- ✅ Team coordination framework
+- ✅ Emergency protocols and communication preferences
+- ✅ Perfect for healthcare, family care, or complex professional projects
+
 ### **📚 Complete Reference**
 **[TOOLKIT-GUIDE.md →](portable-obsidian-ai-tools/TOOLKIT-GUIDE.md)** - Comprehensive documentation with all tools and options
 

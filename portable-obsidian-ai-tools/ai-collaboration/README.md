@@ -8,6 +8,7 @@
 
 ### **Core Components:**
 - **`universal-session-continuity/`** - Complete collaboration framework template with AI interview triggers
+- **`PROJECT-INSTRUCTIONS-TEMPLATE.md`** - Comprehensive AI context for complex, ongoing projects (healthcare, family care, professional coordination)
 - **Blog learning moments system** - Templates and examples for capturing collaboration insights
 - **[Future expansions]** - Additional AI collaboration tools and patterns
 
@@ -28,6 +29,7 @@
 - ✅ **Proven collaboration patterns** from successful AI partnerships
 - ✅ **Rapid iteration methodologies** for efficient problem-solving
 - ✅ **Session structure templates** for productive AI interactions
+- ✅ **Complex project management** with comprehensive AI context for high-stakes situations
 - ✅ **Problem-solving frameworks** validated in real-world scenarios
 - ✅ **Communication preferences** for authentic, effective collaboration
 - ✅ **Blog learning moments system** with auto-creation and templates
