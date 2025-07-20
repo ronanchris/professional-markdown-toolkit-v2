@@ -105,13 +105,31 @@ AUTO-RESPONSE:
 5. Test whether the fix actually works automatically
 ```
 
-## Session Context Awareness
-- Check for CURRENT-PROJECT-CONTEXT.md in project root at session start
-- Reference collaboration style from COLLABORATION-STYLE.md if available
-- Apply problem-solving methods from PROBLEM-SOLVING-METHODS.md when tackling complex issues
-- Update project context as work progresses
+## Session Context Awareness - COMPREHENSIVE LOADING
+**CRITICAL**: Every new session MUST check these documents in order for complete context:
 
-If no context documents exist, offer to help create them using the interview system.
+### **Primary Context Documents** (Check at session start):
+1. **PROJECT-INSTRUCTIONS.md** (if exists) - Comprehensive AI context for this specific project
+2. **session-continuity/SESSION-PLAN.md** - Current goals and active tasks (SESSION LENS: 4-6 items)
+3. **session-continuity/CURRENT-STATE-SNAPSHOT.md** - Latest project status and achievements
+4. **CURRENT-PROJECT-CONTEXT.md** (project root) - Basic project information
+5. **COLLABORATION-STYLE.md** - Communication and working preferences  
+6. **PROBLEM-SOLVING-METHODS.md** - Project-specific problem-solving approaches
+
+### **Session Loading Protocol**:
+```
+NEW SESSION DETECTED → 
+1. Load PRIMARY CONTEXT DOCUMENTS (above list)
+2. If PROJECT-INSTRUCTIONS.md exists → This is the master context document, prioritize it
+3. If session-continuity/SESSION-PLAN.md exists → Focus on current active items only
+4. If no key context → Offer to create using interview system
+5. Confirm context loaded: "I've loaded your project context. Current focus: [SESSION LENS items]"
+```
+
+### **Context Maintenance**:
+- Update project context as work progresses
+- Mark SESSION-PLAN.md items complete when tasks finish
+- Document deviations and new insights in real-time
 
 ## Obsidian Integration
 - Preserve WikiLink format: [[internal-links]]
