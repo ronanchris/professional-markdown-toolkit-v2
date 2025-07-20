@@ -104,6 +104,67 @@ This toolkit includes an advanced **AI collaboration intelligence system** with 
 
 **📊 [View Interactive Diagram & Documentation →](session-continuity/README.md#-system-flow-diagram)**
 
+## 📋 **Cross-Session Context Loading**
+
+**How AI maintains full context across different Cursor sessions:**
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    🆕 NEW CURSOR SESSION                        │
+└─────────────────────┬───────────────────────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────────────────────┐
+│               📄 DOCUMENT LOADING PRIORITY                      │
+│                                                                 │
+│  1. 🧠 PROJECT-INSTRUCTIONS.md ◄─── MASTER CONTEXT             │
+│     • Comprehensive AI role & expertise needed                 │
+│     • Team structure & communication preferences               │
+│     • Emergency protocols & contact info                       │
+│     • Project-specific tone & approach                         │
+│                                                                 │
+│  2. 📋 session-continuity/SESSION-PLAN.md ◄─── CURRENT FOCUS   │
+│     • Active goals (SESSION LENS: 4-6 items only)             │
+│     • Current project phase & timeline                         │
+│     • Recent decisions & approach changes                      │
+│                                                                 │
+│  3. 📊 session-continuity/CURRENT-STATE-SNAPSHOT.md            │
+│     • Latest achievements & progress                           │
+│     • System status & immediate next actions                   │
+│     • Key metrics & recent changes                             │
+│                                                                 │
+│  4. 🎯 CURRENT-PROJECT-CONTEXT.md ◄─── BASIC INFO              │
+│     • Project overview & objectives                            │
+│     • Key stakeholders & roles                                 │
+│                                                                 │
+│  5. 🤝 COLLABORATION-STYLE.md                                  │
+│     • Communication preferences & working style                │
+│     • Decision-making patterns                                 │
+│                                                                 │
+│  6. 🧩 PROBLEM-SOLVING-METHODS.md                             │
+│     • Project-specific approaches & methodologies              │
+│     • Proven patterns & solutions                              │
+└─────────────────────┬───────────────────────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────────────────────┐
+│                🤖 AI CONTEXT LOADED                             │
+│                                                                 │
+│  ✅ "I've loaded your project context."                        │
+│  ✅ "Current focus: [SESSION LENS - 4-6 active items]"         │
+│  ✅ Ready for seamless continuation of previous work           │
+└─────────────────────┬───────────────────────────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────────────────────────┐
+│              💻 ACTIVE COLLABORATION                            │
+│                                                                 │
+│  • Full context of previous sessions                           │
+│  • Knows team dynamics & communication style                   │
+│  • Maintains focus on current priorities                       │
+│  • Updates documents as work progresses                        │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**🎯 Result**: Every new session = Complete project continuity with zero context loss
+
 Key features:
 - **67% reduction in computational overhead** through session lens optimization
 - **Automatic progress tracking** with intelligent triggers  
