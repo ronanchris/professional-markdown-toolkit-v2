@@ -6,9 +6,9 @@
 ## 🎯 Immediate Next Actions
 
 1. **🚀 IN PROGRESS**: User testing deployment in real Cursor project (cursor rules installed first)
-2. **Validate deployment process** works smoothly with enhanced AI assistance  
-3. **Monitor session continuity system** functionality in real-world usage
-4. **Gather feedback** on toolkit usability and documentation clarity
+2. **✅ ADDED**: PROJECT-INSTRUCTIONS template for complex, high-stakes projects (healthcare, family care)
+3. **Validate deployment process** works smoothly with enhanced AI assistance  
+4. **Monitor session continuity system** functionality in real-world usage
 5. **Test complete workflow** from deployment → daily usage → problem solving
 
 ## 📊 Progress Summary
