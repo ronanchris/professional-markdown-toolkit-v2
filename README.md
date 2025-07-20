@@ -37,9 +37,26 @@ cd professional-markdown-toolkit/portable-obsidian-ai-tools
 ./install.sh
 ```
 
-### **📚 Need Help?**
-- **[Complete Deployment Guide →](portable-obsidian-ai-tools/DEPLOYMENT-PROMPT.md)** - Step-by-step setup
+## 📖 **Essential Documents - Start Here**
+
+### **📋 For Daily Usage** 
+**[DEAD-SIMPLE.md →](portable-obsidian-ai-tools/DEAD-SIMPLE.md)** - When your brain is fried and you just need to know which script to run
+- ✅ Problem → Solution format 
+- ✅ Copy-paste ready commands
+- ✅ Quick decision tree
+
+### **🚀 For New Projects**
+**[DEPLOYMENT-PROMPT.md →](portable-obsidian-ai-tools/DEPLOYMENT-PROMPT.md)** - Copy one prompt, deploy entire toolkit to any Cursor project
+- ✅ One-shot deployment prompt
+- ✅ Complete setup automation  
+- ✅ Session continuity included
+
+### **📚 Complete Reference**
+**[TOOLKIT-GUIDE.md →](portable-obsidian-ai-tools/TOOLKIT-GUIDE.md)** - Comprehensive documentation with all tools and options
+
+### **🔧 Additional Guides**
 - **[Post-Setup Verification →](portable-obsidian-ai-tools/POST-DEPLOYMENT-GUIDE.md)** - Test everything works
+- **[Integration Guide →](portable-obsidian-ai-tools/integration-guides/README.md)** - Cursor + Obsidian workflow
 
 ## 🎯 **Two Ways to Use This Toolkit**
 
