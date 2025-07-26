@@ -253,11 +253,121 @@ Based on community analysis, User Rules section likely shows rules with:
 **Community Consensus**: **Multiple small files are significantly better**
 
 **Benefits of Multiple Files**:
-- ✅ **Focused purpose** - one concern per file
+- ✅ **Focused purpose** - one concern per file (see granularity guidelines below)
 - ✅ **Better token efficiency** - only relevant rules load
 - ✅ **Easier maintenance** - targeted edits without affecting other rules
 - ✅ **Improved reliability** - less chance of frontmatter syntax errors
 - ✅ **Team collaboration** - different team members can work on different rule domains
+
+#### **File Granularity Guidelines: Finding the Right Balance**
+
+**Question**: "Does 'one concern per file' mean creating dozens of tiny cursor rules files?"
+
+**ANSWER**: **No!** There are practical limits and optimal granularity levels:
+
+##### **✅ GOOD Granularity (5-15 files total)**
+```
+.cursor/rules/
+├── core-protocols.mdc          # Date validation, template system (25-50 lines)
+├── safety-standards.mdc        # Backup, security, testing (40-60 lines)
+├── session-management.mdc      # Session continuity, prompts (50-80 lines)
+├── obsidian-integration.mdc    # WikiLinks, Templater, tags (20-40 lines)
+└── collaboration-style.mdc     # Working preferences, communication (30-50 lines)
+```
+
+**Why This Works**:
+- ✅ **Logical groupings** - related rules stay together
+- ✅ **Manageable size** - each file has substantial content (20-80 lines)
+- ✅ **Clear purpose** - each file addresses a distinct domain
+- ✅ **Easy reference** - `@safety-standards.mdc` vs `@session-management.mdc`
+
+##### **❌ BAD Granularity (Too Many Tiny Files)**
+```
+.cursor/rules/
+├── date-validation-only.mdc      # 8 lines - TOO SMALL
+├── template-triggers-only.mdc    # 6 lines - TOO SMALL  
+├── backup-rules-only.mdc         # 4 lines - TOO SMALL
+├── security-rules-only.mdc       # 5 lines - TOO SMALL
+├── shell-script-rules-only.mdc   # 3 lines - TOO SMALL
+├── python-script-rules-only.mdc  # 4 lines - TOO SMALL
+├── markdown-formatting-only.mdc  # 2 lines - TOO SMALL
+├── wikilink-rules-only.mdc       # 3 lines - TOO SMALL
+├── templater-rules-only.mdc      # 2 lines - TOO SMALL
+└── ...15 more tiny files
+```
+
+**Why This Fails**:
+- ❌ **Management overhead** - too many files to track
+- ❌ **Fragmented context** - related rules separated artificially
+- ❌ **Reference complexity** - hard to remember which file has what
+- ❌ **Token inefficiency** - loading many small files vs fewer focused ones
+
+##### **❌ ALSO BAD Granularity (One Massive File)**
+```
+.cursor/rules/
+└── everything-kitchen-sink.mdc   # 800+ lines - TOO LARGE
+```
+
+**Why This Fails**:
+- ❌ **Context overload** - AI struggles with massive files
+- ❌ **Maintenance difficulty** - editing affects everything
+- ❌ **Reliability issues** - one syntax error breaks all rules
+
+##### **🎯 OPTIMAL "One Concern Per File" Definition**
+
+**"One Concern" Means**:
+- ✅ **One domain area** (security, session management, file operations)
+- ✅ **One workflow stage** (development, testing, deployment)
+- ✅ **One technology** (Obsidian, TypeScript, React)
+- ✅ **One team responsibility** (frontend, backend, DevOps)
+
+**"One Concern" Does NOT Mean**:
+- ❌ **One individual rule** (date validation gets its own file)
+- ❌ **One function** (backup rules separate from security rules)
+- ❌ **One tool** (separate files for each shell script)
+
+##### **Practical Size Guidelines**
+
+**File Size Sweet Spot**:
+- ✅ **Minimum**: 15-20 lines (substantial enough to be worth a file)
+- ✅ **Optimal**: 25-75 lines (focused but comprehensive)
+- ✅ **Maximum**: 100 lines (before considering split)
+
+**Total Project Guidelines**:
+- ✅ **Small projects**: 3-8 rule files
+- ✅ **Medium projects**: 5-15 rule files  
+- ✅ **Large projects**: 10-25 rule files (use subfolders)
+- ❌ **Avoid**: 25+ files (management overhead becomes problematic)
+
+##### **When to Combine vs Split Files**
+
+**Combine When**:
+- ✅ Rules are **frequently used together**
+- ✅ **Related concepts** that work as a unit
+- ✅ **Same team** maintains both sets of rules
+- ✅ **File would be under 15 lines** if separated
+
+**Split When**:
+- ✅ File exceeds **100 lines**
+- ✅ **Different teams** maintain different sections
+- ✅ **Distinct use cases** (always-apply vs manual-reference)
+- ✅ **Different reliability needs** (core vs experimental rules)
+
+**Example Decision**:
+```
+# COMBINE: These work together as a unit
+safety-standards.mdc:
+- Backup requirements
+- Security protocols  
+- Testing standards
+- Error handling
+
+# DON'T SPLIT INTO:
+- backup-only.mdc (too small, related to security)
+- security-only.mdc (too small, related to backup)
+- testing-only.mdc (overlaps with safety)
+- error-handling-only.mdc (overlaps with all above)
+```
 
 **Recommended Structure**:
 ```
