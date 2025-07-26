@@ -58,6 +58,8 @@
 - **📁 Created session-continuity/prompts/ with historical tracking and reusable templates** *(Session 4 - July 26, 2025)*
 - **🚨 Deployment troubleshooting prompt now in prompts/2025-07-26-session-04-deployment-fixes.md** *(Session 4 - July 26, 2025)*
 - **📚 Comprehensive Cursor memory & rules research documented in CURSOR-MEMORY-RESEARCH.md** *(Session 4 - July 26, 2025)*
+- **🔍 BREAKTHROUGH: Solved User Rules parsing logic mystery - selective frontmatter-based display** *(Session 4 - July 26, 2025)*
+- **💾 RESEARCH: Analyzed memories.md pattern, recommended PROJECT-MEMORIES.md enhancement** *(Session 4 - July 26, 2025)*
 - **🆕 CRITICAL TEMPLATE FIX: Converted portable AI collaboration files to universal templates** *(Session 3 Extended Continued - Today)*
 - **🆕 Removed project-specific content from portable toolkit** *(Session 3 Extended Continued - Today)*
 - **🆕 Added AI interview triggers to all portable collaboration templates** *(Session 3 Extended Continued - Today)*
