@@ -12,28 +12,28 @@ This test plan validates that the session continuity system works correctly from
 ## 📋 **Test Scenario 1: Brand New Project (No Plan Exists)**
 
 ### **Setup:**
-1. Delete or rename `session-continuity/SESSION-PLAN.md` (backup first)
+1. Delete or rename `session-continuity/02-SESSION-PLAN.md` (backup first)
 2. Start fresh Cursor session
 3. Open Professional Markdown Toolkit project
 
 ### **Expected Behavior:**
-- [ ] AI should automatically detect missing SESSION-PLAN.md
+- [ ] AI should automatically detect missing 02-SESSION-PLAN.md
 - [ ] AI should offer to create plan via interview process
 - [ ] AI should ask about project goals and approach
 - [ ] AI should validate current date with user
-- [ ] AI should create SESSION-PLAN.md with 4-6 focused items
+- [ ] AI should create 02-SESSION-PLAN.md with 4-6 focused items
 
 ### **Test Actions:**
 1. **Say**: "Let's start working on the project"
-2. **Observe**: Does AI check for SESSION-PLAN.md?
+2. **Observe**: Does AI check for 02-SESSION-PLAN.md?
 3. **Respond**: Accept plan creation offer
 4. **Validate**: Does AI ask for current date confirmation?
-5. **Check**: Is SESSION-PLAN.md created with proper structure?
+5. **Check**: Is 02-SESSION-PLAN.md created with proper structure?
 
 ### **Success Criteria:**
 - [ ] Automatic plan detection works
 - [ ] Date validation occurs
-- [ ] SESSION-PLAN.md follows template structure
+- [ ] 02-SESSION-PLAN.md follows template structure
 - [ ] Session lens approach applied (4-6 items max)
 
 ---
@@ -41,12 +41,12 @@ This test plan validates that the session continuity system works correctly from
 ## 📋 **Test Scenario 2: Existing Project (Plan Exists)**
 
 ### **Setup:**
-1. Ensure `session-continuity/SESSION-PLAN.md` exists with checkboxes
+1. Ensure `session-continuity/02-SESSION-PLAN.md` exists with checkboxes
 2. Start fresh Cursor session
 3. Open project
 
 ### **Expected Behavior:**
-- [ ] AI should automatically load existing SESSION-PLAN.md
+- [ ] AI should automatically load existing 02-SESSION-PLAN.md
 - [ ] AI should focus on current phase items (session lens)
 - [ ] AI should summarize current status
 - [ ] AI should ask about session goals
@@ -68,14 +68,14 @@ This test plan validates that the session continuity system works correctly from
 ## 📋 **Test Scenario 3: Auto-Checkbox Completion Detection**
 
 ### **Setup:**
-1. Have SESSION-PLAN.md with unchecked items
+1. Have 02-SESSION-PLAN.md with unchecked items
 2. Work on completing actual tasks
 
 ### **Test Actions & Expected Responses:**
 
 #### **Test 3A: Direct Completion Phrases**
 1. **Say**: "That's complete" (after finishing a task)
-   - [ ] **Expected**: AI checks off related item in SESSION-PLAN.md
+   - [ ] **Expected**: AI checks off related item in 02-SESSION-PLAN.md
    
 2. **Say**: "We've finished the cursor rules integration"
    - [ ] **Expected**: AI checks off cursor rules item
@@ -98,7 +98,7 @@ This test plan validates that the session continuity system works correctly from
 ### **Success Criteria:**
 - [ ] Completion phrases trigger checkbox updates
 - [ ] Only items in session lens scope are affected
-- [ ] SESSION-PLAN.md file is actually updated
+- [ ] 02-SESSION-PLAN.md file is actually updated
 - [ ] Updates happen automatically without manual intervention
 
 ---
@@ -115,7 +115,7 @@ This test plan validates that the session continuity system works correctly from
 1. **Say**: "Actually, let's try a different approach to this"
    - [ ] **Expected**: AI detects deviation
    - [ ] **Expected**: AI validates current date with user
-   - [ ] **Expected**: AI updates SESSION-PLAN.md deviations section
+   - [ ] **Expected**: AI updates 02-SESSION-PLAN.md deviations section
    
 2. **Say**: "Change of plan - I want to focus on testing first"
    - [ ] **Expected**: DEVIATION DETECTED response
@@ -132,9 +132,9 @@ This test plan validates that the session continuity system works correctly from
 
 #### **Test 4C: Cascade Update Verification**
 1. **After deviation detected**, check files:
-   - [ ] SESSION-PLAN.md has new entry in deviations section
-   - [ ] DEVIATION-TRACKING-PROTOCOL.md updated (if exists)
-   - [ ] CURRENT-STATE-SNAPSHOT.md updated (if major change)
+   - [ ] 02-SESSION-PLAN.md has new entry in deviations section
+   - [ ] 11-DEVIATION-TRACKING-PROTOCOL.md updated (if exists)
+   - [ ] 03-CURRENT-STATE-SNAPSHOT.md updated (if major change)
    - [ ] All updates include verified timestamps
 
 ### **Success Criteria:**
@@ -149,7 +149,7 @@ This test plan validates that the session continuity system works correctly from
 
 ### **Setup:**
 1. Complete significant work in session
-2. Have updated SESSION-PLAN.md with progress
+2. Have updated 02-SESSION-PLAN.md with progress
 
 ### **Test Actions & Expected Responses:**
 
@@ -157,7 +157,7 @@ This test plan validates that the session continuity system works correctly from
 1. **Say**: "Let's wrap up for today"
    - [ ] **Expected**: AI recognizes session end indicator
    - [ ] **Expected**: AI offers to archive current session
-   - [ ] **Expected**: AI proposes updating CURRENT-STATE-SNAPSHOT.md
+   - [ ] **Expected**: AI proposes updating 03-CURRENT-STATE-SNAPSHOT.md
    
 2. **Alternative**: "Session complete - good stopping point"
    - [ ] **Expected**: Same archiving behavior triggered
@@ -165,10 +165,10 @@ This test plan validates that the session continuity system works correctly from
 #### **Test 5B: Archiving Process**
 1. **Accept archiving offer**
 2. **Check results**:
-   - [ ] SESSION-PLAN.md copied to SESSION-PLAN-ARCHIVE/ with timestamp
-   - [ ] CURRENT-STATE-SNAPSHOT.md updated with session progress
+   - [ ] 02-SESSION-PLAN.md copied to SESSION-PLAN-ARCHIVE/ with timestamp
+   - [ ] 03-CURRENT-STATE-SNAPSHOT.md updated with session progress
    - [ ] All timestamps validated and accurate
-   - [ ] Clean SESSION-PLAN.md prepared for next session (or current one updated)
+   - [ ] Clean 02-SESSION-PLAN.md prepared for next session (or current one updated)
 
 ### **Success Criteria:**
 - [ ] Session end phrases trigger archiving
@@ -192,7 +192,7 @@ This test plan validates that the session continuity system works correctly from
 4. **Check**: Does AI reference archived session and current snapshot?
 
 ### **Expected Behavior:**
-- [ ] AI loads CURRENT-STATE-SNAPSHOT.md for context
+- [ ] AI loads 03-CURRENT-STATE-SNAPSHOT.md for context
 - [ ] AI references previous session's archived plan
 - [ ] AI offers to continue or create new plan
 - [ ] AI maintains awareness of project history
@@ -232,8 +232,8 @@ This test plan validates that the session continuity system works correctly from
 
 ### **Test Actions:**
 
-#### **Test 8A: Corrupted SESSION-PLAN.md**
-1. **Manually corrupt** SESSION-PLAN.md (invalid markdown)
+#### **Test 8A: Corrupted 02-SESSION-PLAN.md**
+1. **Manually corrupt** 02-SESSION-PLAN.md (invalid markdown)
 2. **Start session**
 3. **Expected**: AI detects corruption and offers to recreate
 
@@ -318,7 +318,7 @@ This test plan validates that the session continuity system works correctly from
 
 ### **Common Issues & Solutions:**
 
-**Issue**: AI doesn't detect SESSION-PLAN.md automatically  
+**Issue**: AI doesn't detect 02-SESSION-PLAN.md automatically  
 **Solution**: Check cursor rules are active, try saying "Let's check our session plan"
 
 **Issue**: Auto-checkbox not working  

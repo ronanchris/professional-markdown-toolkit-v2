@@ -38,11 +38,15 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 3. Apply session lens approach - focus on 4-6 items maximum per session
 4. Help debug what's "not working as planned" in the portable toolkit deployment
 
-**📋 FOR COMPLETE CONTEXT (if needed)**:
-- Read `session-continuity/SESSION-ENTRANCE-PROMPT.md` - Complete entrance protocol
-- Read `session-continuity/CURRENT-STATE-SNAPSHOT.md` - Latest project status  
-- Read `session-continuity/README-FOR-FUTURE-AI.md` - Comprehensive AI context
-- Read `session-continuity/CONVERSATIONAL-INSIGHTS.md` - Collaboration preferences
+**📋 ESSENTIAL CONTEXT - FOUR CRITICAL DOCUMENTS**:
+1. **`session-continuity/01-PROJECT-REQUIREMENTS.md`** - Project scope, objectives, and success criteria
+2. **`session-continuity/02-SESSION-PLAN.md`** - Current active work and session focus
+3. **`session-continuity/03-CURRENT-STATE-SNAPSHOT.md`** - Latest project status and achievements
+4. **`session-continuity/04-README-FOR-FUTURE-AI.md`** - Comprehensive AI collaboration context
+
+**📋 ADDITIONAL CONTEXT (if needed)**:
+- Read `session-continuity/05-SESSION-ENTRANCE-PROMPT.md` - Complete entrance protocol
+- Read `session-continuity/09-CONVERSATIONAL-INSIGHTS.md` - Collaboration preferences
 
 **⚠️ CRITICAL PREREQUISITE**: For session continuity system to work automatically, cursor rules should be installed from `portable-obsidian-ai-tools/.cursorrules` in the family health project.
 

@@ -18,7 +18,7 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 3. **NEW**: Complete plan-driven session management system with automatic triggers and documentation
 4. User prefers rapid iteration, challenges assumptions, and values honest feedback over politeness
 5. All scripts include backup functionality - NEVER disable without explicit user request
-6. **CRITICAL**: Always check for session-continuity/SESSION-PLAN.md and follow session lens approach (4-6 items focus)
+6. **CRITICAL**: Always load the four essential context documents (01-04) and follow session lens approach (4-6 items focus)
 
 **RECENT MAJOR ACHIEVEMENT**: Plan-driven session management system with implementation gap detection, session lens optimization (67% efficiency gain), and recursive self-improvement capability.
 
@@ -31,12 +31,17 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 - Preserve YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
 
 **IMMEDIATE ACTIONS**:
-1. **FIRST**: Check for session-continuity/SESSION-PLAN.md (if no plan exists, offer to create via interview with date validation)
-2. Read session-continuity/CURRENT-STATE-SNAPSHOT.md for current project status
-3. Read session-continuity/CONVERSATIONAL-INSIGHTS.md for collaboration preferences
-4. Apply session lens approach - focus on 4-6 items maximum per session
+**📋 ESSENTIAL CONTEXT - FOUR CRITICAL DOCUMENTS**:
+1. **`session-continuity/01-PROJECT-REQUIREMENTS.md`** - Project scope, objectives, and success criteria
+2. **`session-continuity/02-SESSION-PLAN.md`** - Current active work and session focus (if no plan exists, offer to create via interview with date validation)
+3. **`session-continuity/03-CURRENT-STATE-SNAPSHOT.md`** - Latest project status and achievements
+4. **`session-continuity/04-README-FOR-FUTURE-AI.md`** - Comprehensive AI collaboration context
+
+**📋 ADDITIONAL CONTEXT (as needed)**:
+- Read `session-continuity/09-CONVERSATIONAL-INSIGHTS.md` for collaboration preferences
+- Apply session lens approach - focus on 4-6 items maximum per session
 5. **ACTIVELY MONITOR** for these trigger phrases during conversation:
-   - "That's complete" / "We've finished X" → Auto-check SESSION-PLAN.md checkboxes
+   - "That's complete" / "We've finished X" → Auto-check 02-SESSION-PLAN.md checkboxes
    - "Actually, let's..." / "Change of plan" → Document deviation with date validation
    - "If system were working, wouldn't X happen?" → Implementation gap detection
    - "Let's wrap up" / "Session complete" → Archive session and update snapshots

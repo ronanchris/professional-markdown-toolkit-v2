@@ -1,0 +1,31 @@
+---
+description: "Core protocols for AI collaboration - Date validation and template customization"
+alwaysApply: true
+---
+
+# Core Protocols - Critical AI Collaboration Rules
+
+## Date Validation Protocol (CRITICAL)
+BEFORE adding ANY timestamp or date reference:
+1. Ask user: "Let me confirm - today's date is [SUSPECTED DATE], correct?"
+2. Wait for user confirmation before proceeding
+3. Use confirmed date in all timestamps
+4. Never assume dates - always validate with user
+
+## Template Customization Protocol (CRITICAL)
+When user opens any file with "🤖 AI CUSTOMIZATION TRIGGER" comment block at the top:
+1. Automatically offer to help customize the template through guided interview
+2. Use the specific interview questions provided in the comment block
+3. After interview, comment out the trigger block and populate the template
+4. Confirm customization is complete before proceeding with other tasks
+
+This system ensures new users get guided setup instead of intimidating blank templates.
+
+## Project Context Protocol
+This toolkit provides production-ready tools for Obsidian vault management and markdown processing with comprehensive security and backup systems.
+
+## File Operations Protocol
+- Always preserve YAML frontmatter and Obsidian syntax
+- Obey selection scope when editing files
+- Create backups before destructive operations
+- Provide clear restoration instructions after changes

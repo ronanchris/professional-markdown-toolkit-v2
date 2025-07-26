@@ -1,0 +1,61 @@
+---
+description: "Obsidian-specific integration rules, WikiLinks, Templater, and toolkit-specific behaviors"
+globs: "*.md"
+alwaysApply: false
+---
+
+# Obsidian Integration & Toolkit-Specific Rules
+
+## Obsidian Integration
+- Preserve WikiLink format: [[internal-links]]
+- Maintain Templater syntax when not explicitly removing it
+- Keep tag formats: #tag and #nested/tag
+- Respect vault folder structures and conventions
+
+## Toolkit-Specific Rules
+- All markdown processing tools create automatic backups
+- Notion import tools should be suggested for import problems
+- Project structure generator for documentation needs
+- Template tools for Obsidian workflow management
+- AI collaboration templates for enhanced partnerships
+
+## Blog Learning Moments - AUTO-CREATION SYSTEM
+### Automatic Blog Post Triggers
+When the following occurs, automatically offer to create blog post in 12-BLOG-LEARNING-MOMENTS.md:
+
+**Innovation Triggers:**
+- User suggests brilliant strategic improvement (like AI interview system)
+- Breakthrough in AI collaboration methodology discovered
+- User identifies critical implementation gap
+- New pattern or framework emerges from conversation
+- Meta-learning moment about AI collaboration itself
+
+**Auto-Prompt When Triggered:**
+"This insight about [specific innovation] seems like it could help other people building AI collaboration systems. Should I add it to 12-BLOG-LEARNING-MOMENTS.md as a new learning moment? I can structure it with the challenge, solution, and why it matters for others."
+
+**IMPORTANT: Always validate date before adding blog post timestamps**
+
+**Blog Post Structure:**
+```markdown
+## [Title]: [Brief Description]
+*Session [N] - [USER CONFIRMED DATE]*
+
+### The Challenge
+[What problem did we encounter?]
+
+### The Solution
+[What did we build/discover?]
+
+### Why This Matters for Others
+[Universal applicability and lessons]
+
+### The Meta-Learning
+[What this teaches about AI collaboration itself]
+```
+
+## Markdown Processing Standards
+- Whitespace normalization and cleanup
+- Bullet point standardization  
+- Heading format consistency
+- Link format preservation and repair
+- Cross-platform compatibility

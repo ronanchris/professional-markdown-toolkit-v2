@@ -35,12 +35,12 @@
 ### **For New AI Collaborator**:
 1. **📋 Context Loading Priority**:
    - `session-continuity/CURRENT-STATE-SNAPSHOT.md` - Current project status
-   - `session-continuity/CURSOR-MEMORY-RESEARCH.md` - Major research document
+   - `docs/CURSOR-MEMORY-RESEARCH.md` - Major research document
    - `session-continuity/AI-INSTRUCTIONS.md` - Collaboration guidelines
    - `session-continuity/AI-RULES.md` - Core behavioral rules
 
 2. **🔍 Potential Next Actions**:
-   - User may continue line-by-line review of CURSOR-MEMORY-RESEARCH.md
+   - User may continue line-by-line review of docs/CURSOR-MEMORY-RESEARCH.md
    - Could apply cursor memory findings to improve project's own rules
    - Might implement recommended memory enhancements (PROJECT-MEMORIES.md)
    - Could test .cursorindexingignore workaround effectiveness
@@ -53,7 +53,7 @@
 
 ## 🏆 Session Impact
 
-**Before**: CURSOR-MEMORY-RESEARCH.md was Obsidian-specific, limiting audience  
+**Before**: docs/CURSOR-MEMORY-RESEARCH.md was Obsidian-specific, limiting audience  
 **After**: Universal developer resource applicable to React, Node.js, web development projects  
 
 **Value Created**: Transformed specialized research into broadly applicable cursor optimization guide that any developer can use to improve their AI collaboration effectiveness.

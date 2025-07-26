@@ -31,7 +31,7 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 3. **NEW**: Complete plan-driven session management system with automatic triggers and documentation
 4. User prefers rapid iteration, challenges assumptions, and values honest feedback over politeness
 5. All scripts include backup functionality - NEVER disable without explicit user request
-6. **CRITICAL**: Always check for session-continuity/SESSION-PLAN.md and follow session lens approach (4-6 items focus)
+6. **CRITICAL**: Always check for session-continuity/02-SESSION-PLAN.md and follow session lens approach (4-6 items focus)
 
 **RECENT MAJOR ACHIEVEMENT**: Plan-driven session management system with implementation gap detection, session lens optimization (67% efficiency gain), and recursive self-improvement capability.
 
@@ -44,12 +44,12 @@ I'm working on the Professional Markdown Toolkit project. Please read the follow
 - Preserve YAML frontmatter, Obsidian embeds ([[links]]), and block references (^block-id)
 
 **IMMEDIATE ACTIONS**:
-1. **FIRST**: Check for session-continuity/SESSION-PLAN.md (if no plan exists, offer to create via interview with date validation)
-2. Read session-continuity/CURRENT-STATE-SNAPSHOT.md for current project status
-3. Read session-continuity/CONVERSATIONAL-INSIGHTS.md for collaboration preferences
+1. **FIRST**: Check for session-continuity/02-SESSION-PLAN.md (if no plan exists, offer to create via interview with date validation)
+2. Read session-continuity/03-CURRENT-STATE-SNAPSHOT.md for current project status
+3. Read session-continuity/09-CONVERSATIONAL-INSIGHTS.md for collaboration preferences
 4. Apply session lens approach - focus on 4-6 items maximum per session
 5. **ACTIVELY MONITOR** for these trigger phrases during conversation:
-   - "That's complete" / "We've finished X" → Auto-check SESSION-PLAN.md checkboxes
+   - "That's complete" / "We've finished X" → Auto-check 02-SESSION-PLAN.md checkboxes
    - "Actually, let's..." / "Change of plan" → Document deviation with date validation
    - "If system were working, wouldn't X happen?" → Implementation gap detection
    - "Let's wrap up" / "Session complete" → Archive session and update snapshots
@@ -115,8 +115,8 @@ Please confirm you understand this context and are ready to collaborate effectiv
 
 ## 📚 **Essential Reading Order**
 
-1. **`session-continuity/CURRENT-STATE-SNAPSHOT.md`** - Current project status and achievements
-2. **`session-continuity/CONVERSATIONAL-INSIGHTS.md`** - Collaboration insights and user preferences
+1. **`session-continuity/03-CURRENT-STATE-SNAPSHOT.md`** - Current project status and achievements
+2. **`session-continuity/09-CONVERSATIONAL-INSIGHTS.md`** - Collaboration insights and user preferences
 3. **`README.md`** - Complete project overview and capabilities
 4. **`docs/NOTION-IMPORT-GUIDE.md`** - Latest major feature documentation
 5. **`portable-obsidian-tools/README.md`** - Portable distribution overview
@@ -186,10 +186,10 @@ Please confirm you understand this context and are ready to collaborate effectiv
 ## 💡 **Conversation Starters for New Sessions**
 
 ### **Plan-Driven Session Start**
-"I've checked session-continuity/SESSION-PLAN.md and see we're in [current phase]. The session lens shows [4-6 current focus items]. What would you like to work on from the current focus, or do we need to adjust the plan?"
+"I've checked session-continuity/02-SESSION-PLAN.md and see we're in [current phase]. The session lens shows [4-6 current focus items]. What would you like to work on from the current focus, or do we need to adjust the plan?"
 
 ### **No Plan Detected**
-"I don't see a SESSION-PLAN.md file. Would you like me to create one through a brief interview about your goals and timeline? This will help us stay organized and efficient."
+"I don't see a 02-SESSION-PLAN.md file. Would you like me to create one through a brief interview about your goals and timeline? This will help us stay organized and efficient."
 
 ### **Implementation Gap Check**
 "I see the system is designed to [behavior]. If it were working correctly, wouldn't we see [expected evidence]? Should we validate the implementation?"
@@ -200,14 +200,14 @@ Please confirm you understand this context and are ready to collaborate effectiv
 ## 🎯 **Automatic Trigger Phrases to Monitor**
 
 ### **Completion Detection**
-- "That's complete" → Auto-check related SESSION-PLAN.md items
+- "That's complete" → Auto-check related 02-SESSION-PLAN.md items
 - "We've finished X" → Mark X complete in session lens
 - "Done with Y" → Update Y status in plan
 - "Successfully implemented" → Check off implementation items
 
 ### **Deviation Detection**
 - "Actually, let's..." → Document deviation with date validation
-- "Change of plan..." → Update SESSION-PLAN.md deviations section
+- "Change of plan..." → Update 02-SESSION-PLAN.md deviations section
 - "Better approach..." → Cascade update to tracking documents
 
 ### **Implementation Gap Detection**
@@ -216,8 +216,8 @@ Please confirm you understand this context and are ready to collaborate effectiv
 - "I don't see Y having been updated" → Identify missing automation
 
 ### **Session End Indicators**
-- "Let's wrap up" → Auto-archive SESSION-PLAN.md to archive folder
-- "Session complete" → Update CURRENT-STATE-SNAPSHOT.md with progress
+- "Let's wrap up" → Auto-archive 02-SESSION-PLAN.md to archive folder
+- "Session complete" → Update 03-CURRENT-STATE-SNAPSHOT.md with progress
 
 ## 🎪 **Project Personality**
 

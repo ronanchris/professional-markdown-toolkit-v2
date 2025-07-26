@@ -5,12 +5,12 @@
 
 ```mermaid
 graph TD
-    A["🚀 Session Start"] --> B{"📄 SESSION-PLAN.md<br/>Exists?"}
+    A["🚀 Session Start"] --> B{"📄 02-SESSION-PLAN.md<br/>Exists?"}
     
     B -->|No| C["📝 Create New Plan<br/>AI Interview + Date Validation<br/>Document Goals & Approach<br/>Apply Session Lens (4-6 items)"]
     B -->|Yes| D["📋 Load Existing Plan<br/>Check Previous Status<br/>Update Session Goals<br/>Focus on Current Phase"]
     
-    C --> E["📋 Check Context<br/>CURRENT-STATE-SNAPSHOT.md<br/>PROBLEM-SOLVING-PATTERNS.md<br/>WORKING-RELATIONSHIP-DNA.md"]
+    C --> E["📋 Check Context<br/>03-CURRENT-STATE-SNAPSHOT.md<br/>08-PROBLEM-SOLVING-PATTERNS.md<br/>07-WORKING-RELATIONSHIP-DNA.md"]
     D --> E
     
     E --> F["💻 Active Collaboration<br/>Session Lens Monitoring<br/>(4-6 focused items only)"]
@@ -24,12 +24,12 @@ graph TD
     G --> L["🧩 Problem-Solving Win"]
     G --> M["✅ Task Completion<br/>(Auto-checkbox)"]
     
-    H --> N["📝 Update<br/>CURRENT-STATE-SNAPSHOT.md"]
-    I --> O["📝 Update<br/>SESSION-PLAN.md (Deviations)<br/>+ DEVIATION-TRACKING-PROTOCOL.md<br/>+ Date Validation"]
-    J --> P["📝 Update<br/>WORKING-RELATIONSHIP-DNA.md"]
-    K --> Q["📝 Update<br/>BLOG-LEARNING-MOMENTS.md<br/>(with date validation)"]
-    L --> R["📝 Update<br/>PROBLEM-SOLVING-PATTERNS.md"]
-    M --> S["📝 Auto-Check<br/>SESSION-PLAN.md Checkboxes<br/>(Focused scope only)"]
+    H --> N["📝 Update<br/>03-CURRENT-STATE-SNAPSHOT.md"]
+I --> O["📝 Update<br/>02-SESSION-PLAN.md (Deviations)<br/>+ 11-DEVIATION-TRACKING-PROTOCOL.md<br/>+ Date Validation"]
+    J --> P["📝 Update<br/>07-WORKING-RELATIONSHIP-DNA.md"]
+K --> Q["📝 Update<br/>12-BLOG-LEARNING-MOMENTS.md<br/>(with date validation)"]
+L --> R["📝 Update<br/>08-PROBLEM-SOLVING-PATTERNS.md"]
+    M --> S["📝 Auto-Check<br/>02-SESSION-PLAN.md Checkboxes<br/>(Focused scope only)"]
     
     N --> T["🔄 Continue Session<br/>(~900 tokens overhead)"]
     O --> T
@@ -41,7 +41,7 @@ graph TD
     T --> G
     
     F --> U["🏁 Session End"]
-    U --> V["📋 Final Updates<br/>Archive to SESSION-PLAN-ARCHIVE/<br/>Update CURRENT-STATE-SNAPSHOT.md<br/>Validate all timestamps"]
+    U --> V["📋 Final Updates<br/>Archive to SESSION-PLAN-ARCHIVE/<br/>Update 03-CURRENT-STATE-SNAPSHOT.md<br/>Validate all timestamps"]
     
     V --> W["✅ Session Complete<br/>Intelligence Preserved<br/>Next Session Ready<br/>(67% efficiency gain)"]
     

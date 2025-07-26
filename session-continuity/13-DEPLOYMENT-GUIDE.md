@@ -19,10 +19,10 @@ Add this section to your project's `.cursor/rules/cursorrules.mdc` or Cursor set
 
 ```markdown
 ## Session Management - AUTOMATED SYSTEM
-- **AUTO-TRIGGER**: Every session start → Check session-continuity/SESSION-PLAN.md exists
+- **AUTO-TRIGGER**: Every session start → Check session-continuity/02-SESSION-PLAN.md exists
 - **If NO PLAN**: Offer to create via AI interview with date validation
 - **If PLAN EXISTS**: Load and focus on current phase (SESSION LENS: 4-6 items max)
-- **COMPLETION DETECTION**: Auto-check SESSION-PLAN.md when tasks complete
+- **COMPLETION DETECTION**: Auto-check 02-SESSION-PLAN.md when tasks complete
 - **DEVIATION MONITORING**: Auto-document when approach changes (with date validation)
 - **SESSION END**: Auto-archive to SESSION-PLAN-ARCHIVE/ and update snapshots
 
@@ -34,18 +34,18 @@ Add this section to your project's `.cursor/rules/cursorrules.mdc` or Cursor set
 
 ### Deviation Detection Phrases:
 "Actually, let's..." → DEVIATION DETECTED → Auto-document with date validation
-"Change of plan..." → DEVIATION DETECTED → Update SESSION-PLAN.md deviations
+"Change of plan..." → DEVIATION DETECTED → Update 02-SESSION-PLAN.md deviations
 "Better approach..." → DEVIATION DETECTED → Cascade update to tracking docs
 
 ### Session End Indicators:
-"Let's wrap up" → Auto-archive current plan → Update CURRENT-STATE-SNAPSHOT.md
+"Let's wrap up" → Auto-archive current plan → Update 03-CURRENT-STATE-SNAPSHOT.md
 "Session complete" → Validate timestamps → Prepare for next session
 ```
 
 ### **Step 3: Initialize First Session**
 1. Start Cursor in your project
 2. Say: "Let's start working on the project"
-3. AI will detect missing SESSION-PLAN.md and offer to create one
+3. AI will detect missing 02-SESSION-PLAN.md and offer to create one
 4. Follow the interview process to create your first plan
 
 ---
@@ -56,13 +56,14 @@ Add this section to your project's `.cursor/rules/cursorrules.mdc` or Cursor set
 ```
 your-project/
 ├── session-continuity/
-│   ├── SESSION-PLAN-TEMPLATE.md      # Master template
-│   ├── SESSION-PLAN.md               # Current active plan
+│   ├── 01-PROJECT-REQUIREMENTS.md    # Project scope and objectives
+│   ├── 02-SESSION-PLAN.md            # Current active plan
+│   ├── 03-CURRENT-STATE-SNAPSHOT.md  # Project status
+│   ├── 07-WORKING-RELATIONSHIP-DNA.md # Collaboration patterns
+│   ├── 08-PROBLEM-SOLVING-PATTERNS.md # Proven methodologies
+│   ├── 09-CONVERSATIONAL-INSIGHTS.md # Meta-learning moments
+│   ├── 16-SESSION-PLAN-TEMPLATE.md   # Master template
 │   ├── SESSION-PLAN-ARCHIVE/         # Completed sessions
-│   ├── CURRENT-STATE-SNAPSHOT.md     # Project status
-│   ├── WORKING-RELATIONSHIP-DNA.md   # Collaboration patterns
-│   ├── PROBLEM-SOLVING-PATTERNS.md   # Proven methodologies
-│   ├── CONVERSATIONAL-INSIGHTS.md    # Meta-learning moments
 │   ├── BLOG-LEARNING-MOMENTS.md      # Shareable insights
 │   ├── DEVIATION-TRACKING-PROTOCOL.md # Approach changes
 │   ├── README.md                     # System documentation
@@ -73,7 +74,7 @@ your-project/
 
 ### **Document Templates**
 
-#### **CURRENT-STATE-SNAPSHOT.md Template**
+#### **03-CURRENT-STATE-SNAPSHOT.md Template**
 ```markdown
 # Current State Snapshot
 
@@ -106,7 +107,7 @@ your-project/
 - **User Experience**: [Status]
 ```
 
-#### **WORKING-RELATIONSHIP-DNA.md Template**
+#### **07-WORKING-RELATIONSHIP-DNA.md Template**
 ```markdown
 # Working Relationship DNA
 
@@ -149,7 +150,7 @@ Adapt the session management triggers to your specific project needs.
 4. **Validate efficiency** - Monitor response times
 
 ### **Success Criteria:**
-- [ ] SESSION-PLAN.md automatically created/loaded
+- [ ] 02-SESSION-PLAN.md automatically created/loaded
 - [ ] Auto-checkbox completion detection works
 - [ ] Deviation detection triggers properly
 - [ ] Session end archiving functions
@@ -190,7 +191,7 @@ Adapt the session management triggers to your specific project needs.
 
 ### **Common Issues:**
 
-**Issue**: AI doesn't automatically check for SESSION-PLAN.md  
+**Issue**: AI doesn't automatically check for 02-SESSION-PLAN.md  
 **Solution**: Verify cursor rules are active, try saying "Let's check our session plan"
 
 **Issue**: Auto-checkbox not working  
@@ -243,7 +244,7 @@ Copy session-continuity/ to multiple projects, each maintains independent contex
 Share SESSION-PLAN-ARCHIVE/ for team context, individual SESSION-PLAN.md for personal focus.
 
 ### **Integration with Other Tools:**
-- **Git**: Commit SESSION-PLAN.md with code changes
+- **Git**: Commit 02-SESSION-PLAN.md with code changes
 - **Project Management**: Sync checkboxes with external tools
 - **Documentation**: Auto-generate progress reports from archived sessions
 
