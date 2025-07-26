@@ -36,6 +36,16 @@ After interview: Comment out this entire block and populate the template below.
 - **Validate inputs**, especially [PROJECT-SPECIFIC INPUT TYPES] and user-provided data
 - **Use secure temp file handling** with proper cleanup
 
+## Date Validation Protocol (CRITICAL)
+
+**BEFORE adding ANY timestamp or date reference:**
+1. **Ask user**: "Let me confirm - today's date is [SUSPECTED DATE], correct?"
+2. **Wait for user confirmation** before proceeding
+3. **Use confirmed date** in all timestamps
+4. **Never assume dates** - always validate with user
+
+**This prevents systematic AI timestamp errors that occur across all projects and domains.**
+
 ## Session Management Rules (Automated)
 
 ### Session Start Protocol

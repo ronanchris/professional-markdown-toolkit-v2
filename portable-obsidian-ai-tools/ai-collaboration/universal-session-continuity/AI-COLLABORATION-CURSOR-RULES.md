@@ -34,6 +34,18 @@ When user opens any file with "🤖 AI CUSTOMIZATION TRIGGER" comment block at t
 This system ensures new users get guided setup instead of intimidating blank templates.
 ```
 
+### **Date Validation Protocol (CRITICAL)**
+```
+## Date Validation Protocol (CRITICAL)
+BEFORE adding ANY timestamp or date reference:
+1. Ask user: "Let me confirm - today's date is [SUSPECTED DATE], correct?"
+2. Wait for user confirmation before proceeding
+3. Use confirmed date in all timestamps
+4. Never assume dates - always validate with user
+
+This prevents systematic AI timestamp errors that are common across all projects.
+```
+
 ### **Session Continuity Integration**
 ```
 ## Session Context Awareness
@@ -97,4 +109,4 @@ Modify rules based on:
 
 ---
 
-**Note**: These rules are based on proven patterns from successful AI collaboration projects. Customize them to match your specific working style and project needs. 
+**Note**: These rules are based on proven patterns from successful AI collaboration projects. Customize them to match your specific working style and project needs.
