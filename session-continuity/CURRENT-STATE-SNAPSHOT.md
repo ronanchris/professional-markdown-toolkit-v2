@@ -60,6 +60,9 @@
 - **📚 Comprehensive Cursor memory & rules research documented in CURSOR-MEMORY-RESEARCH.md** *(Session 4 - July 26, 2025)*
 - **🔍 BREAKTHROUGH: Solved User Rules parsing logic mystery - selective frontmatter-based display** *(Session 4 - July 26, 2025)*
 - **💾 RESEARCH: Analyzed memories.md pattern, recommended PROJECT-MEMORIES.md enhancement** *(Session 4 - July 26, 2025)*
+- **🎯 MAJOR RESEARCH COMPLETE: Comprehensive advanced cursor rules analysis with all user questions answered** *(Session 4 - July 26, 2025)*
+- **📚 PERFORMANCE DISCOVERIES: File size limits, timing behavior, reliability hierarchy, manual triggering methods** *(Session 4 - July 26, 2025)*
+- **🔧 CACHING SOLUTION: Documented .cursorindexingignore workaround for rule consistency issues** *(Session 4 - July 26, 2025)*
 - **🆕 CRITICAL TEMPLATE FIX: Converted portable AI collaboration files to universal templates** *(Session 3 Extended Continued - Today)*
 - **🆕 Removed project-specific content from portable toolkit** *(Session 3 Extended Continued - Today)*
 - **🆕 Added AI interview triggers to all portable collaboration templates** *(Session 3 Extended Continued - Today)*
