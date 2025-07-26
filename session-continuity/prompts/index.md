@@ -3,7 +3,7 @@
 
 ## 📋 **Active Session Prompts** (Most Recent First)
 
-### 2025-01-16-session-04-deployment-fixes.md
+### 2025-07-26-session-04-deployment-fixes.md
 **Type:** Urgent Troubleshooting  
 **Context:** Portable toolkit deployment issues, date validation fixes  
 **Use for:** Deployment debugging, family health project assistance  

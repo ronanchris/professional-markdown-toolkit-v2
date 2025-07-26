@@ -38,13 +38,15 @@ Please confirm you understand this context and are ready to help troubleshoot th
 
 I noticed that with the updated cursor, there are pop-ups that are asking me about things to remember, and when I say accept, that's great, but are those things isolated to only this project, or are they something that are useful to other projects, and if so, how can I get access to those rules that I think you're asking me to remember?
 
-# item 3
-
-Also, based on the updates that you've made, I've noticed that in my other project I'm having issues with that project getting the timestamps correctly. It's always doing them wrong. So, have in the portable documents folder, have you made a provision for this to make sure that I'm able to get that benefit when I use this toolkit in other projects?
 
 # item 4
 
-Also, with respect to the opening prompts, what I prefer is that our prompts are set up so that they are time stamped and marked with the session ID so that I can have a historical view with the most recent one on the top and the oldest one on the bottom. Do you recommend that we do that in one file or do you recommend that our session continuity prompts be in a folder where we add a time and date stamp to the name of the markdown documents containing each prompt?
+Also, with respect to the opening prompts, what I prefer is that our prompts are set up so that they are time stamped and marked with the session ID so that I can have a historical view with the most recent one on the top and the oldest one on the bottom. Do you recommend that we do that in one file or do you recommend that our session continuity prompts be in a folder where we add a time and date stamp to the name of the markdown documents containing each prompt? If we choose to restructure this, what other documents do we need to update that would make both AI and me aware of this?
+
+# item 5
+
+I need to find the diagram that you made for me about how this system works. I think it was a mermaid diagram.
+
 
 
 
