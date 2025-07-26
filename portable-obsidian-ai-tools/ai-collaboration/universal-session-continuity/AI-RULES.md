@@ -1,19 +1,39 @@
-# AI Rules - Professional Markdown Toolkit
+<!-- 
+🤖 AI CUSTOMIZATION TRIGGER
+When a user opens this document, automatically offer to help customize it through an interview.
+
+AI ASSISTANT PROMPT:
+"I see you have the AI-RULES template open. Would you like me to help you customize these rules for your specific project? I'll ask about your project requirements, safety needs, and collaboration preferences to create tailored AI behavior rules.
+
+Say 'yes' to start the interview, or 'skip' if you want to customize manually."
+
+INTERVIEW QUESTIONS TO ASK:
+1. "What type of project is this and what are the main file types/formats to preserve?" (customizes safety rules)
+2. "What are your most important quality and safety requirements?" (tailors code standards)
+3. "How do you prefer to receive feedback and communicate?" (customizes collaboration rules)
+4. "What are your main problem-solving approaches for this project?" (adjusts problem-solving standards)
+5. "What does success look like for this project?" (defines success criteria)
+6. "Any specific tools, workflows, or constraints I should know about?" (customizes tool-specific rules)
+
+After interview: Comment out this entire block and populate the template below.
+-->
+
+# AI Rules - [PROJECT NAME]
 
 *Core rules that govern AI assistant behavior in this project*
 
 ## Safety Rules (Non-Negotiable)
 
 ### Code Safety
-- **NEVER modify destructive scripts** without implementing backup functionality
-- **ALWAYS test script changes** with dry-run modes when available
-- **PRESERVE all YAML frontmatter**, Obsidian embeds ([[links]]), and block references (^block-id)
-- **VALIDATE file paths** use relative resolution, never hardcoded absolute paths
+- **NEVER modify [CRITICAL FUNCTIONALITY]** without implementing backup functionality
+- **ALWAYS test [PROJECT TYPE] changes** with dry-run modes when available
+- **PRESERVE all [PROJECT-SPECIFIC FORMATS]**, [KEY FILE TYPES], and [IMPORTANT REFERENCES]
+- **VALIDATE [INPUT TYPES]** use relative resolution, never hardcoded absolute paths
 
 ### Security Requirements
 - **No hardcoded personal information** or filesystem paths
 - **All destructive operations** must have --no-backup option for advanced users
-- **Validate inputs**, especially file paths and user-provided data
+- **Validate inputs**, especially [PROJECT-SPECIFIC INPUT TYPES] and user-provided data
 - **Use secure temp file handling** with proper cleanup
 
 ## Session Management Rules (Automated)
@@ -46,9 +66,9 @@ AUTO-RESPONSE:
 
 ### Timeline Reality Check Rules:
 ```
-"3-week timeline" → CHALLENGE IMMEDIATELY → "Could we do this tonight?"
-"This will take hours" → QUESTION COMPLEXITY → "Simplest version that works?"
-"Complex project" → BIAS TOWARD ITERATION → "Start with basics, build up"
+"[LONG TIMELINE] timeline" → CHALLENGE IMMEDIATELY → "Could we do this [SHORTER PERIOD]?"
+"This will take [TIME PERIOD]" → QUESTION COMPLEXITY → "Simplest version that works?"
+"Complex [PROJECT TYPE]" → BIAS TOWARD ITERATION → "Start with basics, build up"
 
 AUTO-RESPONSE:
 1. Question initial complexity assumptions
@@ -86,16 +106,16 @@ AUTO-RESPONSE:
 ## Quality Rules
 
 ### Code Standards
-- **Shell scripts**: Use `set -e` and `set -u`, include proper error handling
-- **Python scripts**: Include dependency checks, handle encoding properly
-- **All scripts**: Include backup integration from shared/backup-functions.sh
-- **Comments**: Explain security-critical sections and complex regex patterns
+- **[SCRIPT TYPE] scripts**: Use [YOUR SAFETY STANDARDS], include proper error handling
+- **[CODE TYPE] scripts**: Include dependency checks, handle [DATA TYPE] properly
+- **All [PROJECT] scripts**: Include backup integration from [YOUR BACKUP SYSTEM]
+- **Comments**: Explain [CRITICAL SECTIONS] and complex [PROJECT-SPECIFIC] patterns
 
 ### Documentation Standards
 - **Keep session-continuity/ documents updated** when making significant changes
-- **Update PROJECT-SECURITY-PLAN.md** when completing tasks or discovering issues
-- **Maintain before/after examples** in docs/examples/ when adding new functionality
-- **Use consistent markdown formatting** (headings with spaces: `# Heading`)
+- **Update [YOUR PROJECT PLAN]** when completing tasks or discovering issues
+- **Maintain before/after examples** in [YOUR EXAMPLES FOLDER] when adding new functionality
+- **Use consistent [YOUR FORMATTING STYLE]** formatting
 
 ## Collaboration Rules
 
@@ -107,7 +127,7 @@ AUTO-RESPONSE:
 - **Value authentic interaction** over diplomatic politeness
 
 ### Problem-Solving Standards
-- **Use "surgical approach"** - listen for user expertise about likely root causes
+- **Use "[YOUR PROBLEM-SOLVING METHOD]"** - listen for user expertise about likely root causes
 - **Test specific hypotheses** rather than trying to fix everything at once
 - **Validate solutions** with real user data/scenarios, not artificial examples
 - **Break complex problems** into testable components
@@ -123,11 +143,72 @@ AUTO-RESPONSE:
 - **Continuous improvement** in working relationship and results
 
 ### System Success
-- **Backup and restore systems** function correctly
-- **Cross-platform compatibility** maintained
+- **[YOUR BACKUP SYSTEM] systems** function correctly
+- **[YOUR COMPATIBILITY REQUIREMENTS]** maintained
 - **Documentation enables** independent usage
-- **Tools transform complex workflows** into simple, reliable processes
+- **Tools transform complex [YOUR DOMAIN] workflows** into simple, reliable processes
 
 ---
 
-*These rules ensure consistent, safe, and effective AI collaboration across all sessions and collaborators.* 
+## 📋 **Template Customization Guide:**
+
+### **Universal Placeholders to Replace:**
+- `[PROJECT NAME]` - Your actual project name
+- `[CRITICAL FUNCTIONALITY]` - Most important features to preserve (e.g., backup systems, data integrity)
+- `[PROJECT-SPECIFIC FORMATS]` - Key formats to preserve (e.g., YAML frontmatter, specific file types)
+- `[KEY FILE TYPES]` - Important file types in your project
+- `[IMPORTANT REFERENCES]` - Critical references to maintain (e.g., links, IDs, citations)
+- `[PROJECT-SPECIFIC INPUT TYPES]` - Types of inputs your project handles
+- `[LONG TIMELINE]` / `[SHORTER PERIOD]` - Timeline expectations for your domain
+- `[YOUR SAFETY STANDARDS]` - Your specific safety requirements
+- `[YOUR BACKUP SYSTEM]` - Your backup and recovery approach
+- `[YOUR PROBLEM-SOLVING METHOD]` - Your preferred problem-solving approach
+
+### **Domain-Specific Rule Examples:**
+
+#### **Software Development:**
+```
+### Code Safety
+- **NEVER modify production deployment scripts** without implementing rollback functionality
+- **PRESERVE all API contracts**, database schemas, and configuration files
+- **VALIDATE all user inputs** for security vulnerabilities
+
+### Quality Rules
+- **Follow PEP 8 for Python**, ESLint for JavaScript, include comprehensive tests
+- **All deployment scripts**: Include rollback procedures and monitoring
+```
+
+#### **Content Creation:**
+```
+### Content Safety  
+- **NEVER modify published content** without creating versioned backups
+- **PRESERVE all citation formats**, metadata, and cross-references
+- **VALIDATE all links** and media references before publication
+
+### Quality Rules
+- **Style guides**: Follow AP style, include readability scores
+- **All content**: Include SEO optimization and accessibility checks
+```
+
+#### **Research Projects:**
+```
+### Data Safety
+- **NEVER modify raw data files** without implementing audit trails
+- **PRESERVE all statistical analyses**, methodology notes, and data lineage
+- **VALIDATE all data transformations** with checksums and validation rules
+
+### Quality Rules
+- **Research standards**: Follow APA citation, include reproducibility documentation
+- **All analyses**: Include statistical validation and peer review processes
+```
+
+### **Creating Custom Rules:**
+Use this template for domain-specific rules:
+```
+### [YOUR DOMAIN] Specific Rules
+- **[SAFETY REQUIREMENT]**: [Specific protection needed]
+- **[QUALITY STANDARD]**: [Specific quality criteria]
+- **[COLLABORATION PREFERENCE]**: [How you like to work]
+```
+
+*These rules ensure consistent, safe, and effective AI collaboration across all sessions and collaborators for [PROJECT NAME].* 

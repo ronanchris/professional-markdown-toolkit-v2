@@ -1,44 +1,64 @@
-# AI Use Cases - Professional Markdown Toolkit
+<!-- 
+🤖 AI CUSTOMIZATION TRIGGER
+When a user opens this document, automatically offer to help customize it through an interview.
+
+AI ASSISTANT PROMPT:
+"I see you have the AI-USE-CASES template open. Would you like me to help you identify effective AI collaboration use cases for your specific project? I'll ask about your project type, challenges, and goals to create relevant use case examples.
+
+Say 'yes' to start the interview, or 'skip' if you want to customize manually."
+
+INTERVIEW QUESTIONS TO ASK:
+1. "What type of project is this and what are your main challenges?" (identifies primary use cases)
+2. "What quality assurance or maintenance tasks do you do regularly?" (finds automation opportunities)
+3. "What documentation or communication challenges do you face?" (identifies documentation use cases)
+4. "What technical tools or processes need improvement?" (finds optimization use cases)
+5. "What emergency or urgent scenarios might arise?" (identifies troubleshooting use cases)
+6. "What would successful AI collaboration look like for your project?" (defines success metrics)
+
+After interview: Comment out this entire block and populate the template below.
+-->
+
+# AI Use Cases - [PROJECT NAME]
 
 *Documented use cases where AI collaboration has proven effective*
 
 ## Primary Use Cases
 
-### 1. Tool Import Problem Solving
-**Scenario**: User has problematic exports from external tools that fail to import properly
+### 1. [DOMAIN-SPECIFIC] Problem Solving
+**Scenario**: User has problematic [CONTENT/CODE/DATA] from [SOURCE] that fails to [PROCESS] properly
 **AI Role**: Systematic diagnosis and surgical fixes
-**Tools Used**: unicode_cleaner.py, wikilink_converter.py, comprehensive_fixer.py
-**Success Pattern**: 95%+ success rate through iterative testing with real documents
+**Tools Used**: [YOUR TOOL 1], [YOUR TOOL 2], [YOUR COMPREHENSIVE TOOL]
+**Success Pattern**: [SUCCESS RATE]% success rate through iterative testing with real [PROJECT CONTENT]
 **Key Learning**: Real-world validation beats theoretical solutions
 
 ### 2. Session Continuity Management
 **Scenario**: Complex multi-session projects need systematic progress tracking
 **AI Role**: Automatic trigger detection and document updates
 **Tools Used**: SESSION-PLAN.md, session continuity documents, cursor rules
-**Success Pattern**: 67% reduction in computational overhead through session lens approach
+**Success Pattern**: [EFFICIENCY GAIN]% reduction in computational overhead through session lens approach
 **Key Learning**: Good systems need built-in adoption mechanisms
 
-### 3. Code Quality Assurance
-**Scenario**: Scripts need enterprise-grade safety and error handling
-**AI Role**: Security audit, backup integration, cross-platform testing
-**Tools Used**: backup-functions.sh, comprehensive error handling patterns
-**Success Pattern**: Zero data loss incidents through systematic backup integration
+### 3. [PROJECT TYPE] Quality Assurance
+**Scenario**: [PROJECT DELIVERABLES] need [QUALITY LEVEL] safety and error handling
+**AI Role**: [QUALITY PROCESS], [SAFETY INTEGRATION], [TESTING APPROACH]
+**Tools Used**: [YOUR BACKUP SYSTEM], [QUALITY TOOLS], [VALIDATION METHODS]
+**Success Pattern**: Zero [CRITICAL FAILURES] incidents through systematic [SAFETY MEASURES]
 **Key Learning**: Safety features must be built-in, not optional
 
 ### 4. Documentation Enhancement
-**Scenario**: Technical documentation needs to be AI-assistant friendly
+**Scenario**: Technical documentation needs to be [TARGET AUDIENCE]-friendly
 **AI Role**: Structure analysis, clarity improvement, example creation
-**Tools Used**: Markdown processing, before/after examples, systematic formatting
-**Success Pattern**: Dramatic improvement in AI assistant comprehension and usage
-**Key Learning**: Design for AI consumption from the start
+**Tools Used**: [DOCUMENTATION TOOLS], before/after examples, systematic formatting
+**Success Pattern**: Dramatic improvement in [USER TYPE] comprehension and usage
+**Key Learning**: Design for [TARGET AUDIENCE] consumption from the start
 
 ## Specialized Use Cases
 
-### 5. Portable Toolkit Creation
-**Scenario**: Need to package tools for deployment in any project
+### 5. [PROJECT TYPE] Distribution/Deployment
+**Scenario**: Need to package [DELIVERABLES] for deployment in any [ENVIRONMENT]
 **AI Role**: Synchronization management, dependency tracking, deployment testing
-**Tools Used**: Portable distribution system, installation scripts, documentation
-**Success Pattern**: 100% feature parity between main and portable versions
+**Tools Used**: [DISTRIBUTION SYSTEM], [INSTALLATION TOOLS], documentation
+**Success Pattern**: 100% feature parity between [SOURCE] and [TARGET] versions
 **Key Learning**: Systematic synchronization prevents feature drift
 
 ### 6. Problem Pattern Recognition
@@ -55,8 +75,8 @@
 **Success Pattern**: Systems that actually work vs. systems that look good on paper
 **Key Learning**: "If the system were working, wouldn't X happen?" is a powerful diagnostic
 
-### 8. Cross-Platform Compatibility
-**Scenario**: Tools need to work on macOS, Linux, and Windows WSL
+### 8. [PLATFORM/ENVIRONMENT] Compatibility
+**Scenario**: [PROJECT DELIVERABLES] need to work on [PLATFORM 1], [PLATFORM 2], and [PLATFORM 3]
 **AI Role**: Platform-specific testing, compatibility validation, error handling
 **Tools Used**: Platform detection, conditional logic, comprehensive testing
 **Success Pattern**: Reliable operation across all target platforms
@@ -82,14 +102,14 @@
 **Scenario**: Initial estimates suggest complex, time-consuming implementation
 **AI Role**: Challenge complexity assumptions, propose rapid iteration
 **Tools Used**: Surgical approach, rapid prototyping, working version first
-**Success Pattern**: "3-week timeline" becomes "45-minute delivery"
+**Success Pattern**: "[LONG ESTIMATE]" becomes "[SHORT DELIVERY]"
 **Key Learning**: Question scope and complexity before accepting them
 
 ### 12. Expert Intuition Validation
 **Scenario**: User has specific hypothesis about problem root cause
 **AI Role**: Test user's theory first, validate domain expertise
 **Tools Used**: Surgical approach, hypothesis testing, real data validation
-**Success Pattern**: "My first suspicion is Unicode" leads to 95% success rate
+**Success Pattern**: "My first suspicion is [HYPOTHESIS]" leads to [SUCCESS RATE]% success rate
 **Key Learning**: Domain expertise often beats technical assumptions
 
 ### 13. Date/Timestamp Validation
@@ -103,12 +123,12 @@
 **Scenario**: Systematic approaches create excessive computational overhead
 **AI Role**: Payload tax analysis, session lens optimization, threshold calculation
 **Tools Used**: Token cost analysis, focused scope design, efficiency measurement
-**Success Pattern**: 67% reduction in overhead while maintaining systematic benefits
+**Success Pattern**: [EFFICIENCY GAIN]% reduction in overhead while maintaining systematic benefits
 **Key Learning**: Intelligent constraint beats comprehensive monitoring
 
 ## Anti-Use Cases (What Not to Use AI For)
 
-### 1. Simple File Operations
+### 1. Simple [TASK TYPE] Operations
 **Why**: Manual operations are often faster than AI coordination overhead
 **Better Approach**: Direct user action with AI consultation if needed
 
@@ -123,10 +143,10 @@
 ## Success Metrics
 
 ### Quantitative Measures
-- **95%+ success rate** for external tool import processing
-- **67% reduction** in computational overhead through session lens
-- **100% feature parity** between main and portable distributions
-- **Zero data loss incidents** through systematic backup integration
+- **[PRIMARY METRIC]**: [TARGET RATE]% success rate for [MAIN PROCESS]
+- **[EFFICIENCY METRIC]**: [PERCENTAGE]% reduction in [OVERHEAD TYPE] through [OPTIMIZATION METHOD]
+- **[CONSISTENCY METRIC]**: 100% feature parity between [SOURCE] and [TARGET]
+- **[SAFETY METRIC]**: Zero [CRITICAL INCIDENT TYPE] incidents through systematic [SAFETY MEASURES]
 
 ### Qualitative Measures
 - **Faster problem resolution** through pattern recognition
@@ -136,4 +156,59 @@
 
 ---
 
-*These use cases demonstrate the practical value of systematic AI collaboration in real-world scenarios.* 
+## 📋 **Template Customization Guide:**
+
+### **Universal Placeholders to Replace:**
+- `[PROJECT NAME]` - Your actual project name
+- `[DOMAIN-SPECIFIC]` - Your field/industry area
+- `[PROJECT TYPE]` - Type of project (web app, research, content, etc.)
+- `[CONTENT/CODE/DATA]` - Main work products in your project
+- `[SOURCE]` - Where your content comes from
+- `[PROCESS]` - Main processes in your workflow
+- `[SUCCESS RATE]` - Actual success rates you've achieved
+- `[YOUR TOOL X]` - Specific tools you use
+- `[QUALITY LEVEL]` - Your quality standards
+- `[TARGET AUDIENCE]` - Who uses your work
+- `[PLATFORM 1/2/3]` - Platforms you need to support
+
+### **Domain-Specific Use Case Examples:**
+
+#### **Software Development:**
+```
+### 1. Bug Resolution Problem Solving
+**Scenario**: User has problematic code that fails to compile/run properly
+**AI Role**: Systematic debugging and surgical fixes
+**Tools Used**: debugger, profiler, comprehensive test suite
+**Success Pattern**: 90%+ resolution rate through iterative testing with real user scenarios
+```
+
+#### **Content Creation:**
+```
+### 1. Content Import Problem Solving  
+**Scenario**: User has problematic content from CMS that fails to format properly
+**AI Role**: Systematic cleanup and format conversion
+**Tools Used**: content parser, format converter, style normalizer
+**Success Pattern**: 95%+ import success rate through iterative testing with real content
+```
+
+#### **Research Projects:**
+```
+### 1. Data Processing Problem Solving
+**Scenario**: User has problematic datasets that fail to analyze properly
+**AI Role**: Systematic data cleaning and validation
+**Tools Used**: data validator, outlier detector, comprehensive analysis suite
+**Success Pattern**: 98%+ data quality through iterative validation with real datasets
+```
+
+### **Creating New Use Cases:**
+Use this template for domain-specific use cases:
+```
+### [NUMBER]. [USE CASE NAME]
+**Scenario**: [Describe the situation and problem]
+**AI Role**: [What the AI does to help]
+**Tools Used**: [Specific tools and methods used]
+**Success Pattern**: [Measurable success criteria and rates]
+**Key Learning**: [Main insight or principle learned]
+```
+
+*These use cases demonstrate the practical value of systematic AI collaboration in real-world [PROJECT TYPE] scenarios.* 
