@@ -930,6 +930,143 @@ templates/           # Template files (unless working on them)
 - **Narrow focus**: Add exclusions as you identify your working area
 - **Switch contexts**: Modify exclusions when moving to different vault sections
 
+### **Cursor Rules File Organization Strategies**
+
+**Question**: "Should cursor rules files be organized in subfolders under .cursor/rules/?"
+
+**ANSWER**: It depends on project size and complexity. Here are the proven strategies:
+
+#### **Strategy 1: Simple Multi-File (Recommended for Most Projects)**
+```
+.cursor/rules/
+├── 01-core-protocols.mdc
+├── 02-safety-standards.mdc  
+├── 03-session-management.mdc
+├── 04-obsidian-specific.mdc
+└── 05-collaboration-style.mdc
+```
+
+**Best for**: 
+- ✅ Most projects (like the Professional Markdown Toolkit)
+- ✅ 5-15 rule files total
+- ✅ Single team or consistent collaboration style
+
+**Benefits**:
+- ✅ Simple structure, easy to reference with `@filename.mdc`
+- ✅ All rules at same level, no path complexity
+- ✅ Numbered prefixes ensure loading order
+
+#### **Strategy 2: Domain Subfolders (For Complex Projects)**
+```
+.cursor/rules/
+├── core/
+│   ├── protocols.mdc
+│   └── safety.mdc
+├── typescript/
+│   ├── standards.mdc
+│   ├── testing.mdc
+│   └── frameworks.mdc
+├── react/
+│   ├── components.mdc
+│   ├── hooks.mdc
+│   └── performance.mdc
+├── backend/
+│   ├── api-design.mdc
+│   └── database.mdc
+└── deployment/
+    ├── ci-cd.mdc
+    └── monitoring.mdc
+```
+
+**Best for**:
+- ✅ Large projects with multiple technologies
+- ✅ Teams with different domain expertise
+- ✅ 15+ rule files total
+- ✅ Need for technology-specific rule sets
+
+**Benefits**:
+- ✅ Clear separation of concerns
+- ✅ Team members can focus on their domain
+- ✅ Easier to find relevant rules
+- ✅ Can have different reliability levels per domain
+
+**Reference Method**: `@typescript/standards.mdc` or `@backend/api-design.mdc`
+
+#### **Strategy 3: Hybrid Approach (Enterprise Projects)**
+```
+.cursor/rules/
+├── 00-global-always.mdc        # Always-applied core rules
+├── 01-project-context.mdc      # Project-specific guidance
+├── domains/
+│   ├── frontend/
+│   │   ├── react-patterns.mdc
+│   │   └── ui-standards.mdc
+│   ├── backend/
+│   │   ├── api-conventions.mdc
+│   │   └── data-patterns.mdc
+│   └── shared/
+│       ├── testing-standards.mdc
+│       └── security-rules.mdc
+└── tools/
+    ├── git-workflow.mdc
+    ├── deployment.mdc
+    └── monitoring.mdc
+```
+
+**Best for**:
+- ✅ Enterprise projects with multiple teams
+- ✅ Mixed always-apply and manual rules
+- ✅ Need for both global and specialized guidance
+
+#### **When to Use Subfolders vs Single Directory**
+
+**Use Single Directory (.cursor/rules/*.mdc) When**:
+- ✅ **5-15 total rule files**
+- ✅ **Single technology stack** (like Obsidian + markdown processing)
+- ✅ **Consistent team** with shared practices
+- ✅ **Simple project** with focused scope
+
+**Use Subfolders (.cursor/rules/domain/*.mdc) When**:
+- ✅ **15+ total rule files**
+- ✅ **Multiple technology stacks** (React + Node + Python + DevOps)
+- ✅ **Multiple teams** with different expertise areas
+- ✅ **Complex project** with many specialized domains
+
+#### **Critical Implementation Details**
+
+**Frontmatter for Subfolders**:
+```yaml
+---
+description: "React component patterns and standards"
+globs: "src/components/**/*.tsx"
+alwaysApply: false
+---
+```
+
+**Manual Reference Syntax**:
+```
+# Single directory
+@typescript-standards.mdc
+
+# Subfolder structure  
+@frontend/react-patterns.mdc
+@backend/api-conventions.mdc
+```
+
+**Loading Behavior**:
+- ✅ **Cursor automatically finds** `.mdc` files in subdirectories
+- ✅ **Path-based organization** doesn't affect functionality
+- ✅ **Glob patterns still work** regardless of file location
+
+#### **Migration Strategy: Single File → Multiple Files → Subfolders**
+
+**Step 1**: Split single large file into 5 domain files (same directory)
+**Step 2**: Test reliability and reference patterns
+**Step 3**: If project grows beyond 15 files, organize into subfolders
+**Step 4**: Update all `@filename` references to include paths
+
+**For Your Project**: The Professional Markdown Toolkit should use **Strategy 1** (Simple Multi-File). Your 251-line file is perfect for splitting into 5 focused files in the same directory.
+
 ### **Technical Terms Clarified**
 
 **What are "Globs"?**

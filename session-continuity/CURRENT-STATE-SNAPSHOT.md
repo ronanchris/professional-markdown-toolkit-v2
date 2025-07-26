@@ -67,6 +67,7 @@
 - **🛠 IMPLEMENTATION GUIDES: Complete step-by-step instructions for .cursorindexingignore and large directory exclusion** *(Session 4 - July 26, 2025)*
 - **📚 TECHNICAL CLARIFICATION: Comprehensive definitions of globs, Always-type rules, manual triggering methods** *(Session 4 - July 26, 2025)*
 - **📝 INLINE ANNOTATIONS COMPLETE: Added detailed recommendations directly within user's cursorrules.mdc file** *(Session 4 - July 26, 2025)*
+- **📁 FILE ORGANIZATION GUIDE: Added comprehensive section on cursor rules subfolder strategies and when to use them** *(Session 4 - July 26, 2025)*
 - **🆕 CRITICAL TEMPLATE FIX: Converted portable AI collaboration files to universal templates** *(Session 3 Extended Continued - Today)*
 - **🆕 Removed project-specific content from portable toolkit** *(Session 3 Extended Continued - Today)*
 - **🆕 Added AI interview triggers to all portable collaboration templates** *(Session 3 Extended Continued - Today)*
