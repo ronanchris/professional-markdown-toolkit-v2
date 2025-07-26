@@ -4,17 +4,27 @@
 
 ## 📁 **File Organization Strategy**
 
-This folder contains the strategically split cursor rules from the original `.cursor/rules/cursorrules.mdc` file, organized for optimal performance and reliability based on our comprehensive cursor memory research.
+This folder provides **DOCUMENTATION ONLY** for the strategically split cursor rules. The actual working files are located in `.cursor/rules/` where Cursor automatically discovers them.
+
+**⚠️ IMPORTANT**: This folder contains only documentation (README.md). The actual `.mdc` files are in `.cursor/rules/` to prevent duplication and confusion.
 
 ### **File Structure (25-75 lines per file)**
 
+**ACTIVE LOCATION** (Where Cursor reads from):
 ```
-session-continuity/cursor-rules/
+.cursor/rules/
 ├── 01-core-protocols.mdc      # Date validation, template customization (CRITICAL)
 ├── 02-safety-standards.mdc   # Safety, security, testing, code quality
 ├── 03-session-management.mdc # Session continuity, automated triggers
 ├── 04-obsidian-integration.mdc # Obsidian-specific rules, WikiLinks, toolkit
-└── 05-collaboration-style.mdc # Communication, problem-solving style
+├── 05-collaboration-style.mdc # Communication, problem-solving style
+└── cursorrules-backup.mdc     # Backup of original monolithic file
+```
+
+**DOCUMENTATION LOCATION** (This folder):
+```
+session-continuity/cursor-rules/
+└── README.md                  # This documentation file only
 ```
 
 ## 🎯 **Strategic Design Principles**
