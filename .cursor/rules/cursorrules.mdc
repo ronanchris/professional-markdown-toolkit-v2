@@ -1,8 +1,3 @@
----
-description: 
-globs: 
-alwaysApply: true
----
 # Obsidian AI Tools - Universal Cursor Rules
 
 ## Date Validation Protocol (CRITICAL)
@@ -97,12 +92,49 @@ This toolkit provides production-ready tools for Obsidian vault management and m
 "Did you just do X because I asked, or is that automatic?" → IMPLEMENTATION GAP DETECTED
 "I don't see Y having been updated" → IMPLEMENTATION GAP DETECTED
 
-AUTO-RESPONSE:
+**AUTO-RESPONSE:**
 1. Acknowledge the gap between design and implementation
 2. Update SESSION-PLAN.md with new deviation
 3. Add corrective phase to plan if needed
 4. Update all relevant cursor rules and documentation
 5. Test whether the fix actually works automatically
+```
+
+## Session Prompt Management - HISTORICAL TRACKING SYSTEM
+**CRITICAL**: Session prompts are now organized with historical tracking and reusable templates.
+
+### **Auto-Prompt Structure Awareness**:
+```
+**PRIMARY LOCATION**: session-continuity/prompts/ folder
+**NAVIGATION FILE**: session-continuity/prompts/index.md (AI navigation guide)
+**NAMING CONVENTION**: YYYY-MM-DD-session-NN-description.md (newest first)
+**TEMPLATES FOLDER**: session-continuity/prompts/templates/ (reusable patterns)
+**METADATA**: Each prompt has YAML frontmatter with session_id, date, type, tags, status
+```
+
+### **Session Prompt Usage Protocol**:
+```
+**FOR NEW SESSIONS**:
+1. Always check prompts/index.md first for latest prompts
+2. Use most recent session prompt that matches current context
+3. Fall back to templates/ for general patterns
+4. When creating new prompts, follow naming: YYYY-MM-DD-session-NN-description.md
+
+**PROMPT SELECTION GUIDE**:
+- **Urgent Issues**: Use latest deployment/troubleshooting prompt
+- **New Features**: Use session management or foundation prompts  
+- **Complex Problems**: Use templates/problem-solving.md
+- **Timeline Pressure**: Use templates/timeline-reality-check.md
+- **Implementation Gaps**: Use templates/implementation-gap-detection.md
+```
+
+### **Historical Context Integration**:
+```
+**WHEN REFERENCING PROMPTS**:
+- Reference specific session files by name and date
+- Update prompt effectiveness metrics in session files
+- Track which prompts solve real problems vs theoretical ones
+- Maintain chronological progression of collaboration improvements
 ```
 
 ## Session Context Awareness - COMPREHENSIVE LOADING

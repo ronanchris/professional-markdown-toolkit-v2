@@ -131,6 +131,26 @@ NEW SESSION DETECTED →
 - Mark SESSION-PLAN.md items complete when tasks finish
 - Document deviations and new insights in real-time
 
+## Session Prompt Management - HISTORICAL TRACKING
+**CRITICAL**: Session prompts are organized with historical tracking and reusable templates.
+
+### **Prompt Structure Awareness**:
+```
+**PRIMARY LOCATION**: session-continuity/prompts/ folder
+**NAVIGATION FILE**: session-continuity/prompts/index.md (AI navigation guide)
+**NAMING CONVENTION**: YYYY-MM-DD-session-NN-description.md (newest first)
+**TEMPLATES FOLDER**: session-continuity/prompts/templates/ (reusable patterns)
+```
+
+### **Prompt Usage Protocol**:
+```
+**FOR NEW SESSIONS**:
+1. Check prompts/index.md first for latest prompts
+2. Use most recent session prompt that matches current context
+3. Fall back to templates/ for general patterns
+4. When creating new prompts, follow naming convention and update index.md
+```
+
 ## Obsidian Integration
 - Preserve WikiLink format: [[internal-links]]
 - Maintain Templater syntax when not explicitly removing it
