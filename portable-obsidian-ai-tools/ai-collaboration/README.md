@@ -7,8 +7,8 @@
 **Professional-grade AI collaboration framework** developed and refined through real-world project experience. This system packages **relationship intelligence** - the patterns that make human-AI collaboration truly effective.
 
 ### **Core Components:**
-- **`universal-session-continuity/`** - Complete collaboration framework template with AI interview triggers
-- **`PROJECT-INSTRUCTIONS-TEMPLATE.md`** - Comprehensive AI context for complex, ongoing projects (healthcare, family care, professional coordination)
+- **Session Continuity Templates** - Complete collaboration framework with AI interview triggers (available in `../session-continuity/` folder)
+- **AI Collaboration Intelligence** - Proven patterns and methodologies for effective human-AI partnerships
 - **Blog learning moments system** - Templates and examples for capturing collaboration insights
 - **[Future expansions]** - Additional AI collaboration tools and patterns
 
@@ -16,14 +16,14 @@
 
 ### **For Any New Cursor Project:**
 1. **Copy `ai-collaboration/` folder** to your project root  
-2. **Copy `universal-session-continuity/`** to your project root as `session-continuity/`
+2. **Deploy session continuity templates** using the Standard Operating Procedure in `../session-continuity/README.md`
 3. **Set up blog learning moments** (recommended):
    ```bash
-   cp ai-collaboration/universal-session-continuity/BLOG-LEARNING-MOMENTS-TEMPLATE.md ./BLOG-LEARNING-MOMENTS.md
+   cp ../session-continuity/12-BLOG-LEARNING-MOMENTS-TEMPLATE.md ./BLOG-LEARNING-MOMENTS.md
    ```
-4. **Follow setup instructions** in `universal-session-continuity/README.md`
-5. **Customize templates** using AI interview triggers (they'll guide you automatically)
-6. **Add the comprehensive Cursor rules** from `.cursorrules` file
+4. **Follow template customization process** - AI interview triggers will guide you automatically
+5. **Deploy strategic cursor rules** for enhanced automation (optional)
+6. **Create project-specific instances** from reusable templates
 
 ### **What You Get:**
 - ✅ **Proven collaboration patterns** from successful AI partnerships

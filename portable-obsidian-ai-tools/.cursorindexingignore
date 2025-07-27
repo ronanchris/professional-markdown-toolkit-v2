@@ -76,9 +76,9 @@
 # =================================================================
 
 # Large test files that slow down indexing
-test-cases/notion-import-issues/original/
-test-cases/notion-import-issues/cleaned/
-test-cases/notion-import-issues/processed/
+../test-cases/notion-import-issues/original/
+../test-cases/notion-import-issues/cleaned/
+../test-cases/notion-import-issues/processed/
 
 # Generated project structure (gets regenerated anyway)
 PROJECT-STRUCTURE.md

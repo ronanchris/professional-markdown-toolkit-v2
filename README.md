@@ -52,7 +52,7 @@ cd professional-markdown-toolkit/portable-obsidian-ai-tools
 - ✅ Session continuity included
 
 ### **🧠 For Complex Projects**
-**[PROJECT-INSTRUCTIONS-TEMPLATE.md →](portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity/PROJECT-INSTRUCTIONS-TEMPLATE.md)** - Comprehensive AI context for ongoing, high-stakes projects
+**[Session Continuity Templates →](portable-obsidian-ai-tools/session-continuity/)** - Comprehensive AI collaboration framework for ongoing, high-stakes projects
 - ✅ AI interview-driven customization
 - ✅ Team coordination framework
 - ✅ Emergency protocols and communication preferences
@@ -299,7 +299,7 @@ portable-obsidian-ai-tools/obsidian-tools/template-management/apply_template.sh
 
 ### **🤖 Get AI Collaboration Enhancement**
 **Problem**: Want better AI partnership patterns  
-**Solution**: Copy `ai-collaboration/universal-session-continuity/` to your project root
+**Solution**: Use session continuity templates with AI interview setup - see `portable-obsidian-ai-tools/session-continuity/`
 
 **All tools include automatic backups and dry-run modes for safety!**
 
