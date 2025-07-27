@@ -136,10 +136,11 @@ python portable-obsidian-ai-tools/obsidian-tools/markdown-processing/notion_impo
 
 ### **Want better AI collaboration patterns** → Use this:
 ```bash
-# Copy the session continuity templates to your project root
-cp -r portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity ./
+# Create session continuity folder and use AI interviews for setup
+mkdir session-continuity
+# Then open templates in portable-obsidian-ai-tools/session-continuity/ for guided customization
 ```
-**What it does**: Deploys proven AI collaboration patterns for better human-AI partnerships.
+**What it does**: Deploys proven AI collaboration patterns with guided interview setup for better human-AI partnerships.
 
 ### **Need Cursor integration help** → Check this:
 ```bash
@@ -178,7 +179,7 @@ open portable-obsidian-ai-tools/integration-guides/README.md
 **Solution**: `update_date_created_to_templater.py` ← **Converts to Templater format**
 
 **Problem**: Want better AI collaboration  
-**Solution**: Copy `ai-collaboration/universal-session-continuity/` to project root
+**Solution**: Use session continuity templates with AI interviews for guided setup
 
 ## 🚨 **Safety Notes**
 

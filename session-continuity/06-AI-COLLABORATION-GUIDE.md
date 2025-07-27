@@ -37,6 +37,21 @@
 - **Update documentation** when making significant changes
 - **Validate dates** to prevent timestamp errors
 
+### Session Continuity File Management (CRITICAL)
+**⚠️ NEVER confuse the two session continuity locations:**
+
+1. **`/session-continuity/`** - **OUR ACTUAL WORKING DOCUMENTS**
+   - These are our real project rules, plans, and tracking documents
+   - Modify these when updating our actual project context
+   - Examples: `02-SESSION-PLAN.md`, `04-README-FOR-FUTURE-AI.md`
+
+2. **`/portable-obsidian-ai-tools/session-continuity/`** - **TEMPLATES FOR OTHERS**
+   - These are templates with AI customization triggers for distribution
+   - Only modify these when improving the template system itself
+   - Examples: `02-SESSION-PLAN-TEMPLATE.md`, `04-AI-COLLABORATION-TEMPLATE.md`
+
+**Rule**: When working on session continuity improvements, always clarify which location you're targeting. The portable versions are templates, not our active rules.
+
 ## 💻 Code Modification Instructions
 
 ### Development Standards

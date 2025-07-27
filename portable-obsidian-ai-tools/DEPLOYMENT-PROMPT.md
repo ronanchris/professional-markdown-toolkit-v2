@@ -17,9 +17,11 @@ Please help me deploy the Portable Obsidian AI Tools from GitHub into this proje
    cd portable-obsidian-ai-tools && ./install.sh && cd ..
    ```
 
-2. **Set Up Session Continuity Templates:**
+2. **Set Up Session Continuity Framework:**
    ```bash
-   cp -r portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity ./session-continuity
+   mkdir -p session-continuity
+   echo "Session continuity templates available in portable-obsidian-ai-tools/session-continuity/"
+   echo "Ready for guided customization through AI interviews"
    ```
 
 3. **Display Cursor Rules Setup Instructions:**
@@ -41,23 +43,27 @@ Please help me deploy the Portable Obsidian AI Tools from GitHub into this proje
 
 5. **Set Up Blog Learning Moments:**
    ```bash
-   cp portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity/BLOG-LEARNING-MOMENTS-TEMPLATE.md ./BLOG-LEARNING-MOMENTS.md
+   cp portable-obsidian-ai-tools/session-continuity/12-BLOG-LEARNING-MOMENTS-TEMPLATE.md ./BLOG-LEARNING-MOMENTS.md
    ```
 
 6. **Session Continuity Setup Interview:**
    Please offer to help me set up my complete session continuity system by saying:
    
-   "Great! The toolkit is deployed and ready. Now I can help you set up a personalized AI collaboration system for your project through guided interviews. This usually takes 10-15 minutes and gives you a completely customized system.
+   "Great! The toolkit is deployed and ready. Now I can help you set up a personalized AI collaboration system for your project through guided interviews. The session continuity templates in `portable-obsidian-ai-tools/session-continuity/` have AI customization triggers that make setup easy.
    
-   I can help you configure:
-   - 📋 **Project context and goals** (session-continuity/CURRENT-PROJECT-CONTEXT.md)
-   - 🤝 **Collaboration style preferences** (session-continuity/COLLABORATION-STYLE.md)  
-   - 📝 **Blog learning moments** (BLOG-LEARNING-MOMENTS.md)
-   - 🤖 **AI collaboration enhancements** (session-continuity/AI-COLLABORATION-CURSOR-RULES.md)
+   **Standard Operating Procedure:**
+   1. **Choose templates** you want (start with core 4: PROJECT-REQUIREMENTS, SESSION-PLAN, CURRENT-STATE, AI-COLLABORATION)
+   2. **Open each template** → I'll automatically offer guided interview
+   3. **Complete interviews** → I'll customize templates for your project  
+   4. **Save customized versions** → In your project's `session-continuity/` folder (remove -TEMPLATE from filename)
+   5. **Keep templates unchanged** → For future projects
    
-   Would you like me to walk you through setting up all of these, or would you prefer to customize them manually? I recommend the guided setup - it ensures everything works together perfectly."
+   Would you like me to start with the 4 core templates, or do you want to customize them manually? The guided interviews usually take 10-15 minutes total and ensure everything works together perfectly."
    
-   If I say yes, guide me through customizing each template using their built-in AI interview triggers.
+   If I say yes, guide me through customizing each template:
+   - Open `portable-obsidian-ai-tools/session-continuity/01-PROJECT-REQUIREMENTS-TEMPLATE.md` and trigger the AI interview
+   - Then `02-SESSION-PLAN-TEMPLATE.md`, `03-CURRENT-STATE-TEMPLATE.md`, `04-AI-COLLABORATION-TEMPLATE.md`
+   - For each: Complete interview → Save as `session-continuity/[filename without -TEMPLATE].md`
 
 7. **Verify Blog Auto-Creation System:**
    - Confirm that `BLOG-LEARNING-MOMENTS.md` file exists in project root

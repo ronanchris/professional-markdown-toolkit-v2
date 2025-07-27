@@ -1,50 +1,69 @@
 graph TD
-    A["🚀 Session Start"] --> B{"📄 SESSION-PLAN.md<br/>Exists?"}
+    A["🚀 New Project Start"] --> B{"🎯 Deployment Type?"}
     
-    B -->|No| C["📝 Create New Plan<br/>AI Interview + Date Validation<br/>Document Goals & Approach<br/>Apply Session Lens (4-6 items)"]
-    B -->|Yes| D["📋 Load Existing Plan<br/>Check Previous Status<br/>Update Session Goals<br/>Focus on Current Phase"]
+    B -->|Fresh Project| C["📦 Deploy Portable Toolkit<br/>Copy portable-obsidian-ai-tools/<br/>Create session-continuity/ folder<br/>Deploy .cursorindexingignore"]
+    B -->|Existing Session| D["📋 Load 4 Core Documents<br/>01-PROJECT-REQUIREMENTS.md<br/>02-SESSION-PLAN.md<br/>03-CURRENT-STATE-SNAPSHOT.md<br/>04-README-FOR-FUTURE-AI.md"]
     
-    C --> E["📋 Check Context<br/>CURRENT-STATE-SNAPSHOT.md<br/>PROBLEM-SOLVING-PATTERNS.md<br/>WORKING-RELATIONSHIP-DNA.md"]
-    D --> E
+    C --> E["🤖 AI Template Interview System<br/>HTML Comment Triggers in Templates<br/>01-PROJECT-REQUIREMENTS-TEMPLATE.md<br/>02-SESSION-PLAN-TEMPLATE.md<br/>03-CURRENT-STATE-TEMPLATE.md<br/>04-AI-COLLABORATION-TEMPLATE.md"]
     
-    E --> F["💻 Active Collaboration<br/>Session Lens Monitoring<br/>(4-6 focused items only)"]
+    E --> F["🔄 Extended Template Setup<br/>05-SESSION-ENTRANCE-PROMPT-TEMPLATE.md<br/>06-AI-COLLABORATION-GUIDE-TEMPLATE.md<br/>07-WORKING-RELATIONSHIP-DNA-TEMPLATE.md<br/>08-PROBLEM-SOLVING-PATTERNS-TEMPLATE.md<br/>09-CONVERSATIONAL-INSIGHTS-TEMPLATE.md<br/>10-AI-USE-CASES-TEMPLATE.md<br/>11-DEVIATION-TRACKING-PROTOCOL-TEMPLATE.md<br/>12-BLOG-LEARNING-MOMENTS-TEMPLATE.md"]
     
-    F --> G{"🎯 Trigger Events<br/>(Reduced Payload Tax)"}
+    F --> G["⚙️ Strategic Cursor Rules Deployment<br/>01-core-protocols.mdc (Date validation, templates)<br/>02-safety-standards.mdc (Security, testing)<br/>03-session-management.mdc (AUTOMATION TRIGGERS)<br/>04-obsidian-integration.mdc (WikiLinks, tools)<br/>05-collaboration-style.mdc (Communication)"]
     
-    G --> H["📈 Major Milestone"] 
-    G --> I["🔄 Approach Deviation<br/>(with date validation)"]
-    G --> J["💡 New Pattern Discovery"]
-    G --> K["🌟 Blog-Worthy Insight"]
-    G --> L["🧩 Problem-Solving Win"]
-    G --> M["✅ Task Completion<br/>(Auto-checkbox)"]
+    G --> H["💾 File Organization<br/>Templates: portable-obsidian-ai-tools/session-continuity/<br/>Instances: your-project/session-continuity/<br/>Rules: .cursor/rules/ (5-file system)<br/>Performance: .cursorindexingignore active"]
     
-    H --> N["📝 Update<br/>CURRENT-STATE-SNAPSHOT.md"]
-    I --> O["📝 Update<br/>SESSION-PLAN.md (Deviations)<br/>+ DEVIATION-TRACKING-PROTOCOL.md<br/>+ Date Validation"]
-    J --> P["📝 Update<br/>WORKING-RELATIONSHIP-DNA.md"]
-    K --> Q["📝 Update<br/>BLOG-LEARNING-MOMENTS.md<br/>(with date validation)"]
-    L --> R["📝 Update<br/>PROBLEM-SOLVING-PATTERNS.md"]
-    M --> S["📝 Auto-Check<br/>SESSION-PLAN.md Checkboxes<br/>(Focused scope only)"]
+    H --> D
+    D --> I["💻 Active Collaboration<br/>Session Lens Monitoring (4-6 items only)<br/>All 16 documents available<br/>Strategic Cursor Rules Active<br/>03-session-management.mdc handling automation"]
     
-    N --> T["🔄 Continue Session<br/>(~900 tokens overhead)"]
-    O --> T
-    P --> T
-    Q --> T
-    R --> T
-    S --> T
+    I --> J{"🎯 Specific Trigger Detection<br/>From 03-session-management.mdc"}
     
-    T --> G
+    J --> K1["✅ Auto-Checkbox Triggers<br/>'That's complete'<br/>'We've finished X'<br/>'Done with Y'<br/>'Successfully implemented'"]
+    J --> K2["🔄 Deviation Detection<br/>'Actually, let's...'<br/>'Change of plan...'<br/>'Better approach...'"]
+    J --> K3["🏁 Session End Triggers<br/>'Let's wrap up'<br/>'Session complete'"]
+    J --> K4["🔍 Implementation Gap Detection<br/>'If the system were working, wouldn't X?'<br/>'Did you just do X because I asked?'<br/>'I don't see Y having been updated'"]
+    J --> K5["📈 Major Milestone"]
+    J --> K6["💡 New Template Pattern Discovery"]
+    J --> K7["🌟 Blog-Worthy Insight"]
+    J --> K8["🧩 Problem-Solving Win"]
+    J --> K9["🎨 Template vs Instance Gap"]
     
-    F --> U["🏁 Session End"]
-    U --> V["📋 Final Updates<br/>Archive to SESSION-PLAN-ARCHIVE/<br/>Update CURRENT-STATE-SNAPSHOT.md<br/>Validate all timestamps"]
+    K1 --> L1["📝 Auto-Update<br/>02-SESSION-PLAN.md checkboxes<br/>(Session lens scope only)"]
+    K2 --> L2["📝 Update Deviation Tracking<br/>02-SESSION-PLAN.md (Deviations section)<br/>11-DEVIATION-TRACKING-PROTOCOL.md<br/>Date validation required"]
+    K3 --> L3["📝 Session End Protocol<br/>Archive to SESSION-PLAN-ARCHIVE/<br/>Update 03-CURRENT-STATE-SNAPSHOT.md<br/>Validate all timestamps"]
+    K4 --> L4["📝 Implementation Gap Response<br/>Acknowledge gap between design/implementation<br/>Update 02-SESSION-PLAN.md with deviation<br/>Add corrective phase if needed<br/>Update cursor rules and documentation<br/>Test whether fix works automatically"]
+    K5 --> L5["📝 Update<br/>03-CURRENT-STATE-SNAPSHOT.md"]
+    K6 --> L6["📝 Update Templates<br/>Add to portable-obsidian-ai-tools/<br/>Include AI customization trigger<br/>Update Standard Operating Procedure"]
+    K7 --> L7["📝 Update<br/>12-BLOG-LEARNING-MOMENTS.md<br/>(Newest at top - reverse chronological)<br/>Date validation required"]
+    K8 --> L8["📝 Update<br/>08-PROBLEM-SOLVING-PATTERNS.md"]
+    K9 --> L9["📝 Create New Template<br/>Add file placement instructions<br/>Include AI customization trigger<br/>Update portable toolkit documentation"]
     
-    V --> W["✅ Session Complete<br/>Intelligence Preserved<br/>Next Session Ready<br/>(67% efficiency gain)"]
+    L1 --> M["🔄 Continue Session<br/>Performance: .cursorindexingignore active<br/>Session lens: 4-6 items focus<br/>Strategic rules: 5-file system optimized<br/>All 16 documents available as context"]
+    L2 --> M
+    L3 --> N["✅ Session Complete<br/>16-Document System Preserved<br/>Templates Available for Reuse<br/>Project Instance Customized<br/>Strategic Rules Optimized<br/>Intelligence Captured<br/>Next Session Ready"]
+    L4 --> M
+    L5 --> M
+    L6 --> M
+    L7 --> M
+    L8 --> M
+    L9 --> M
+    
+    M --> J
+    
+    I --> O["📚 Full Document Context Available<br/>13-DEPLOYMENT-GUIDE.md<br/>14-SYSTEM-TEST-PLAN.md<br/>15-README.md<br/>16-SESSION-PLAN-TEMPLATE.md<br/>Plus: prompts/, cursor-rules/, SESSION-PLAN-ARCHIVE/"]
+    
+    O --> P["🔄 Continue with Complete System"]
+    P --> I
     
     classDef startEnd fill:#ffffff,stroke:#0d47a1,stroke-width:3px,color:#000000
     classDef process fill:#f8f9fa,stroke:#4a148c,stroke-width:3px,color:#000000
+    classDef template fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px,color:#000000
     classDef trigger fill:#fff8e1,stroke:#e65100,stroke-width:3px,color:#000000
     classDef update fill:#f1f8e9,stroke:#1b5e20,stroke-width:3px,color:#000000
+    classDef automation fill:#e1f5fe,stroke:#01579b,stroke-width:3px,color:#000000
     
-    class A,W startEnd
-    class B,C,D,E,F,U,V process
-    class G,H,I,J,K,L,M trigger
-    class N,O,P,Q,R,S,T update
+    class A,N startEnd
+    class B,D,I,H process  
+    class C,E,F,G,L6,L9 template
+    class J,K1,K2,K3,K4,K5,K6,K7,K8,K9 trigger
+    class L1,L2,L4,L5,L7,L8,M update
+    class L3,O,P automation

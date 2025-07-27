@@ -11,6 +11,7 @@
 - **Session continuity frameworks** for complex multi-session projects
 - **Problem-solving methodologies** validated through real-world usage
 - **Communication templates** for effective AI assistant collaboration
+- **🆕 Optional Session Continuity Enhancement** - Systematic project tracking and AI collaboration templates (see `session-continuity/` folder)
 
 ### **🛠️ Professional Obsidian Tools**
 - **Metadata management** - YAML frontmatter cleaning and standardization
@@ -63,8 +64,7 @@ portable-obsidian-ai-tools/
 │   ├── template-management/          # Template application & repair
 │   └── project-structure/            # Automated documentation generation
 ├── ai-collaboration/                 # AI partnership enhancement
-│   ├── README.md                    # AI collaboration system overview
-│   └── universal-session-continuity/ # Session management templates
+│   └── README.md                    # AI collaboration system overview
 ├── integration-guides/               # Cursor + Obsidian workflow guides
 ├── shared/                          # Common utilities (backup system)
 ├── TOOLKIT-GUIDE.md                # This comprehensive guide
@@ -101,9 +101,44 @@ python portable-obsidian-ai-tools/obsidian-tools/project-structure/generate_proj
 **What it does**: Creates comprehensive PROJECT-STRUCTURE.md with file inventory
 
 ### **Problem: Want AI collaboration enhancement**
-**Basic Setup**: Copy `ai-collaboration/universal-session-continuity/` to your project root and follow the README instructions for instant AI partnership improvement.
 
-**Complex Projects**: Use `ai-collaboration/universal-session-continuity/PROJECT-INSTRUCTIONS-TEMPLATE.md` for comprehensive AI context on ongoing, high-stakes projects (healthcare, family coordination, professional projects). Includes AI interview-driven customization, team coordination framework, and emergency protocols.
+**🎯 RECOMMENDED: Advanced Session Continuity System**
+**Location**: `session-continuity/` folder (**12+ comprehensive templates**)
+**Features**: AI customization triggers, guided interviews, automatic session management
+
+**📋 Standard Operating Procedure:**
+1. **Choose templates** (start with core 4: PROJECT-REQUIREMENTS, SESSION-PLAN, CURRENT-STATE, AI-COLLABORATION)
+2. **Open any template** → AI automatically offers guided interview
+3. **Complete interview** → AI customizes template for your project
+4. **Save customized version** → In your project's `session-continuity/` folder (remove `-TEMPLATE` from filename)
+5. **Keep templates unchanged** → For future projects
+
+**Example Workflow:**
+```bash
+# 1. Create session continuity folder in your project
+mkdir session-continuity
+
+# 2. Open templates and use AI interviews
+# AI will guide you through: 01-PROJECT-REQUIREMENTS-TEMPLATE.md
+# Save as: session-continuity/01-PROJECT-REQUIREMENTS.md
+
+# 3. Repeat for other core templates
+# Templates stay in: portable-obsidian-ai-tools/session-continuity/
+# Your files go in: your-project/session-continuity/
+```
+
+**Basic Setup**: For simpler setups without full session management, use individual templates from `session-continuity/` as needed.
+
+**What it does**: 
+- **Session planning** that integrates with all Obsidian tools
+- **Progress tracking** with automatic completion detection
+- **AI collaboration guidelines** customized for your workflow
+- **Context preservation** across multiple work sessions
+
+**When to use**: Complex projects, multi-session work, systematic AI collaboration
+**When to skip**: Quick tasks, simple projects, prefer minimal overhead
+
+**Note**: This enhancement works WITH all existing tools, doesn't replace anything. See `session-continuity/README.md` for full details.
 
 ## 🛠️ **Complete Tool Reference**
 
@@ -185,7 +220,7 @@ Should I run with backups enabled (safer) or disabled (faster)?
 Use the cursor rules templates in `integration-guides/` for enhanced safety and AI assistant optimization.
 
 ### **For Team Collaboration**
-Copy `ai-collaboration/universal-session-continuity/` to establish consistent AI collaboration patterns across team members.
+Use the session continuity template system (`session-continuity/` folder) with AI interviews to establish consistent AI collaboration patterns across team members.
 
 ### **For Custom Workflows**
 All tools are modular and can be combined. See individual tool documentation in their respective directories.

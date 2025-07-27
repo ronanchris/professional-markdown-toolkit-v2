@@ -1,57 +1,37 @@
 {
-  "project_name": "SignPilot Documentation",
-  "project_type": "Obsidian Vault",
+  "project_name": "Professional Markdown Toolkit",
+  "project_type": "Production-Ready Obsidian & Markdown Processing Toolkit", 
   "key_features": [
-    "Field Survey System",
-    "Sign Type Classification",
-    "Mobile App Documentation",
-    "Dashboard Platform Guides",
-    "Glossary Database (400+ terms)",
-    "Field Mapping System",
-    "Portable Tools Integration"
+    "Strategic Cursor Rules System (5-file organization)",
+    "Notion Import Tools (95%+ success rate)",
+    "Portable Distribution System",
+    "Session Continuity Framework",
+    "Comprehensive Security & Backup Systems",
+    "AI Collaboration Enhancement",
+    "Cross-Platform Compatibility"
   ],
   "custom_sections": [
     {
-      "title": "📱 Platform Components",
-      "content": "- **Dashboard Platform**: Web-based management interface for shop owners\n- **Mobile Application**: Field survey app for data collection\n- **API System**: Backend integration and data synchronization\n- **Reporting Tools**: Analytics and project management features"
+      "title": "🎯 Strategic Cursor Rules",
+      "content": "- 5-file domain-focused organization (.cursor/rules/)\n- Performance optimizations with .cursorindexingignore\n- Research-based rule management\n- Automatic discovery and application"
     },
     {
-      "title": "🏗️ Survey Workflow",
-      "content": "- **6-Step Process**: Comprehensive sign assessment workflow\n- **23 Sign Types**: Complete taxonomy (8 indoor + 15 outdoor)\n- **Field Mapping**: 400+ individual field definitions\n- **Data Validation**: Automated quality control and verification"
+      "title": "📊 Session Continuity System", 
+      "content": "- 4 critical documents framework (01-04)\n- Automated session triggers and deviation detection\n- Historical tracking with SESSION-PLAN-ARCHIVE\n- AI collaboration templates and prompts"
     },
     {
-      "title": "🔧 Documentation Architecture",
-      "content": "- **Hierarchical Organization**: Structured by platform and workflow\n- **Cross-Referenced**: Extensive linking between concepts\n- **Template-Driven**: Consistent formatting and organization\n- **AI-Enhanced**: Optimized for AI assistant collaboration"
+      "title": "🛠️ Notion Import Solutions",
+      "content": "- Unicode character cleaning and replacement\n- WikiLink conversion to compatible formats\n- Complex table simplification\n- Real-world tested with 161KB+ documents"
     }
   ],
   "directory_descriptions": {
-    "OVERVIEW": "Strategic project documentation and planning",
-    "PLATFORM": "Platform-specific user guides and documentation",
-    "PLATFORM/01-Dashboard": "Web dashboard documentation and workflows",
-    "PLATFORM/02-Mobile": "Mobile app documentation and field guides",
-    "PLATFORM/02-Mobile/Indoor-Sign-Requirements": "Indoor sign type field mappings",
-    "PLATFORM/02-Mobile/Outdoor-Sign-Requirements": "Outdoor sign type field mappings",
-    "REFERENCE": "Reference materials and glossary system",
-    "REFERENCE/glossary": "400+ term definitions and classifications",
-    "REFERENCE/glossary/terms": "Individual term definition files",
-    "REFERENCE/templates": "Documentation templates and standards",
-    "SYSTEM": "Technical system documentation and specifications",
-    "SYSTEM/1 User Roles": "Access control and permission definitions",
-    "SYSTEM/2 Data-Types-Reference": "Field type definitions and specifications",
-    "SYSTEM/3 Field-Mappings-Per-Step": "Survey step field definitions",
-    "SYSTEM/Sign-Type-Classification": "Sign categorization and taxonomy",
-    "SYSTEM/api": "API documentation and specifications",
-    "WORKFLOW": "Process documentation and data flow",
-    "ROAD MAP": "Future development and feature planning",
-    "LINKS-TO-FIX": "Automated link health monitoring system",
-    "media": "Visual assets and screenshots",
-    "media/_dashboard_screens": "Dashboard interface screenshots",
-    "media/_mobile_screens": "Mobile app interface screenshots",
-    "media/ui-pins": "UI annotation reference images",
-    "portable-obsidian-tools": "Universal markdown processing toolkit",
-    "scripts": "Project-specific automation and utilities",
-    "scripts/python": "Python automation scripts",
-    "scripts/shell": "Shell automation scripts",
-    "scripts/documentation": "Documentation generation and reports"
+    "portable-obsidian-ai-tools": "Complete self-contained toolkit distribution",
+    ".cursor/rules": "Strategic 5-file cursor rules organization", 
+    "session-continuity": "AI collaboration and session management system",
+    "docs/CURSOR-MEMORY-RESEARCH.md": "1486 lines of comprehensive cursor memory research",
+    "obsidian-tools": "Core Obsidian vault management tools",
+    "ai-collaboration": "Universal AI collaboration intelligence framework",
+    "integration-guides": "Deployment and setup documentation",
+    "shared/backup-functions.sh": "Enterprise-grade backup system (217 lines)"
   }
 } 

@@ -24,10 +24,11 @@ ls -la BLOG-LEARNING-MOMENTS.md
 
 ## 🤖 **Step 2: Set Up AI Assistant Context**
 
-### **Option A: Use Generic Template (Recommended)**
-1. **Open:** `portable-obsidian-ai-tools/ai-collaboration/universal-session-continuity/SESSION-ENTRANCE-PROMPT-GENERIC.md`
-2. **Customize** the template for your specific project
-3. **Copy and paste** the customized prompt to your AI assistant
+### **Option A: Use Session Continuity Templates (Recommended)**
+1. **Open:** `portable-obsidian-ai-tools/session-continuity/05-SESSION-ENTRANCE-PROMPT-TEMPLATE.md` 
+2. **Complete the AI interview** to customize for your specific project
+3. **Save customized version** as `session-continuity/05-SESSION-ENTRANCE-PROMPT.md`
+4. **Use the customized prompt** with your AI assistant
 
 ### **Option B: Manual Context Setup**
 If you prefer to set up context manually, make sure to tell your AI assistant:
