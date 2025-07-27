@@ -48,6 +48,9 @@
 # **/.git/
 # **/__pycache__/
 
+# CRITICAL: Cursor rules (prevents caching issues)
+# .cursor/rules/
+
 # Binary and media files
 # **/*.pdf
 # **/*.png
@@ -74,6 +77,9 @@
 # =================================================================
 # ACTIVE IGNORE PATTERNS FOR THIS PROJECT
 # =================================================================
+
+# CRITICAL: Cursor rules caching fix (prevents rule inconsistencies)
+.cursor/rules/
 
 # Large test files that slow down indexing
 ../test-cases/notion-import-issues/original/
