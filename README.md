@@ -14,6 +14,10 @@ A collection of **portable markdown processing tools** that you copy to your pro
 
 ## 🚀 Quick Start
 
+### **For Cursor & Obsidian Users:**
+See **[Installation Guide →](INSTALLATION-GUIDE.md)** for complete setup instructions.
+
+### **Basic Installation:**
 ```bash
 # Get the tools
 git clone https://github.com/ronanchris/professional-markdown-toolkit-v2.git
@@ -58,6 +62,7 @@ python tools/notion_complete_fixer.py your-document.md
 
 ## 📚 Documentation
 
+- **[Installation Guide →](INSTALLATION-GUIDE.md)** - Complete setup for Cursor & Obsidian
 - **[Tool Details →](markdown-toolkit/README.md)** - Complete guide with examples
 - **[Notion Tools →](markdown-toolkit/tools/README-NOTION-TOOLS.md)** - Notion-specific solutions
 

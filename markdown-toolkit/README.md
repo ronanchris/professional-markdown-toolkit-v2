@@ -8,6 +8,10 @@ Fix common markdown issues that cause formatting problems, prevent documents fro
 
 ## 🚀 Quick Start
 
+### **For Cursor & Obsidian Integration:**
+See **[Installation Guide →](../INSTALLATION-GUIDE.md)** for complete setup.
+
+### **Basic Usage:**
 ```bash
 # Install
 ./install.sh
