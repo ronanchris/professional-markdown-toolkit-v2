@@ -113,6 +113,7 @@ python tools/notion_import_fixer.py document.md
 
 ## 📚 Documentation
 
+- **Examples & demonstrations**: `../EXAMPLES.md` - See before/after transformations
 - **Complete tool reference**: `tools/README-NOTION-TOOLS.md`
 - **Individual tool help**: Add `--help` to any Python script
 

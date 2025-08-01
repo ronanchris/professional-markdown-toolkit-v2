@@ -275,8 +275,9 @@ After installation:
 
 1. **Test the setup** with a sample markdown file
 2. **Configure your workflow** using the examples above
-3. **Read the main README** for detailed tool usage
-4. **Explore the documentation** in `docs/` for advanced features
+3. **See examples** in `EXAMPLES.md` for before/after demonstrations
+4. **Read the main README** for detailed tool usage
+5. **Explore the documentation** in `docs/` for advanced features
 
 ## 🆘 Support
 

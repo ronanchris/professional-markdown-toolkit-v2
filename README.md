@@ -63,6 +63,7 @@ python tools/notion_complete_fixer.py your-document.md
 ## 📚 Documentation
 
 - **[Installation Guide →](INSTALLATION-GUIDE.md)** - Complete setup for Cursor & Obsidian
+- **[Examples & Demonstrations →](EXAMPLES.md)** - See before/after transformations
 - **[Tool Details →](markdown-toolkit/README.md)** - Complete guide with examples
 - **[Notion Tools →](markdown-toolkit/tools/README-NOTION-TOOLS.md)** - Notion-specific solutions
 
