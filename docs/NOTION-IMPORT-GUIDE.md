@@ -2,11 +2,11 @@
 
 **Professional tools for resolving Notion markdown import issues and ensuring successful document migration.**
 
-## 🎯 **Overview**
+## 🎯 Overview
 
-This guide covers the comprehensive Notion import tools included in the Professional Markdown Toolkit. These tools address the most common issues that prevent successful markdown imports into Notion, including Unicode character problems, formatting conflicts, and Obsidian-specific syntax.
+This guide covers the comprehensive Notion import tools included in the Professional Markdown Toolkit. **Important**: Use the general markdown cleanup tools first before attempting Notion-specific fixes.
 
-## 📋 **Common Notion Import Issues**
+## 📋 Common Notion Import Issues
 
 ### **Primary Import Blockers:**
 1. **Unicode Characters** - Emojis and special characters that Notion's parser rejects
@@ -20,7 +20,7 @@ This guide covers the comprehensive Notion import tools included in the Professi
 - Complex nested formatting
 - Non-standard markdown syntax
 
-## 🛠️ **Available Tools**
+## 🛠️ Available Tools
 
 ### **1. Complete All-in-One Fixer** ⭐ **RECOMMENDED**
 **File:** `markdown-toolkit/tools/notion_complete_fixer.py`
@@ -100,7 +100,21 @@ python3 tools/notion_import_fixer.py document.md
 python3 tools/notion_import_fixer.py document.md --no-wikilinks --no-hr-reduction
 ```
 
-## 📊 **Workflow Examples**
+## 📊 Workflow Examples
+
+### **Recommended Workflow - Clean First, Then Fix Notion Issues**
+```bash
+# Step 1: Clean general formatting issues first
+python3 tools/cleanup_markdown_batch.py
+
+# Step 2: Analyze Notion-specific issues
+python3 tools/notion_complete_fixer.py problematic-doc.md --analyze
+
+# Step 3: Fix Notion issues
+python3 tools/notion_complete_fixer.py problematic-doc.md -o notion-ready-doc.md
+
+# Step 4: Import notion-ready-doc.md into Notion
+```
 
 ### **Quick Start - All-in-One Processing**
 ```bash
@@ -134,7 +148,7 @@ for file in *.md; do
 done
 ```
 
-## 🔧 **Advanced Configuration**
+## 🔧 Advanced Configuration
 
 ### **Selective Processing**
 ```bash
@@ -153,24 +167,26 @@ for file in documents/*.md; do
 done
 ```
 
-## 🎯 **Best Practices**
+## 🎯 Best Practices
 
 ### **Before Processing:**
-1. **Backup original files** (tools create backups automatically)
-2. **Run analysis first** to understand what issues exist
-3. **Test with a small sample** before processing large documents
+1. **Use markdown cleanup tools first** (see main README)
+2. **Backup original files** (tools create backups automatically)
+3. **Run analysis first** to understand what issues exist
+4. **Test with a small sample** before processing large documents
 
 ### **Processing Strategy:**
-1. **Use the all-in-one fixer** for most cases
-2. **Use surgical approach** when you need specific control
-3. **Preview changes** before applying them (especially WikiLinks)
+1. **Clean general formatting** with `cleanup_markdown_batch.py`
+2. **Use the all-in-one fixer** for Notion-specific issues
+3. **Use surgical approach** when you need specific control
+4. **Preview changes** before applying them (especially WikiLinks)
 
 ### **After Processing:**
 1. **Verify import success** with a test document
 2. **Check formatting** in Notion matches expectations  
 3. **Keep both original and processed versions**
 
-## 📈 **Success Metrics**
+## 📈 Success Metrics
 
 Based on testing with real-world documents:
 
@@ -185,7 +201,7 @@ Based on testing with real-world documents:
 - Large documents (1-5MB): 3-10 seconds
 - Very large documents (>5MB): 10-30 seconds
 
-## 🚨 **Troubleshooting**
+## 🚨 Troubleshooting
 
 ### **Common Issues:**
 
@@ -222,7 +238,7 @@ for char in set(problematic):
 "
 ```
 
-## 📚 **Examples and Test Cases**
+## 📚 Examples and Test Cases
 
 The `test-cases/notion-import-issues/` directory contains:
 
@@ -249,19 +265,19 @@ python3 tools/notion_complete_fixer.py test-cases/notion-import-issues/original/
 diff -u test-cases/notion-import-issues/cleaned/working-example.md your-processed-document.md
 ```
 
-## 🔗 **Integration with Other Tools**
+## 🔗 Integration with Other Tools
+
+### **With Markdown Cleanup Tools:**
+```bash
+# Clean formatting first, then prepare for Notion
+python3 tools/cleanup_markdown_batch.py
+python3 tools/notion_complete_fixer.py cleaned-file.md
+```
 
 ### **With Obsidian Tools:**
 ```bash
 # Process Obsidian vault for Notion export
 find vault/ -name "*.md" -exec python3 tools/notion_complete_fixer.py {} -o "notion-export/{}" \;
-```
-
-### **With Cleanup Tools:**
-```bash
-# Clean formatting first, then prepare for Notion
-python3 tools/cleanup_markdown_batch.py
-python3 tools/notion_complete_fixer.py cleaned-file.md
 ```
 
 ### **With Backup System:**
@@ -272,7 +288,7 @@ backup_file "important-document.md"
 python3 tools/notion_complete_fixer.py important-document.md
 ```
 
-## 🚀 **Future Enhancements**
+## 🚀 Future Enhancements
 
 ### **Planned Features:**
 - **Document splitting** for very large files
@@ -290,7 +306,7 @@ Guidelines for improvements:
 
 ---
 
-## 📄 **Quick Reference**
+## 📄 Quick Reference
 
 ### **Most Common Command:**
 ```bash
