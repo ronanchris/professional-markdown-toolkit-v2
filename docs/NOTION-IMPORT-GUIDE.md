@@ -23,20 +23,20 @@ This guide covers the comprehensive Notion import tools included in the Professi
 ## 🛠️ **Available Tools**
 
 ### **1. Complete All-in-One Fixer** ⭐ **RECOMMENDED**
-**File:** `markdown-processing/notion_complete_fixer.py`
+**File:** `markdown-toolkit/tools/notion_complete_fixer.py`
 
 **Purpose:** Single script that handles all major Notion import issues in one pass.
 
 **Usage:**
 ```bash
 # Basic usage - fixes everything
-python3 markdown-processing/notion_complete_fixer.py document.md
+python3 tools/notion_complete_fixer.py document.md
 
 # Custom output location
-python3 markdown-processing/notion_complete_fixer.py document.md -o clean-document.md
+python3 tools/notion_complete_fixer.py document.md -o clean-document.md
 
 # Analyze issues without fixing
-python3 markdown-processing/notion_complete_fixer.py document.md --analyze
+python3 tools/notion_complete_fixer.py document.md --analyze
 ```
 
 **What it fixes:**
@@ -47,17 +47,17 @@ python3 markdown-processing/notion_complete_fixer.py document.md --analyze
 - ✅ Nested formatting cleanup
 
 ### **2. Unicode Character Cleaner**
-**File:** `markdown-processing/unicode_cleaner.py`
+**File:** `tools/unicode_cleaner.py`
 
 **Purpose:** Specialized Unicode character cleaning with smart replacements.
 
 **Usage:**
 ```bash
 # Clean Unicode characters
-python3 markdown-processing/unicode_cleaner.py document.md
+python3 tools/unicode_cleaner.py document.md
 
 # Analyze Unicode issues
-python3 markdown-processing/unicode_cleaner.py document.md --analyze --verbose
+python3 tools/unicode_cleaner.py document.md --analyze --verbose
 ```
 
 **Features:**
@@ -66,20 +66,20 @@ python3 markdown-processing/unicode_cleaner.py document.md --analyze --verbose
 - Preserves meaning while ensuring compatibility
 
 ### **3. WikiLink Converter**
-**File:** `markdown-processing/wikilink_converter.py`
+**File:** `tools/wikilink_converter.py`
 
 **Purpose:** Convert Obsidian WikiLinks to Notion-friendly bold text.
 
 **Usage:**
 ```bash
 # Convert WikiLinks
-python3 markdown-processing/wikilink_converter.py document.md
+python3 tools/wikilink_converter.py document.md
 
 # Preview conversions
-python3 markdown-processing/wikilink_converter.py document.md --preview
+python3 tools/wikilink_converter.py document.md --preview
 
 # Analyze WikiLinks
-python3 markdown-processing/wikilink_converter.py document.md --analyze
+python3 tools/wikilink_converter.py document.md --analyze
 ```
 
 **Conversion Examples:**
@@ -87,17 +87,17 @@ python3 markdown-processing/wikilink_converter.py document.md --analyze
 - `[[technical-analysis-2024]]` → `**Technical Analysis 2024**`
 
 ### **4. Notion-Specific Import Fixer**
-**File:** `markdown-processing/notion_import_fixer.py`
+**File:** `tools/notion_import_fixer.py`
 
 **Purpose:** Handles Notion-specific formatting issues (horizontal rules, tables, etc.).
 
 **Usage:**
 ```bash
 # Fix Notion-specific issues
-python3 markdown-processing/notion_import_fixer.py document.md
+python3 tools/notion_import_fixer.py document.md
 
 # Skip certain fixes
-python3 markdown-processing/notion_import_fixer.py document.md --no-wikilinks --no-hr-reduction
+python3 tools/notion_import_fixer.py document.md --no-wikilinks --no-hr-reduction
 ```
 
 ## 📊 **Workflow Examples**
@@ -105,10 +105,10 @@ python3 markdown-processing/notion_import_fixer.py document.md --no-wikilinks --
 ### **Quick Start - All-in-One Processing**
 ```bash
 # Step 1: Analyze your document
-python3 markdown-processing/notion_complete_fixer.py problematic-doc.md --analyze
+python3 tools/notion_complete_fixer.py problematic-doc.md --analyze
 
 # Step 2: Fix all issues
-python3 markdown-processing/notion_complete_fixer.py problematic-doc.md -o notion-ready-doc.md
+python3 tools/notion_complete_fixer.py problematic-doc.md -o notion-ready-doc.md
 
 # Step 3: Import notion-ready-doc.md into Notion
 ```
@@ -116,13 +116,13 @@ python3 markdown-processing/notion_complete_fixer.py problematic-doc.md -o notio
 ### **Surgical Approach - Step by Step**
 ```bash
 # Step 1: Clean Unicode issues first
-python3 markdown-processing/unicode_cleaner.py document.md -o step1-unicode-clean.md
+python3 tools/unicode_cleaner.py document.md -o step1-unicode-clean.md
 
 # Step 2: Fix Notion-specific issues
-python3 markdown-processing/notion_import_fixer.py step1-unicode-clean.md -o step2-notion-ready.md
+python3 tools/notion_import_fixer.py step1-unicode-clean.md -o step2-notion-ready.md
 
 # Step 3: Convert WikiLinks (optional)
-python3 markdown-processing/wikilink_converter.py step2-notion-ready.md -o final-polished.md
+python3 tools/wikilink_converter.py step2-notion-ready.md -o final-polished.md
 ```
 
 ### **Analysis-First Workflow**
@@ -130,7 +130,7 @@ python3 markdown-processing/wikilink_converter.py step2-notion-ready.md -o final
 # Analyze issues across multiple files
 for file in *.md; do
     echo "=== $file ==="
-    python3 markdown-processing/notion_complete_fixer.py "$file" --analyze
+    python3 tools/notion_complete_fixer.py "$file" --analyze
 done
 ```
 
@@ -139,17 +139,17 @@ done
 ### **Selective Processing**
 ```bash
 # Only fix Unicode and WikiLinks, keep horizontal rules
-python3 markdown-processing/notion_complete_fixer.py document.md --no-hr-removal
+python3 tools/notion_complete_fixer.py document.md --no-hr-removal
 
 # Only remove horizontal rules
-python3 markdown-processing/notion_complete_fixer.py document.md --no-unicode --no-wikilinks --no-table-fix
+python3 tools/notion_complete_fixer.py document.md --no-unicode --no-wikilinks --no-table-fix
 ```
 
 ### **Batch Processing**
 ```bash
 # Process all markdown files in a directory
 for file in documents/*.md; do
-    python3 markdown-processing/notion_complete_fixer.py "$file" -o "notion-ready/$(basename "$file")"
+    python3 tools/notion_complete_fixer.py "$file" -o "notion-ready/$(basename "$file")"
 done
 ```
 
@@ -210,7 +210,7 @@ Based on testing with real-world documents:
 ### **Advanced Troubleshooting:**
 ```bash
 # Debug Unicode issues
-python3 markdown-processing/unicode_cleaner.py document.md --analyze --verbose
+python3 tools/unicode_cleaner.py document.md --analyze --verbose
 
 # Check specific character issues
 python3 -c "
@@ -243,7 +243,7 @@ test-cases/notion-import-issues/
 ### **Using Test Cases:**
 ```bash
 # Test your documents against existing test cases
-python3 markdown-processing/notion_complete_fixer.py test-cases/notion-import-issues/original/your-document.md --analyze
+python3 tools/notion_complete_fixer.py test-cases/notion-import-issues/original/your-document.md --analyze
 
 # Compare results with successful examples
 diff -u test-cases/notion-import-issues/cleaned/working-example.md your-processed-document.md
@@ -254,14 +254,14 @@ diff -u test-cases/notion-import-issues/cleaned/working-example.md your-processe
 ### **With Obsidian Tools:**
 ```bash
 # Process Obsidian vault for Notion export
-find vault/ -name "*.md" -exec python3 markdown-processing/notion_complete_fixer.py {} -o "notion-export/{}" \;
+find vault/ -name "*.md" -exec python3 tools/notion_complete_fixer.py {} -o "notion-export/{}" \;
 ```
 
-### **With Metadata Tools:**
+### **With Cleanup Tools:**
 ```bash
-# Clean metadata first, then prepare for Notion
-python3 metadata-tools/remove_metadata.sh
-python3 markdown-processing/notion_complete_fixer.py cleaned-file.md
+# Clean formatting first, then prepare for Notion
+python3 tools/cleanup_markdown_batch.py
+python3 tools/notion_complete_fixer.py cleaned-file.md
 ```
 
 ### **With Backup System:**
@@ -269,7 +269,7 @@ python3 markdown-processing/notion_complete_fixer.py cleaned-file.md
 # Use with backup system
 source shared/backup-functions.sh
 backup_file "important-document.md"
-python3 markdown-processing/notion_complete_fixer.py important-document.md
+python3 tools/notion_complete_fixer.py important-document.md
 ```
 
 ## 🚀 **Future Enhancements**
@@ -282,9 +282,9 @@ python3 markdown-processing/notion_complete_fixer.py important-document.md
 - **Integration with Notion API** for direct upload
 
 ### **Contributing:**
-See `CONTRIBUTING.md` for guidelines on:
+Guidelines for improvements:
 - Adding new Unicode character mappings
-- Extending WikiLink conversion patterns
+- Extending WikiLink conversion patterns  
 - Adding test cases for edge cases
 - Improving processing performance
 
@@ -294,13 +294,13 @@ See `CONTRIBUTING.md` for guidelines on:
 
 ### **Most Common Command:**
 ```bash
-python3 markdown-processing/notion_complete_fixer.py your-document.md
+python3 tools/notion_complete_fixer.py your-document.md
 ```
 
 ### **Emergency Troubleshooting:**
 ```bash
 # If all else fails, try minimal processing
-python3 markdown-processing/unicode_cleaner.py your-document.md
+python3 tools/unicode_cleaner.py your-document.md
 ```
 
 ### **Success Verification:**

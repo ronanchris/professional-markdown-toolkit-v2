@@ -1,0 +1,8 @@
+# Markdown Processing Tools - Python Dependencies
+
+# Note: Most scripts use only Python standard library
+# No additional dependencies required for core markdown processing
+
+# System Requirements:
+# - Python 3.6+ (recommended: Python 3.8+)
+# - Standard Unix tools: grep, sed, find (for shell scripts) 

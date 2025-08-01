@@ -1,15 +1,9 @@
 # Professional Markdown Toolkit - Python Dependencies
 
-# Required Python packages
-PyYAML>=6.0  # Required for YAML frontmatter processing
+# Note: All markdown processing tools use only Python standard library
+# No additional dependencies required
 
 # System Requirements:
 # - Python 3.6+ (recommended: Python 3.8+)
 # - Bash shell (for .sh scripts)  
-# - Standard Unix tools: awk, grep, sed, find
-# - Perl (for Unicode processing in document generation)
-
-# Note: Most scripts use only Python standard library
-# PyYAML is required for:
-#   - obsidian-cursor-workflow/vault-analytics.py
-#   - obsidian-tools/apply_moc_template_preserve_metadata.py 
+# - Standard Unix tools: grep, sed, find 

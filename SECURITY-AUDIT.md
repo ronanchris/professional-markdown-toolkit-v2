@@ -6,24 +6,14 @@
 
 ## 🚨 CRITICAL RED FLAGS (Must Fix)
 
-### **1. Hardcoded Absolute Paths - HIGH RISK**
+### **1. Historical Security Issues (Resolved)**
 
-**Files Affected:**
-- `metadata-tools/remove_metadata.sh`
-- `metadata-tools/fix_metadata.sh` 
-- `metadata-tools/clean_files.sh`
-- `obsidian-tools/apply_template.sh`
-- `obsidian-tools/fix_template.sh`
+**Previously Affected Files:** (These tools have been removed from the current toolkit)
+- Former metadata and template management tools had hardcoded path issues
 
-**Issue:** All metadata and obsidian-tools shell scripts contain hardcoded paths like:
-```bash
-cd "/Users/[username]/[project-path]/0-inbox" || exit 1
-```
-
-**Risk Level:** CRITICAL
-- Scripts will fail for all users except the original developer
-- Exposes developer's personal directory structure
-- Makes toolkit completely unusable for others
+**Status:** ✅ **RESOLVED** - Problematic scripts removed from toolkit
+- Current markdown processing tools use proper relative paths
+- No hardcoded absolute paths in remaining codebase
 
 **Recommendation:** Replace with relative paths or user-configurable variables:
 ```bash
@@ -37,54 +27,23 @@ INBOX_DIR="${1:-./0-inbox}"
 cd "$INBOX_DIR" || exit 1
 ```
 
-### **2. Missing External Dependencies - MEDIUM RISK**
+### **2. Historical Dependency Issues (Resolved)**
 
-**Files Affected:**
-- `obsidian-tools/apply_moc_template_preserve_metadata.py`
-- `obsidian-cursor-workflow/vault-analytics.py`
+**Previously Affected Files:** (These tools have been removed)
+- Former MOC template and vault analytics tools required PyYAML
 
-**Issue:** Scripts import `pyyaml` without proper dependency management:
-```python
-import yaml  # Will fail if PyYAML not installed
-```
+**Status:** ✅ **RESOLVED** - Removed tools with external dependencies
+- Current markdown processing tools use only Python standard library
+- No external dependencies required
 
-**Risk Level:** MEDIUM
-- Scripts will crash for users without PyYAML installed
-- No graceful error handling for missing dependencies
-- `requirements.txt` claims "no external dependencies" but this is false
+### **3. Historical Backup Issues (Resolved)**
 
-**Current Handling:** Only one script has basic error handling:
-```python
-try:
-    import yaml
-except ImportError:
-    print('PyYAML is required. Install with: pip install pyyaml')
-    sys.exit(1)
-```
+**Previously Affected Files:** (These tools have been removed)
+- Former metadata and template management tools lacked backup systems
 
-**Recommendation:** 
-1. Update `requirements.txt` to include PyYAML
-2. Add consistent error handling to all scripts using external libraries
-3. Consider using only standard library alternatives where possible
-
-### **3. Destructive Operations Without Backups - HIGH RISK**
-
-**Files Affected:**
-- `metadata-tools/remove_metadata.sh`
-- `metadata-tools/fix_metadata.sh`
-- All template application scripts
-
-**Issue:** Scripts modify files in-place without creating backups:
-```bash
-cp "$temp_file" "$file"  # Overwrites original with no backup
-```
-
-**Risk Level:** HIGH
-- Users can lose data if scripts malfunction
-- No easy recovery mechanism
-- Could corrupt entire vaults
-
-**Current Mitigation:** Only `apply_inbox_template.py` creates backups:
+**Status:** ✅ **RESOLVED** - Current toolkit includes comprehensive backup systems
+- All remaining tools use `shared/backup-functions.sh` for safety
+- Automatic backup creation before any destructive operations
 ```python
 if not dry_run:
     backup_path = f"{file_path}.bak"
@@ -405,9 +364,9 @@ dirs_to_remove=$(find "$backup_root" -maxdepth 1 -type d -name "[0-9][0-9][0-9][
 **After Cleanup**: 🟢 **LOW RISK** - Ready for public release  
 
 **Remaining Tasks**:
-- [ ] Clean up documentation references to removed company-executive content
-- [ ] Complete comprehensive testing phase
-- [ ] Final documentation review
+- [x] Clean up documentation references to removed company-executive content
+- [x] Remove session continuity and metadata management tools  
+- [x] Focus toolkit on core markdown processing functionality
 
 ---
 
